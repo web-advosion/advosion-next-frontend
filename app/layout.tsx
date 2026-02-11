@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Advosion",
   icons: {
-    icon: "/favicon_advosion.svg",
+    icon: "/img/faveicon-advosion-v4.svg",
   },
   description:
     "Advosion er en kombineret advokat- og revisionsvirksomhed, der tilbyder juridisk og økonomisk rådgivning til både private og erhvervskunder.",
