@@ -1,4 +1,7 @@
 import Image from "next/image";
+import WhoCardDark from "./components/who-card-light";
+import WhoCardLight from "./components/who-card-dark";
+import ButtonCTA from "./components/cta-holdet";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -12,7 +15,10 @@ export default async function HomePage() {
     <main className="flex flex-col items-center">
       {/*Hero sektion */}
 
-      <section className="w-full h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative">
+      <section
+        id="hero"
+        className="w-full h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+      >
         <div className="absolute inset-0 bg-black/60"></div>
         {/* <video
           autoPlay
@@ -54,18 +60,30 @@ export default async function HomePage() {
       </section>
 
       {/*Hvem er vi */}
-      <section className=" w-full h-screen bg-(--primay-bg) px-48">
+      <section className=" w-full h-auto bg-(--primay-bg) px-48">
         <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
           Hvem er vi?
         </h1>
 
         {/*Card container */}
-        <div className="mt-7.5 w-full grid grid-cols-3 gap-7.5">
-          <div className="w-72 h-72 bg-(--advokat-blue) rounded-3xl shadow-[0px_3.1646809577941895px_3.1646809577941895px_0px_rgba(0,0,0,0.25)]"></div>
-          <div className="w-72 h-72 rounded-3xl shadow-md bg-(--cards)"></div>
-
-          <div className="w-72 h-72 bg-(--advokat-blue) rounded-3xl"></div>
+        <div className="mt-7.5 w-full flex justify-between mb-12.5">
+          <WhoCardDark />
+          <WhoCardLight />
+          <WhoCardDark />
         </div>
+
+        <div className="my-12.5 flex justify-end w-full">
+          <ButtonCTA />
+        </div>
+      </section>
+
+      {/*Ydelser */}
+      <section className=" w-full h-screen bg-(--secondary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
+          Ydelser{" "}
+        </h1>
+
+        {/*Card container */}
       </section>
     </main>
   );
