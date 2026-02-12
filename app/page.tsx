@@ -1,8 +1,11 @@
 import Image from "next/image";
-import WhoCardDark from "./components/who-card-light";
-import WhoCardLight from "./components/who-card-dark";
-import ButtonCTA from "./components/cta-holdet";
-import AdvokatCard from "./components/advokat-card";
+import WhoCardLight from "./components/cards/who-card-light";
+import WhoCardDark from "./components/cards/who-card-dark";
+import ButtonCTA from "./components/buttons/cta-holdet";
+import AdvokatCard from "./components/cards/advokat-card";
+import RevisorCard from "./components/cards/revisor-card";
+import ContactCard from "./components/cards/contact-card";
+import StatementContainer from "./components/Client-statement-container.jsx";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -33,7 +36,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-        <div className="flex flex-col justify-center w-full h-full align-start text-white relative z-10">
+        <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10">
           <div>
             <Image
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -62,7 +65,7 @@ export default async function HomePage() {
 
       {/*Hvem er vi */}
       <section className=" w-full h-full bg-(--primay-bg) px-48">
-        <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
           Hvem er vi?
         </h1>
 
@@ -80,13 +83,40 @@ export default async function HomePage() {
 
       {/*Ydelser */}
       <section className=" w-full h-full bg-(--secondary-bg) px-48">
-        <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
           Ydelser
         </h1>
 
         {/*Card container */}
         <div className="mt-7.5 w-full mb-12.5">
           <AdvokatCard />
+        </div>
+        <div className="mt-22.5 w-full mb-12.5 flex justify-end">
+          <RevisorCard />
+        </div>
+      </section>
+
+      {/*kontakt */}
+      <section className=" w-full h-full bg-(--primary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+          Kontakt
+        </h1>
+
+        {/*Card container */}
+        <div className="mt-7.5 w-full mb-31.25">
+          <ContactCard />
+        </div>
+      </section>
+
+      {/*Kunde statements */}
+      <section className=" w-full h-full bg-(--secondary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+          Det siger vores kunder
+        </h1>
+
+        {/*Card gallery */}
+        <div className="mt-7.5 w-full mb-12.5">
+          <StatementContainer />
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonReadMore from "./cta-readmore";
+import ButtonReadMore from "../buttons/cta-readmore";
 import Image from "next/image";
 
 export default function AdvokatCard() {
