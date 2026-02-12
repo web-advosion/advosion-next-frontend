@@ -1,7 +1,11 @@
 import Image from "next/image";
-import WhoCardDark from "./components/who-card-light";
-import WhoCardLight from "./components/who-card-dark";
-import ButtonCTA from "./components/cta-holdet";
+import WhoCardLight from "./components/cards/WhoCardLight";
+import WhoCardDark from "./components/cards/WhoCardDark";
+import ButtonMeet from "./components/buttons/ButtonMeet";
+import AdvokatCard from "./components/cards/AdvokatCard";
+import RevisorCard from "./components/cards/RevisorCard";
+import ContactCard from "./components/cards/ContactCard";
+import StatementContainer from "./components/StatementContainer";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -32,7 +36,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-        <div className="flex flex-col justify-center w-full h-full align-start text-white relative z-10">
+        <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10">
           <div>
             <Image
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -42,10 +46,7 @@ export default async function HomePage() {
               priority
             />
 
-            <p
-              className="mt-4 max-w-102"
-              dangerouslySetInnerHTML={{ __html: page.acf.hero_description }}
-            />
+            <p className="mt-4 max-w-102">{page.acf.hero_description}</p>
           </div>
         </div>
 
@@ -60,8 +61,8 @@ export default async function HomePage() {
       </section>
 
       {/*Hvem er vi */}
-      <section className=" w-full h-auto bg-(--primay-bg) px-48">
-        <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
+      <section className=" w-full h-full bg-(--primay-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
           Hvem er vi?
         </h1>
 
@@ -73,17 +74,47 @@ export default async function HomePage() {
         </div>
 
         <div className="my-12.5 flex justify-end w-full">
-          <ButtonCTA />
+          <ButtonMeet />
         </div>
       </section>
 
       {/*Ydelser */}
-      <section className=" w-full h-screen bg-(--secondary-bg) px-48">
-        <h1 className="font-bold text-3xl text-(--cta-black) mt-12,5">
-          Ydelser{" "}
+      <section className=" w-full h-full bg-(--secondary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+          Ydelser
         </h1>
 
         {/*Card container */}
+        <div className="mt-7.5 w-full mb-12.5">
+          <AdvokatCard />
+        </div>
+        <div className="mt-22.5 w-full mb-12.5 flex justify-end">
+          <RevisorCard />
+        </div>
+      </section>
+
+      {/*kontakt */}
+      <section className=" w-full h-full bg-(--primary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+          Kontakt
+        </h1>
+
+        {/*Card container */}
+        <div className="mt-7.5 w-full mb-31.25">
+          <ContactCard />
+        </div>
+      </section>
+
+      {/*Kunde statements */}
+      <section className=" w-full h-full bg-(--secondary-bg) px-48">
+        <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+          Det siger vores kunder
+        </h1>
+
+        {/*Card gallery */}
+        <div className="mt-7.5 w-full h-full mb-12.5">
+          <StatementContainer />
+        </div>
       </section>
     </main>
   );
