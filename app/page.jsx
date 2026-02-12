@@ -46,10 +46,7 @@ export default async function HomePage() {
               priority
             />
 
-            <p
-              className="mt-4 max-w-102"
-              dangerouslySetInnerHTML={{ __html: page.acf.hero_description }}
-            />
+            <p className="mt-4 max-w-102">{page.acf.hero_description}</p>
           </div>
         </div>
 
