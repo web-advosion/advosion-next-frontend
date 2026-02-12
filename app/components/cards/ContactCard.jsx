@@ -1,5 +1,4 @@
-import Link from "next/link";
-import ButtonFind from "../buttons/cta-find-employee";
+import ButtonFind from "../buttons/ButtonFind.jsx";
 import Image from "next/image";
 
 export default function ContactCard() {

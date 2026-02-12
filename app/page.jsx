@@ -1,11 +1,11 @@
 import Image from "next/image";
-import WhoCardLight from "./components/cards/who-card-light";
-import WhoCardDark from "./components/cards/who-card-dark";
-import ButtonCTA from "./components/buttons/cta-holdet";
-import AdvokatCard from "./components/cards/advokat-card";
-import RevisorCard from "./components/cards/revisor-card";
-import ContactCard from "./components/cards/contact-card";
-import StatementContainer from "./components/Client-statement-container.jsx";
+import WhoCardLight from "./components/cards/WhoCardLight";
+import WhoCardDark from "./components/cards/WhoCardDark";
+import ButtonMeet from "./components/buttons/ButtonMeet";
+import AdvokatCard from "./components/cards/AdvokatCard";
+import RevisorCard from "./components/cards/RevisorCard";
+import ContactCard from "./components/cards/ContactCard";
+import StatementContainer from "./components/StatementContainer";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -77,7 +77,7 @@ export default async function HomePage() {
         </div>
 
         <div className="my-12.5 flex justify-end w-full">
-          <ButtonCTA />
+          <ButtonMeet />
         </div>
       </section>
 
@@ -115,7 +115,7 @@ export default async function HomePage() {
         </h1>
 
         {/*Card gallery */}
-        <div className="mt-7.5 w-full mb-12.5">
+        <div className="mt-7.5 w-full h-full mb-12.5">
           <StatementContainer />
         </div>
       </section>

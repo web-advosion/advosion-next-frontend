@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ButtonReadMore() {
+export default function ButtonRead() {
   return (
     <div className=" flex w-full">
       <Link

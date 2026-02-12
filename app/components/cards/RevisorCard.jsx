@@ -1,10 +1,10 @@
 import Link from "next/link";
-import ButtonReadMore from "../buttons/cta-readmore";
+import ButtonReadMore from "../buttons/ButtonRead";
 import Image from "next/image";
 
-export default function AdvokatCard() {
+export default function RevisorCard() {
   return (
-    <div className="w-178 h-96 bg-(--advokat-blue) rounded-3xl shadow-md flex items-center px-8 justify-between">
+    <div className="w-178 h-96 bg-(--revision-green) rounded-3xl shadow-md flex items-center px-8 justify-between">
       <article>
         <div className="w-full h-full p-">
           <div className=" text-(--advokat-blue) ">
