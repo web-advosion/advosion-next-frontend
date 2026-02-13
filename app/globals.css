@@ -19,9 +19,3 @@ body {
   background: var(--primary-bg);
   color: var(--cta-black);
 }
-
-section {
-  max-width: 100vw;
-  padding-left: 192px;
-  padding-right: 192px;
-}

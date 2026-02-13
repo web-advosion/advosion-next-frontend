@@ -19,12 +19,12 @@ export default async function HomePage() {
 
   return (
     <>
-      <main className=" flex flex-col items-center">
+      <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
         {/*Hero sektion */}
 
         <section
           id="hero"
-          className="w-full h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+          className="w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
         >
           <div className="absolute inset-0 bg-black/60"></div>
           {/* <video
@@ -39,8 +39,8 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-          <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10 animate__animated animate__fadeInDown animate__slow">
-            <div>
+          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5">
+            <div className="w-72 h-30">
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
                 width={320}
@@ -49,7 +49,7 @@ export default async function HomePage() {
                 priority
               />
 
-              <p className="mt-4 max-w-102">{page.acf.hero_description}</p>
+              <p className="mt-4">{page.acf.hero_description}</p>
             </div>
           </div>
 
@@ -61,86 +61,6 @@ export default async function HomePage() {
               height={48}
               alt="Hvid pil"
             />
-          </div>
-        </section>
-
-        {/*Hvem er vi */}
-        <section className=" w-full h-full bg-(--primay-bg) px-48">
-          <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-              Hvem er vi?
-            </h1>
-          </Link>
-
-          {/*Card container */}
-          <div
-            data-aos="fade-in"
-            className="mt-7.5 w-full flex justify-between mb-12.5"
-          >
-            <WhoCardLeft />
-            <WhoCardMid />
-            <WhoCardRight />
-          </div>
-
-          <div className="my-12.5 flex justify-end w-full">
-            <ButtonMeet />
-          </div>
-        </section>
-
-        {/*Ydelser */}
-        <section className=" w-full h-full bg-(--secondary-bg) px-48">
-          <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-              Ydelser
-            </h1>
-          </Link>
-
-          {/*Card container */}
-          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
-            <AdvokatCard />
-          </div>
-          <div
-            data-aos="fade-left"
-            className="mt-22.5 w-full mb-12.5 flex justify-end"
-          >
-            <RevisorCard />
-          </div>
-        </section>
-
-        {/*Sektion: kontakt */}
-        <section className=" w-full h-full bg-(--primary-bg) px-48">
-          <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-              Kontakt
-            </h1>
-          </Link>
-
-          {/*Card container */}
-          <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
-            <ContactCard />
-          </div>
-        </section>
-
-        {/*Kunde statements */}
-        <section className=" w-full h-full bg-(--secondary-bg) px-48">
-          <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-              Det siger vores kunder
-            </h1>
-          </Link>
-
-          {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-5 w-full h-full mb-31.5">
-            <div className="w-full flex justify-end mb-0">
-              <Image
-                className="w-35 h-10"
-                src="/img/icon-swipe.svg"
-                width={150}
-                height={50}
-                alt="swipe icon"
-              ></Image>
-            </div>
-            <StatementContainer />
           </div>
         </section>
       </main>

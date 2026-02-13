@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
         {children}
-        <Footer />
+        {/*    <Footer /> */}
       </body>
     </html>
   );
