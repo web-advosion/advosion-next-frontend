@@ -36,7 +36,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-        <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10">
+        <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10 animate__animated animate__fadeInDown animate__slow">
           <div>
             <Image
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -52,6 +52,7 @@ export default async function HomePage() {
 
         <div className="absolute bottom-8 inset-x-0 flex justify-center z-10">
           <Image
+            className="animate__animated animate__pulse animate__infinite animate__fast"
             src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
             width={48}
             height={48}
@@ -67,7 +68,10 @@ export default async function HomePage() {
         </h1>
 
         {/*Card container */}
-        <div className="mt-7.5 w-full flex justify-between mb-12.5">
+        <div
+          data-aos="fade-in"
+          className="mt-7.5 w-full flex justify-between mb-12.5"
+        >
           <WhoCardDark />
           <WhoCardLight />
           <WhoCardDark />

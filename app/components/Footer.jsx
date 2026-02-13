@@ -92,9 +92,75 @@ export default function Footer() {
         </article>
       </section>
 
-      <section>
-        <article></article>
-        <article></article>
+      <section className="w-full h-auto flex mt-19 justify-between">
+        <article className="flex gap-14 mr-30">
+          <div className="text-(--advokat-blue) text-sm w-auto">
+            <h4 className="font-bold">
+              ADVOSION <br />
+              ADVOKATPARTNERSELSKAB
+            </h4>
+            <p>
+              Dronning Sophies Allé 7D, 1. sal <br />
+              8660 Skanderborg <br />
+              CVR: 37 55 75 60
+            </p>
+          </div>
+          <div className="text-(--advokat-blue) text-sm w-auto">
+            <h4 className="font-bold">
+              ADVOSION <br />
+              STATSAUT. REVISORPARTNERSELSKAB
+            </h4>
+            <p>
+              Dronning Sophies Allé 7D, 1. sal <br />
+              8660 Skanderborg <br />
+              CVR: 37 55 70 64
+            </p>
+          </div>
+        </article>
+
+        <article className="flex items-end justify-end">
+          <ul className=" text-base font-medium gap-8 flex items-end">
+            <li>
+              <Link className="flex items-center gap-2" href="/">
+                <Image
+                  className=""
+                  src="/img/icon-trustpilot.svg"
+                  width={150}
+                  height={50}
+                  alt="telefon logo"
+                ></Image>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="flex items-center gap-2"
+                href="https://maps.app.goo.gl/p4e8WT6AYfpvtTUo6"
+              >
+                <Image
+                  className=""
+                  src="/img/icon-maps.svg"
+                  width={66}
+                  height={66}
+                  alt="telefon logo"
+                ></Image>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="flex items-center gap-2"
+                href="https://www.linkedin.com/company/advosion/"
+              >
+                <Image
+                  className=""
+                  src="/img/icon-linkedin.svg"
+                  width={66}
+                  height={66}
+                  alt="telefon logo"
+                ></Image>
+              </Link>
+            </li>
+          </ul>
+        </article>
       </section>
     </footer>
   );
