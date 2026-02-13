@@ -112,7 +112,16 @@ export default async function HomePage() {
         </h1>
 
         {/*Card gallery */}
-        <div className="mt-7.5 w-full h-full mb-12.5">
+        <div className="mt-5 w-full h-full mb-31.5">
+          <div className="w-full flex justify-end mb-0">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
           <StatementContainer />
         </div>
       </section>
