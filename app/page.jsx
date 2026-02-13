@@ -63,6 +63,86 @@ export default async function HomePage() {
             />
           </div>
         </section>
+
+        {/*Hvem er vi */}
+        <section className="w-screen h-auto px-7.5">
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Hvem er vi?
+            </h1>
+          </Link>
+
+          {/*Card container */}
+          <div
+            data-aos="fade-in"
+            className="mt-7.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
+          >
+            <WhoCardLeft />
+            <WhoCardMid />
+            <WhoCardRight />
+          </div>
+
+          <div className="my-12.5 flex justify-end w-full">
+            <ButtonMeet />
+          </div>
+        </section>
+
+        {/*Ydelser */}
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Ydelser
+            </h1>
+          </Link>
+
+          {/*Card container */}
+          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
+            <AdvokatCard />
+          </div>
+          <div
+            data-aos="fade-left"
+            className="mt-22.5 w-full mb-12.5 flex justify-end"
+          >
+            <RevisorCard />
+          </div>
+        </section>
+
+        {/*Sektion: kontakt */}
+        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5">
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Kontakt
+            </h1>
+          </Link>
+
+          {/*Card container */}
+          <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
+            <ContactCard />
+          </div>
+        </section>
+
+        {/*Kunde statements */}
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Det siger vores kunder
+            </h1>
+          </Link>
+
+          {/*Card gallery */}
+          <div data-aos="fade-in" className="mt-5 w-screen h-auto mb-25">
+            <div className="w-full flex justify-start ">
+              <Image
+                className="w-35 h-10"
+                src="/img/icon-swipe.svg"
+                width={150}
+                height={50}
+                alt="swipe icon"
+              ></Image>
+            </div>
+            <StatementContainer />
+          </div>
+        </section>
       </main>
     </>
   );
