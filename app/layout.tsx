@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import "animate.css";
+import "aos/dist/aos.css";
+import AOSInit from "./components/AOSInit";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        <AOSInit />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
