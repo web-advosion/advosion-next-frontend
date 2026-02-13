@@ -7,6 +7,7 @@ import AdvokatCard from "./components/cards/AdvokatCard";
 import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
 import StatementContainer from "./components/StatementContainer";
+import Link from "next/link";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -64,16 +65,18 @@ export default async function HomePage() {
         </section>
 
         {/*Hvem er vi */}
-        <section
-          data-aos="fade-in"
-          className=" w-full h-full bg-(--primay-bg) px-48"
-        >
-          <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-            Hvem er vi?
-          </h1>
+        <section className=" w-full h-full bg-(--primay-bg) px-48">
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Hvem er vi?
+            </h1>
+          </Link>
 
           {/*Card container */}
-          <div className="mt-7.5 w-full flex justify-between mb-12.5">
+          <div
+            data-aos="fade-in"
+            className="mt-7.5 w-full flex justify-between mb-12.5"
+          >
             <WhoCardLeft />
             <WhoCardMid />
             <WhoCardRight />
@@ -86,9 +89,11 @@ export default async function HomePage() {
 
         {/*Ydelser */}
         <section className=" w-full h-full bg-(--secondary-bg) px-48">
-          <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-            Ydelser
-          </h1>
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Ydelser
+            </h1>
+          </Link>
 
           {/*Card container */}
           <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
@@ -104,9 +109,11 @@ export default async function HomePage() {
 
         {/*Sektion: kontakt */}
         <section className=" w-full h-full bg-(--primary-bg) px-48">
-          <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-            Kontakt
-          </h1>
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Kontakt
+            </h1>
+          </Link>
 
           {/*Card container */}
           <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
@@ -116,9 +123,11 @@ export default async function HomePage() {
 
         {/*Kunde statements */}
         <section className=" w-full h-full bg-(--secondary-bg) px-48">
-          <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
-            Det siger vores kunder
-          </h1>
+          <Link href="/">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+              Det siger vores kunder
+            </h1>
+          </Link>
 
           {/*Card gallery */}
           <div data-aos="fade-in" className="mt-5 w-full h-full mb-31.5">
