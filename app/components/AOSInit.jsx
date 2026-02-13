@@ -7,8 +7,11 @@ import "aos/dist/aos.css";
 export default function AOSInit() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: true,
+      duration: 1000, // animation duration
+      offset: 250, // when animation triggers
+      easing: "ease-in-out", // animation curve
+      once: false, // animate only once
+      /*  mirror: false, // don't animate on scroll up */
     });
   }, []);
 
