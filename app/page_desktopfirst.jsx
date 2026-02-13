@@ -19,12 +19,12 @@ export default async function HomePage() {
 
   return (
     <>
-      <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
+      <main className="max-w-screen h-auto flex flex-col items-center">
         {/*Hero sektion */}
 
         <section
           id="hero"
-          className="w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+          className="w-full h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative px-48"
         >
           <div className="absolute inset-0 bg-black/60"></div>
           {/* <video
@@ -39,8 +39,8 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5">
-            <div className="w-72 h-30">
+          <div className="flex flex-col justify-center w-fulll h-full align-start text-white relative z-10 animate__animated animate__fadeInDown animate__slow">
+            <div>
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
                 width={320}
@@ -49,7 +49,7 @@ export default async function HomePage() {
                 priority
               />
 
-              <p className="mt-4">{page.acf.hero_description}</p>
+              <p className="mt-4 max-w-102">{page.acf.hero_description}</p>
             </div>
           </div>
 
@@ -65,7 +65,7 @@ export default async function HomePage() {
         </section>
 
         {/*Hvem er vi */}
-        <section className="w-screen h-auto px-7.5">
+        <section className=" w-full h-full bg-(--primay-bg) px-48">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Hvem er vi?
@@ -75,7 +75,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-7.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
+            className="mt-7.5 w-full flex justify-between mb-12.5"
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -88,7 +88,7 @@ export default async function HomePage() {
         </section>
 
         {/*Ydelser */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+        <section className=" w-full h-full bg-(--secondary-bg) px-48">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Ydelser
@@ -108,7 +108,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: kontakt */}
-        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5">
+        <section className=" w-full h-full bg-(--primary-bg) px-48">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Kontakt
@@ -122,7 +122,7 @@ export default async function HomePage() {
         </section>
 
         {/*Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+        <section className=" w-full h-full bg-(--secondary-bg) px-48">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Det siger vores kunder
@@ -130,8 +130,8 @@ export default async function HomePage() {
           </Link>
 
           {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-5 w-screen h-auto mb-25">
-            <div className="w-full flex justify-start ">
+          <div data-aos="fade-in" className="mt-5 w-full h-full mb-31.5">
+            <div className="w-full flex justify-end mb-0">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-swipe.svg"
