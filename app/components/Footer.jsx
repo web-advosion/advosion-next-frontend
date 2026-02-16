@@ -61,7 +61,6 @@ export default function Footer() {
                   ></Image>
                   <p>+45 40 82 71 01</p>
                 </Link>
-                test
               </li>
               <li>
                 <Link className="flex items-center gap-2" href="/">
