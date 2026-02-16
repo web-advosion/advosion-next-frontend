@@ -144,7 +144,7 @@ export default async function HomePage() {
               <ContactCard />
             </div>
 
-            <div className="hidden md:block">
+            <div className="hidden md:block lg:hidden">
               <ContactCardTablet />
             </div>
 

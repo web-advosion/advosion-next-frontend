@@ -41,8 +41,8 @@ export default function ContactCardTablet() {
                   <h3>kontakt@advosion.dk</h3>
                 </li>
               </ul>
-              <div className="my-6">
-                <ButtonFind />
+              <div className="my-6 min-w-44 max-w-55 h-8 bg-(--cta-black) px-8 rounded-2xl font-bold text-lg text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
+                <p>Find medarbejder</p>
               </div>
             </div>
 

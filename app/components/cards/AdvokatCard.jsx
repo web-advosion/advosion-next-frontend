@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonReadMore from "../buttons/ButtonRead";
+import ButtonRead from "../buttons/ButtonRead";
 import Image from "next/image";
 
 export default function AdvokatCard() {
@@ -21,8 +21,8 @@ export default function AdvokatCard() {
                 <li>Konflikthåndtering</li>
               </ul>
             </div>
-            <div className="my-6">
-              <ButtonReadMore />
+            <div className="my-6 max-w-40 h-8 bg-(--cta-black) px-8 rounded-2xl font-bold text-lg text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
+              <p>Læs mere</p>
             </div>
 
             <div className="justify-start text-white text-5xl font-medium">

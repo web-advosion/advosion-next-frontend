@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ButtonRead from "../buttons/ButtonRead";
 
 export default function WhoCardLeft() {
   return (
@@ -9,9 +10,9 @@ export default function WhoCardLeft() {
             Ét firma <br />
             To ekspertvirksomheder
           </h2>
-          <Link href="/#hero" className="underline text-base mt-3 inline-block">
+          <div className="underline text-base mt-3 inline-block">
             <p>Læs mere</p>
-          </Link>
+          </div>
         </div>
       </div>
     </Link>
