@@ -2,10 +2,10 @@ import Link from "next/link.js";
 import ButtonFind from "../buttons/ButtonFind.jsx";
 import Image from "next/image";
 
-export default function ContactCard() {
+export default function ContactCardTablet() {
   return (
     <Link href="/kontakt">
-      <div className="w-282 h-96 bg-(--cards) rounded-3xl shadow-md flex p-8 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out">
+      <div className="w-full h-96 bg-(--cards) rounded-3xl shadow-md flex p-8 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out">
         <article className="w-2/3 h-full flex flex-col justify-between">
           <div className="w-full h-full text-(--cta-black) flex flex-col justify-between">
             <div>

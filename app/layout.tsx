@@ -6,6 +6,7 @@ import "animate.css";
 import "aos/dist/aos.css";
 import AOSInit from "./components/AOSInit";
 import MobileFooter from "./components/MobileFooter";
+import TabletFooter from "./components/TabletFooter";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,11 +34,15 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
         {children}
-        <div className="hidden md:block">
+        <div className="hidden md:hidden lg:block ">
           <Footer />
         </div>
         <div className=" md:hidden">
           <MobileFooter />
+        </div>
+
+        <div className="hidden md:block lg:hidden">
+          <TabletFooter />
         </div>
       </body>
     </html>

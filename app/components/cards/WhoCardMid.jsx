@@ -10,9 +10,9 @@ export default function WhoCardMiddle() {
             juridisk og økonomisk <br />
             rådgiving{" "}
           </h2>
-          <Link href="/#hero" className="underline text-base mt-3 inline-block">
+          <div className="underline text-base mt-3 inline-block">
             <p>Læs mere</p>
-          </Link>
+          </div>
         </div>
       </div>
     </Link>
