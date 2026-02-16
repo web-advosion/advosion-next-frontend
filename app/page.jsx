@@ -43,7 +43,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-10.75">
+          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
             <div className="w-72 h-30">
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -69,13 +69,13 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Hvem er vi */}
-        <section className="w-screen h-auto px-7.5">
+        <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Hvem er vi?
             </h1>
           </Link>
-          <div className="w-full flex justify-start mt-5">
+          <div className="w-full flex justify-start mt-5 lg:hidden">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -88,7 +88,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl md:gap-20"
+            className="mt-2.5 lg:mt-7.5 w-screen lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24 lg:pr-0 lg:overflow-visible "
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -101,7 +101,7 @@ export default async function HomePage() {
         </section>
 
         {/*Ydelser */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Ydelser
@@ -109,7 +109,10 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5 ">
+          <div
+            data-aos="fade-right"
+            className="mt-7.5 w-full mb-12.5 lg:w-179 "
+          >
             <div className="hidden md:block">
               <AdvokatCard />
             </div>
@@ -119,7 +122,10 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div data-aos="fade-left" className="mt-12.5 w-full mb-12.5 ">
+          <div
+            data-aos="fade-left"
+            className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
+          >
             <div className="hidden md:block">
               <RevisorCard />
             </div>
@@ -131,7 +137,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: kontakt */}
-        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5">
+        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Kontakt
@@ -155,7 +161,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25">
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
               Det siger vores kunder
