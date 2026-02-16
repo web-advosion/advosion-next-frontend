@@ -8,6 +8,8 @@ import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
 import StatementContainer from "./components/StatementContainer";
 import Link from "next/link";
+import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
+import RevisorCardMobile from "./components/cards/RevisorCardMobile";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -97,13 +99,26 @@ export default async function HomePage() {
 
           {/*Card container */}
           <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
-            <AdvokatCard />
+            <div className="hidden md:block">
+              <AdvokatCard />
+            </div>
+
+            <div className="md:hidden">
+              <AdvokatCardMobile />
+            </div>
           </div>
+
           <div
             data-aos="fade-left"
-            className="mt-22.5 w-full mb-12.5 flex justify-end"
+            className="mt-12.5 w-full mb-12.5 flex justify-end"
           >
-            <RevisorCard />
+            <div className="hidden md:block">
+              <RevisorCard />
+            </div>
+
+            <div className=" md:hidden">
+              <RevisorCardMobile />
+            </div>
           </div>
         </section>
 
