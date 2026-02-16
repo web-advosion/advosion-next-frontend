@@ -121,7 +121,10 @@ export default function MobileFooter() {
         <article className="flex items-end justify-start mt-11.5">
           <ul className=" text-base font-medium gap-8 flex flex-col items-start">
             <li>
-              <Link className="flex flex-col items-center gap-2" href="/">
+              <Link
+                className="flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
+                href="/"
+              >
                 <Image
                   className=""
                   src="/img/icon-trustpilot.svg"
@@ -133,7 +136,7 @@ export default function MobileFooter() {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
                 href="https://maps.app.goo.gl/p4e8WT6AYfpvtTUo6"
               >
                 <Image
@@ -147,7 +150,7 @@ export default function MobileFooter() {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
                 href="https://www.linkedin.com/company/advosion/"
               >
                 <Image

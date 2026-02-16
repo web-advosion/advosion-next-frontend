@@ -25,7 +25,7 @@ export default function RevisorCard() {
             </div>
 
             <div className="justify-start text-white text-5xl font-medium">
-              <h3>Statsaut.</h3>
+              <h3 className="text-2xl">Statsaut.</h3>
               Revison
             </div>
           </div>
