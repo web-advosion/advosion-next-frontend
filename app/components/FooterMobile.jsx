@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+export default function FooterMobile() {
   return (
-    <footer className="w-full h-133.5 py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-48">
+    <footer className="w-full h-133.5 py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue)">
       <section className="w-full h-auto flex">
         <article className="mr-47.5">
           <div className="mb-5">

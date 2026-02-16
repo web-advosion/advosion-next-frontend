@@ -144,7 +144,7 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
+          <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
             <div className="hidden">
               <ContactCard />
             </div>
@@ -156,7 +156,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
               Det siger vores kunder
