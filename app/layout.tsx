@@ -39,6 +39,10 @@ export default function RootLayout({
         <div className=" md:hidden">
           <MobileFooter />
         </div>
+
+        <div>
+          <TabletFooter />
+        </div>
       </body>
     </html>
   );
