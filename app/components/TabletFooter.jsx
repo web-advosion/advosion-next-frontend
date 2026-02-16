@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function TabletFooter() {
   return (
-    <footer className="w-full h-133.5 py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-48">
-      <section className="w-full h-auto flex">
-        <article className="mr-47.5">
+    <footer className="w-full h-auto py-10.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-10.75 gap-12.5">
+      <section className="w-full h-auto flex gap-20">
+        <article className="max-w-52">
           <div className="mb-5">
             <Link href="/#hero">
               <Image
@@ -17,7 +17,7 @@ export default function TabletFooter() {
             </Link>
           </div>
 
-          <div className="w-64 justify-start text-(--advokat-blue) text-base font-medium font-['Inter'] leading-6">
+          <div className="w-full justify-start text-(--advokat-blue) text-xs font-medium font-['Inter'] leading-6">
             Vi har siden xxxx hjulpet store og små virksomheder med skræddersyet
             juridisk og økonomisk rådgivning via vores dygtige eksperter
           </div>
@@ -25,8 +25,8 @@ export default function TabletFooter() {
 
         <article className="w-2xl h-52 flex justify-between">
           <div>
-            <h2 className="text-2xl font-bold">Sider</h2>
-            <ul className="text-base font-medium gap-3 flex flex-col mt-3">
+            <h2 className="text-base font-bold">Sider</h2>
+            <ul className="text-xs font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/">Om os</Link>
               </li>
@@ -46,8 +46,8 @@ export default function TabletFooter() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Kontakt</h2>
-            <ul className="text-base font-medium gap-2 flex flex-col mt-3">
+            <h2 className="text-base font-bold">Kontakt</h2>
+            <ul className="text-xs font-medium gap-2 flex flex-col mt-3">
               <li>
                 <Link className="flex items-center gap-2" href="/">
                   <Image
@@ -76,8 +76,8 @@ export default function TabletFooter() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Information</h2>
-            <ul className="text-base font-medium gap-3 flex flex-col mt-3">
+            <h2 className="text-base font-bold">Information</h2>
+            <ul className="text-xs font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/">Forretningsbetingelser</Link>
               </li>
@@ -92,9 +92,9 @@ export default function TabletFooter() {
         </article>
       </section>
 
-      <section className="w-full h-auto flex mt-19 justify-between">
+      <section className="w-full h-auto flex justify-between">
         <article className="flex gap-14 mr-30">
-          <div className="text-(--advokat-blue) text-sm w-auto">
+          <div className="text-(--advokat-blue) text-xs w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               ADVOKATPARTNERSELSKAB
@@ -105,7 +105,7 @@ export default function TabletFooter() {
               CVR: 37 55 75 60
             </p>
           </div>
-          <div className="text-(--advokat-blue) text-sm w-auto">
+          <div className="text-(--advokat-blue) text-xs w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               STATSAUT. REVISORPARTNERSELSKAB

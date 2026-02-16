@@ -34,14 +34,14 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
         {children}
-        <div className="hidden md:hidden ">
+        <div className="hidden md:hidden lg:block ">
           <Footer />
         </div>
         <div className=" md:hidden">
           <MobileFooter />
         </div>
 
-        <div>
+        <div className="hidden md:block lg:hidden">
           <TabletFooter />
         </div>
       </body>
