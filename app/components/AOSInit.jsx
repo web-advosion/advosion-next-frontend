@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 export default function AOSInit() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration
+      duration: 600, // animation duration
       offset: 250, // when animation triggers
       easing: "ease-in-out", // animation curve
       once: false, // animate only once

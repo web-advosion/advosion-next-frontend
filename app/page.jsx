@@ -8,6 +8,9 @@ import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
 import StatementContainer from "./components/StatementContainer";
 import Link from "next/link";
+import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
+import RevisorCardMobile from "./components/cards/RevisorCardMobile";
+import ContactCardMobile from "./components/cards/ContactCardMobile";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -53,7 +56,7 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 inset-x-0 flex justify-center z-10">
+          <div className="absolute bottom-18 md:bottom-6 inset-x-0 flex justify-center z-10">
             <Image
               className="animate__animated animate__pulse animate__infinite animate__fast"
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
@@ -71,11 +74,20 @@ export default async function HomePage() {
               Hvem er vi?
             </h1>
           </Link>
+          <div className="w-full flex justify-start mt-5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
 
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-7.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
+            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -96,14 +108,30 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
-            <AdvokatCard />
+          <div
+            data-aos="fade-right"
+            className="mt-7.5 w-full mb-12.5 flex justify-center"
+          >
+            <div className="hidden md:block">
+              <AdvokatCard />
+            </div>
+
+            <div className="md:hidden">
+              <AdvokatCardMobile />
+            </div>
           </div>
+
           <div
             data-aos="fade-left"
-            className="mt-22.5 w-full mb-12.5 flex justify-end"
+            className="mt-12.5 w-full mb-12.5 flex justify-end"
           >
-            <RevisorCard />
+            <div className="hidden md:block">
+              <RevisorCard />
+            </div>
+
+            <div className=" md:hidden">
+              <RevisorCardMobile />
+            </div>
           </div>
         </section>
 
@@ -116,22 +144,28 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
-            <ContactCard />
+          <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
+            <div className="hidden md:block">
+              <ContactCard />
+            </div>
+
+            <div className="md:hidden">
+              <ContactCardMobile />
+            </div>
           </div>
         </section>
 
-        {/*Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
+        {/*Sektion: Kunde statements */}
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
               Det siger vores kunder
             </h1>
           </Link>
 
           {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-5 w-screen h-auto mb-25">
-            <div className="w-full flex justify-start ">
+          <div data-aos="fade-in" className="mt-2.5 w-screen h-auto">
+            <div className="w-full flex justify-start mb-0 ">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-swipe.svg"
