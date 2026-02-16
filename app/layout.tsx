@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import "animate.css";
 import "aos/dist/aos.css";
 import AOSInit from "./components/AOSInit";
+import MobileFooter from "./components/MobileFooter";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function RootLayout({
         <div className="hidden md:block">
           <Footer />
         </div>
-        <div>
+        <div className=" md:hidden">
           <MobileFooter />
         </div>
       </body>

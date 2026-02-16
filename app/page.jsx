@@ -56,7 +56,7 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="absolute bottom-8 inset-x-0 flex justify-center z-10">
+          <div className="absolute bottom-18 md:bottom-6 inset-x-0 flex justify-center z-10">
             <Image
               className="animate__animated animate__pulse animate__infinite animate__fast"
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
@@ -145,11 +145,11 @@ export default async function HomePage() {
 
           {/*Card container */}
           <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
-            <div className="hidden">
+            <div className="hidden md:block">
               <ContactCard />
             </div>
 
-            <div>
+            <div className="md:hidden">
               <ContactCardMobile />
             </div>
           </div>

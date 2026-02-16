@@ -3,15 +3,15 @@ import Link from "next/link";
 
 export default function MobileFooter() {
   return (
-    <footer className="w-full h-133.5 py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue)">
-      <section className="w-full h-auto flex">
-        <article className="mr-47.5">
+    <footer className="max-w-screen h-auto py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-7.5 gap-80">
+      <section className="w-full h-auto flex flex-col">
+        <article className="mr-47.5 w-full">
           <div className="mb-5">
             <Link href="/#hero">
               <Image
                 src="/img/icon-footer.svg"
-                width={206}
-                height={42}
+                width={271}
+                height={60}
                 alt="Advosion logo"
               ></Image>
             </Link>
@@ -23,7 +23,7 @@ export default function MobileFooter() {
           </div>
         </article>
 
-        <article className="w-2xl h-52 flex justify-between">
+        <article className="w-full h-52 flex flex-col justify-between mt-11.5">
           <div>
             <h2 className="text-2xl font-bold">Sider</h2>
             <ul className="text-base font-medium gap-3 flex flex-col mt-3">
@@ -45,7 +45,7 @@ export default function MobileFooter() {
             </ul>
           </div>
 
-          <div>
+          <div className="mt-11.5">
             <h2 className="text-2xl font-bold">Kontakt</h2>
             <ul className="text-base font-medium gap-2 flex flex-col mt-3">
               <li>
@@ -75,7 +75,7 @@ export default function MobileFooter() {
             </ul>
           </div>
 
-          <div>
+          <div className="mt-11.5">
             <h2 className="text-2xl font-bold">Information</h2>
             <ul className="text-base font-medium gap-3 flex flex-col mt-3">
               <li>
@@ -92,8 +92,8 @@ export default function MobileFooter() {
         </article>
       </section>
 
-      <section className="w-full h-auto flex mt-19 justify-between">
-        <article className="flex gap-14 mr-30">
+      <section className="w-full h-auto flex flex-col mt-19 justify-between">
+        <article className="flex flex-col gap-11.5">
           <div className="text-(--advokat-blue) text-sm w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
@@ -118,10 +118,10 @@ export default function MobileFooter() {
           </div>
         </article>
 
-        <article className="flex items-end justify-end">
-          <ul className=" text-base font-medium gap-8 flex items-end">
+        <article className="flex items-end justify-start mt-11.5">
+          <ul className=" text-base font-medium gap-8 flex flex-col items-start">
             <li>
-              <Link className="flex items-center gap-2" href="/">
+              <Link className="flex flex-col items-center gap-2" href="/">
                 <Image
                   className=""
                   src="/img/icon-trustpilot.svg"
