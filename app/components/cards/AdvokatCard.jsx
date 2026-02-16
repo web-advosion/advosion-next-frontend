@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function AdvokatCard() {
   return (
     <Link href="/advokat">
-      <div className="w-178 h-96 bg-(--advokat-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out ">
+      <div className="w-full h-96 bg-(--advokat-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20 ">
         <article>
-          <div className="w-full h-full p-">
+          <div className="w-full h-full">
             <div className=" text-(--advokat-blue) ">
               <h2 className="text-3xl font-medium text-(--primary-bg) ">
                 Vi er eksperter i:

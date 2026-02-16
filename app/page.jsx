@@ -11,6 +11,7 @@ import Link from "next/link";
 import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "./components/cards/RevisorCardMobile";
 import ContactCardMobile from "./components/cards/ContactCardMobile";
+import ContactCardTablet from "./components/cards/ContactCardTablet";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -42,7 +43,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5">
+          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-10.75">
             <div className="w-72 h-30">
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -56,7 +57,7 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="absolute bottom-18 md:bottom-6 inset-x-0 flex justify-center z-10">
+          <div className="absolute bottom-20 md:bottom-6 inset-x-0 flex justify-center z-10">
             <Image
               className="animate__animated animate__pulse animate__infinite animate__fast"
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
@@ -67,7 +68,7 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/*Hvem er vi */}
+        {/*Sektion: Hvem er vi */}
         <section className="w-screen h-auto px-7.5">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
@@ -87,7 +88,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
+            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl md:gap-20"
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -108,10 +109,7 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div
-            data-aos="fade-right"
-            className="mt-7.5 w-full mb-12.5 flex justify-center"
-          >
+          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5 ">
             <div className="hidden md:block">
               <AdvokatCard />
             </div>
@@ -121,10 +119,7 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div
-            data-aos="fade-left"
-            className="mt-12.5 w-full mb-12.5 flex justify-end"
-          >
+          <div data-aos="fade-left" className="mt-12.5 w-full mb-12.5 ">
             <div className="hidden md:block">
               <RevisorCard />
             </div>
@@ -145,8 +140,12 @@ export default async function HomePage() {
 
           {/*Card container */}
           <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
-            <div className="hidden md:block">
+            <div className="hidden md:hidden lg:block">
               <ContactCard />
+            </div>
+
+            <div className="hidden md:block">
+              <ContactCardTablet />
             </div>
 
             <div className="md:hidden">

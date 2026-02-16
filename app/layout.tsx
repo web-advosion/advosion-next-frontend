@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
         {children}
-        <div className="hidden md:block">
+        <div className="hidden md:block md:overflow-hidden">
           <Footer />
         </div>
         <div className=" md:hidden">
