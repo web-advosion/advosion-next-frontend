@@ -10,6 +10,7 @@ import StatementContainer from "./components/StatementContainer";
 import Link from "next/link";
 import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "./components/cards/RevisorCardMobile";
+import ContactCardMobile from "./components/cards/ContactCardMobile";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -73,11 +74,20 @@ export default async function HomePage() {
               Hvem er vi?
             </h1>
           </Link>
+          <div className="w-full flex justify-start mt-5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
 
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-7.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
+            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl"
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -98,7 +108,10 @@ export default async function HomePage() {
           </Link>
 
           {/*Card container */}
-          <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5">
+          <div
+            data-aos="fade-right"
+            className="mt-7.5 w-full mb-12.5 flex justify-center"
+          >
             <div className="hidden md:block">
               <AdvokatCard />
             </div>
@@ -132,21 +145,27 @@ export default async function HomePage() {
 
           {/*Card container */}
           <div data-aos="fade-in" className="mt-7.5 w-full mb-31.25">
-            <ContactCard />
+            <div className="hidden">
+              <ContactCard />
+            </div>
+
+            <div>
+              <ContactCardMobile />
+            </div>
           </div>
         </section>
 
-        {/*Kunde statements */}
+        {/*Sektion: Kunde statements */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
               Det siger vores kunder
             </h1>
           </Link>
 
           {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-5 w-screen h-auto mb-25">
-            <div className="w-full flex justify-start ">
+          <div data-aos="fade-in" className="mt-2.5 w-screen h-auto">
+            <div className="w-full flex justify-start mb-0 ">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-swipe.svg"
