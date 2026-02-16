@@ -43,7 +43,7 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
-          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5 md:px-10.75 lg:px-48">
+          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5 md:px-10.75 lg:px-48 xl:px-100">
             <div className="w-72 h-30">
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
@@ -69,7 +69,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Hvem er vi */}
-        <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48">
+        <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Hvem er vi?
@@ -101,7 +101,7 @@ export default async function HomePage() {
         </section>
 
         {/*Ydelser */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48">
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Ydelser
@@ -137,7 +137,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: kontakt */}
-        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48">
+        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
               Kontakt
@@ -161,7 +161,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48">
+        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
               Det siger vores kunder
