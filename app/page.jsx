@@ -75,7 +75,7 @@ export default async function HomePage() {
               Hvem er vi?
             </h1>
           </Link>
-          <div className="w-full flex justify-start mt-5">
+          <div className="w-full flex justify-start mt-5 lg:hidden">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -88,7 +88,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-2.5 w-screen overflow-x-auto gap-5 flex justify-between mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24"
+            className="mt-2.5 lg:mt-7.5 w-screen lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24 lg:pr-0 lg:overflow-visible "
           >
             <WhoCardLeft />
             <WhoCardMid />
