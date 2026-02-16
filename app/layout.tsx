@@ -40,9 +40,7 @@ export default function RootLayout({
           <MobileFooter />
         </div>
 
-        <div>
-          <TabletFooter />
-        </div>
+        <div></div>
       </body>
     </html>
   );
