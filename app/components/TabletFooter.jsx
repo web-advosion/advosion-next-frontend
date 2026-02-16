@@ -46,7 +46,10 @@ export default function TabletFooter() {
           </div>
 
           <div>
-            <h2 className="text-base font-bold">Kontakt</h2>
+            <Link href="/kontakt">
+              <h2 className="text-base font-bold">Kontakt</h2>
+            </Link>
+
             <ul className="text-xs font-medium gap-2 flex flex-col mt-3">
               <li>
                 <Link className="flex items-center gap-2" href="/">

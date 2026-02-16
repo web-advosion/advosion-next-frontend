@@ -46,7 +46,10 @@ export default function MobileFooter() {
           </div>
 
           <div className="mt-11.5">
-            <h2 className="text-2xl font-bold">Kontakt</h2>
+            <Link href="/kontakt">
+              <h2 className="text-2xl font-bold">Kontakt</h2>
+            </Link>
+
             <ul className="text-base font-medium gap-2 flex flex-col mt-3">
               <li>
                 <Link className="flex items-center gap-2" href="/">
