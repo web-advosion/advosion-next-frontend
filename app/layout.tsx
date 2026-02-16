@@ -35,7 +35,9 @@ export default function RootLayout({
         <div className="hidden md:block">
           <Footer />
         </div>
-        <div></div>
+        <div>
+          <MobileFooter />
+        </div>
       </body>
     </html>
   );
