@@ -4,6 +4,7 @@ import RevisorCardMobile from "../components/cards/RevisorCardMobile";
 import AdvokatContainer from "../components/AdvokatContainer";
 import RevisorContainer from "../components/RevisorContainer";
 import AndetContainer from "../components/AndetContainer";
+import ButtonContact from "../components/buttons/ButtonContact";
 
 export default async function Page() {
   const res = await fetch(
@@ -77,7 +78,7 @@ export default async function Page() {
       {/*Sektion: Holdet */}
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-31.25 mt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Holdet</h2>
@@ -133,7 +134,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="w-full h-auto pb-12.5 ">
+        <article className="w-full h-auto pb-11.25 ">
           <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
             <h2>Øvrigt personale</h2>
           </div>
@@ -150,6 +151,9 @@ export default async function Page() {
             <AndetContainer />
           </div>
         </article>
+        <div>
+          <ButtonContact />
+        </div>
       </section>
     </main>
   );
