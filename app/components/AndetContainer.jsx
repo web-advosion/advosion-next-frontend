@@ -2,7 +2,7 @@ import AndetEmployeeCard from "./cards/AndetEmployeeCard";
 
 export default async function AndetContainer() {
   const res = await fetch(
-    "https://cms.advosion.dk/wp-json/wp/v2/medarbejder_kort?_embed",
+    "https://cms.advosion.dk/wp-json/wp/v2/medarbejder_kort?per_page=100&_embed",
     { next: { revalidate: 10 } },
   );
 
