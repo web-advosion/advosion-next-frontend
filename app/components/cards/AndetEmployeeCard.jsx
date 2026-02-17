@@ -6,7 +6,7 @@ export default function AndetEmployeeCard({ medarbejder }) {
     "/img/image-error-message.svg"; // fallback image
 
   return (
-    <div className="min-w-64 max-w-64 h-auto bg-(--revision-green) rounded-2xl shadow-md flex flex-col p-4">
+    <div className="min-w-64 max-w-64 h-auto bg-(--cta-black) rounded-2xl shadow-md flex flex-col p-4">
       {/* Billede */}
       <div>
         <Image
@@ -37,7 +37,7 @@ export default function AndetEmployeeCard({ medarbejder }) {
             />
             <a
               href={`tel:${medarbejder.acf.telefonnummer}`}
-              className="hover:underline"
+              className="hover:font-extrabold"
             >
               {medarbejder.acf.telefonnummer}
             </a>
@@ -50,7 +50,10 @@ export default function AndetEmployeeCard({ medarbejder }) {
               height={22}
               alt="mail ikon"
             />
-            <a href={`mailto:${medarbejder.acf.emailadresse}`}>
+            <a
+              href={`mailto:${medarbejder.acf.emailadresse}`}
+              className="hover:font-extrabold"
+            >
               {medarbejder.acf.emailadresse}
             </a>
           </div>

@@ -34,7 +34,12 @@ export default function AdvokatEmployeeCard({ medarbejder }) {
               height={22}
               alt="telefon ikon"
             />
-            <p>{medarbejder.acf.telefonnummer}</p>
+            <a
+              href={`tel:${medarbejder.acf.telefonnummer}`}
+              className="hover:font-extrabold"
+            >
+              {medarbejder.acf.telefonnummer}
+            </a>
           </div>
 
           <div className="text-sm font-medium flex items-center gap-2">
@@ -44,7 +49,12 @@ export default function AdvokatEmployeeCard({ medarbejder }) {
               height={22}
               alt="mail ikon"
             />
-            <p>{medarbejder.acf.emailadresse}</p>
+            <a
+              href={`mailto:${medarbejder.acf.emailadresse}`}
+              className="hover:font-extrabold"
+            >
+              {medarbejder.acf.emailadresse}
+            </a>
           </div>
         </div>
       </div>

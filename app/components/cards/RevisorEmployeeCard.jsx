@@ -36,7 +36,7 @@ export default function RevisorEmployeeCard({ medarbejder }) {
             />
             <a
               href={`tel:${medarbejder.acf.telefonnummer}`}
-              className="hover:underline"
+              className="hover:font-extrabold"
             >
               {medarbejder.acf.telefonnummer}
             </a>
@@ -49,7 +49,10 @@ export default function RevisorEmployeeCard({ medarbejder }) {
               height={22}
               alt="mail ikon"
             />
-            <a href={`mailto:${medarbejder.acf.emailadresse}`}>
+            <a
+              href={`mailto:${medarbejder.acf.emailadresse}`}
+              className="hover:font-extrabold"
+            >
               {medarbejder.acf.emailadresse}
             </a>
           </div>
