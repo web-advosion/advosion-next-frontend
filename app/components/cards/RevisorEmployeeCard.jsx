@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-export default function AdvokatEmployeeCard({ medarbejder }) {
+export default function RevisorEmployeeCard({ medarbejder }) {
   const billede =
     medarbejder._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
     "/img/image-error-message.svg";
 
   return (
-    <div className="min-w-64 max-w-64 h-auto bg-(--advokat-blue) rounded-2xl shadow-md flex flex-col p-4">
+    <div className="min-w-64 max-w-64 h-auto bg-(--revision-green) rounded-2xl shadow-md flex flex-col p-4">
       <div>
         <Image
           className="overflow-hidden rounded-2xl w-full h-48 object-cover"
           src={billede}
-          alt={medarbejder.title?.rendered || "Ingen titel"}
+          alt={medarbejder.title.rendered}
           width={222}
           height={196}
         />
@@ -22,7 +22,7 @@ export default function AdvokatEmployeeCard({ medarbejder }) {
           <h1 className="text-xl font-bold">{medarbejder.acf.navn}</h1>
           <h2 className="text-base font-normal">{medarbejder.acf.stilling}</h2>
           <p className="italic text-sm font-normal mt-2">
-            {medarbejder.acf.ekspertise || "Ingen beskrivelse"}
+            {medarbejder.acf.ekspertise}
           </p>
         </div>
 
@@ -34,7 +34,12 @@ export default function AdvokatEmployeeCard({ medarbejder }) {
               height={22}
               alt="telefon ikon"
             />
-            <p>{medarbejder.acf.telefonnummer}</p>
+            <a
+              href={`tel:${medarbejder.acf.telefonnummer}`}
+              className="hover:underline"
+            >
+              {medarbejder.acf.telefonnummer}
+            </a>
           </div>
 
           <div className="text-sm font-medium flex items-center gap-2">
@@ -44,7 +49,9 @@ export default function AdvokatEmployeeCard({ medarbejder }) {
               height={22}
               alt="mail ikon"
             />
-            <p>{medarbejder.acf.emailadresse}</p>
+            <a href={`mailto:${medarbejder.acf.emailadresse}`}>
+              {medarbejder.acf.emailadresse}
+            </a>
           </div>
         </div>
       </div>

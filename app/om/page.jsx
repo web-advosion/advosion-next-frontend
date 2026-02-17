@@ -2,6 +2,8 @@ import Image from "next/image";
 import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "../components/cards/RevisorCardMobile";
 import AdvokatContainer from "../components/AdvokatContainer";
+import RevisorContainer from "../components/RevisorContainer";
+import AndetContainer from "../components/AndetContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -110,6 +112,42 @@ export default async function Page() {
           </div>
           <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
             <AdvokatContainer />
+          </div>
+        </article>
+
+        <article className="w-full h-auto pb-12.5 ">
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
+            <h2>Revisorne</h2>
+          </div>
+          <div className="w-full flex justify-start  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+            <RevisorContainer />
+          </div>
+        </article>
+
+        <article className="w-full h-auto pb-12.5 ">
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
+            <h2>Øvrigt personale</h2>
+          </div>
+          <div className="w-full flex justify-start  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+            <AndetContainer />
           </div>
         </article>
       </section>
