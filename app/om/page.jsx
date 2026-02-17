@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "../components/cards/RevisorCardMobile";
+import AdvokatContainer from "../components/AdvokatContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -54,7 +55,7 @@ export default async function Page() {
       {/*Sektion Ekspertise*/}
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) mb-12.5 pt-10"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-10"
       >
         <div className="w-full flex justify-start mb-2.5 ">
           <Image
@@ -69,6 +70,48 @@ export default async function Page() {
           <AdvokatCardMobile />
           <RevisorCardMobile />
         </div>
+      </section>
+
+      {/*Sektion: Holdet */}
+      <section
+        id="hero"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Holdet</h2>
+        </div>
+
+        <div className="mt-5 w-full h-auto">
+          <p>
+            De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
+            dedikerede og entusiatiske medarbejdere, forretningsmæssige
+            totalløsninger og en helhedsorienteret rådgivning.
+            <br /> <br />
+            Organisatorisk er ADVOSION delt op i{" "}
+            <strong>to separate firmaer:</strong> <br /> <br />
+            ADVOSION Advokatpartnerselskab <br /> <br />
+            ADVOSION Statsautoriseret Revisionspartnerselskab. <br /> <br />
+            Se her en samlet oversigt over vores dygtige medarbejdere.
+          </p>
+        </div>
+
+        <article className="w-full h-auto pb-12.5 pt-10">
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
+            <h2>Advokaterne</h2>
+          </div>
+          <div className="w-full flex justify-start  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+            <AdvokatContainer />
+          </div>
+        </article>
       </section>
     </main>
   );
