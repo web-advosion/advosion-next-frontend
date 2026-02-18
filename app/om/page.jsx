@@ -23,38 +23,38 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 relative  "
       >
         <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter']">
           <h1>Om Advosion</h1>
         </div>
 
-        <div className="mt-5 w-full h-auto">
-          <p>
-            ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
-            <strong>jura</strong> og <strong>revision</strong>. <br /> <br />
-            Vores forstærkede forretningsforståelse giver os en unik mulighed
-            for at tilbyde virksomheder en{" "}
-            <strong>
-              helhedsorienteret og professionel rådgiving.
-            </strong> <br /> <br />
-            Vores <strong>
-              specialistkompetencer er samlet under ét tag
-            </strong>{" "}
-            og synenergien mellem de to forretningsområder betyder, at vi
-            udvikler endnu bedre løsninger til gavn for dig og din virksomhed.
-            Vi er eksperter i at rådgive i krydsfeltet mellem økonomi og jura.
-            Hurtigt og enkelt, og uden fordyrrende mellemled.
-          </p>
-        </div>
+        <div data-aos="fade-in">
+          <div className="mt-5 w-full h-auto">
+            <p>
+              ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
+              <strong>jura</strong> og <strong>revision</strong>. <br /> <br />
+              Vores forstærkede forretningsforståelse giver os en unik mulighed
+              for at tilbyde virksomheder en{" "}
+              <strong>helhedsorienteret og professionel rådgiving.</strong>{" "}
+              <br /> <br />
+              Vores{" "}
+              <strong>specialistkompetencer er samlet under ét tag</strong> og
+              synenergien mellem de to forretningsområder betyder, at vi
+              udvikler endnu bedre løsninger til gavn for dig og din virksomhed.
+              Vi er eksperter i at rådgive i krydsfeltet mellem økonomi og jura.
+              Hurtigt og enkelt, og uden fordyrrende mellemled.
+            </p>
+          </div>
 
-        <div className="w-80 h-80 relative overflow-hidden rounded-3xl shadow-md mt-12.5">
-          <Image
-            className="object-cover"
-            src="/img/businesspeople-having-discussion-office.jpg"
-            fill
-            alt="Adovosion kollegaer står tæt sammen og kigger på sag"
-          ></Image>
+          <div className="w-80 h-80 relative overflow-hidden rounded-3xl shadow-md mt-12.5">
+            <Image
+              className="object-cover"
+              src="/img/businesspeople-having-discussion-office.jpg"
+              fill
+              alt="Adovosion kollegaer står tæt sammen og kigger på sag"
+            ></Image>
+          </div>
         </div>
       </section>
 
@@ -72,7 +72,10 @@ export default async function Page() {
             alt="swipe icon"
           ></Image>
         </div>
-        <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+        <div
+          className="w-screen h-auto flex overflow-x-auto gap-5 pr-15"
+          data-aos="fade-in"
+        >
           <AdvokatCardMobile />
           <RevisorCardMobile />
         </div>
@@ -87,7 +90,7 @@ export default async function Page() {
           <h2>Holdet</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto">
+        <div className="mt-5 w-full h-auto" data-aos="fade-in">
           <p>
             De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
             dedikerede og entusiatiske medarbejdere, forretningsmæssige
@@ -114,7 +117,10 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
+          <div
+            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            data-aos="fade-in"
+          >
             <AdvokatContainer />
           </div>
         </article>
@@ -132,7 +138,10 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
+          <div
+            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            data-aos="fade-in"
+          >
             <RevisorContainer />
           </div>
         </article>
@@ -150,7 +159,10 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
+          <div
+            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            data-aos="fade-in"
+          >
             <AndetContainer />
           </div>
         </article>
@@ -168,7 +180,7 @@ export default async function Page() {
           <h2>Faciliteterne</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto">
+        <div className="mt-5 w-full h-auto" data-aos="fade-in">
           <p>
             Vi bor i nogle dejlige og nye lækre bygninger, som vi flyttede til i
             september 2024. <br /> <br />
@@ -197,7 +209,7 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div>
+          <div data-aos="fade-in">
             <GalleryContainer />
             <div className="flex justify-end mt-7.5">
               <ButtonJoin />
@@ -209,13 +221,13 @@ export default async function Page() {
       {/*Sektion: Vision */}
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-31.25 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Vision og kerneværdier</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto">
+        <div className="mt-5 w-full h-auto" data-aos="fade-in">
           <p>
             Vi er ikke bare et hvilket som helst advokat- eller revisionsfirma.{" "}
             <br /> <br />
@@ -240,8 +252,37 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div>
+          <div data-aos="fade-in">
             <ValueContainer />
+          </div>
+        </article>
+
+        <article>
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
+            <h3>Hjerte for det lokale</h3>
+          </div>
+
+          <div className="mt-5 w-full h-auto" data-aos="fade-in">
+            <p>
+              Udover at levere juridisk og økonomisk rådgivning har vi også er
+              hjerte for det lokale liv her i Skanderborg og omegn. <br />{" "}
+              <br />
+              Vi støtter aktivt op om det lokale erhvervsliv, samt de manger
+              kulturelle og sportslige initiativer i Skanderborg. <br /> <br />
+              Vi har bland andet støttet: ..... & ..... & .... [konkrete
+              eksempler]
+            </p>
+          </div>
+          <div
+            className="w-full h-full bg-(--cta-black) rounded-3xl shadow-md p-4 flex items-start hover:scale-105 transition-transform duration-300 ease-in-out justify-center mt-12.5"
+            data-aos="fade-in"
+          >
+            <Image
+              src="/img/fc-skanderborg-logo_2024-bla-baggrund-2464090450.png"
+              width={334}
+              height={334}
+              alt="FC Skanderborgs klublogo"
+            ></Image>
           </div>
         </article>
       </section>

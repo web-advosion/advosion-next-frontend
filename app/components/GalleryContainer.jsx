@@ -9,7 +9,7 @@ export default async function GalleryContainer() {
   const billeder = await res.json();
 
   return (
-    <div className=" overflow-x-auto pb-2">
+    <div className="overflow-x-auto pb-2">
       <div className="flex flex-col flex-wrap gap-5 h-144.5 w-full">
         {billeder.map((billede, index) => {
           const pattern = index % 4;
