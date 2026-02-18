@@ -6,7 +6,7 @@ export default function PictureCard({ billede, className }) {
     "/img/image-error-message.svg";
 
   return (
-    <div className={`w-full ${className} rounded-2xl overflow-hidden`}>
+    <div className={`w-full max-w-80 ${className} rounded-2xl overflow-hidden`}>
       <Image
         src={imageURL}
         alt={billede.title?.rendered || "Ingen titel"}
