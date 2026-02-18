@@ -25,14 +25,17 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 relative "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
       >
         <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter']">
           <h1>Om Advosion</h1>
         </div>
 
-        <div data-aos="fade-in">
-          <div className="mt-5 w-full h-auto">
+        <div
+          data-aos="fade-in"
+          className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+        >
+          <div className=" w-full h-auto lg:w-2/3">
             <p>
               ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
               <strong>jura</strong> og <strong>revision</strong>. <br /> <br />
@@ -49,7 +52,7 @@ export default async function Page() {
             </p>
           </div>
 
-          <div className="w-80 h-80  md:w-96 md:h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5">
+          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 lg:mt-0">
             <Image
               className="object-cover"
               src="/img/businesspeople-having-discussion-office.jpg"
@@ -107,7 +110,7 @@ export default async function Page() {
           <h2>Holdet</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto" data-aos="fade-in">
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
           <p>
             De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
             dedikerede og entusiatiske medarbejdere, forretningsmæssige
@@ -121,7 +124,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="w-full h-auto pb-12.5 pt-10">
+        <article className="w-full h-auto pb-12.5 lg:pb-25 pt-10">
           <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
             <h2>Advokaterne</h2>
           </div>
@@ -142,7 +145,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="w-full h-auto pb-12.5  ">
+        <article className="w-full h-auto pb-12.5 lg:pb-25  ">
           <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
             <h2>Revisorne</h2>
           </div>
@@ -197,7 +200,7 @@ export default async function Page() {
           <h2>Faciliteterne</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto" data-aos="fade-in">
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
           <p>
             Vi bor i nogle dejlige og nye lækre bygninger, som vi flyttede til i
             september 2024. <br /> <br />
@@ -244,7 +247,7 @@ export default async function Page() {
           <h2>Vision og kerneværdier</h2>
         </div>
 
-        <div className="mt-5 w-full h-auto" data-aos="fade-in">
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
           <p>
             Vi er ikke bare et hvilket som helst advokat- eller revisionsfirma.{" "}
             <br /> <br />
@@ -279,7 +282,7 @@ export default async function Page() {
             <h3>Hjerte for det lokale</h3>
           </div>
 
-          <div className="mt-5 w-full h-auto" data-aos="fade-in">
+          <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
             <p>
               Udover at levere juridisk og økonomisk rådgivning har vi også er
               hjerte for det lokale liv her i Skanderborg og omegn. <br />{" "}
