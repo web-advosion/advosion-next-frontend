@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ButtonTop from "../components/buttons/ButtonTop";
 
 export default function TabletFooter() {
   return (
@@ -168,6 +169,9 @@ export default function TabletFooter() {
           </ul>
         </article>
       </section>
+      <div className="w-full mt-5 flex justify-end items-end">
+        <ButtonTop />
+      </div>
     </footer>
   );
 }
