@@ -8,6 +8,8 @@ import ButtonContact from "../components/buttons/ButtonContact";
 import GalleryContainer from "../components/GalleryContainer";
 import ButtonJoin from "../components/buttons/ButtonJoin";
 import ValueContainer from "../components/ValueContainer";
+import AdvokatCard from "../components/cards/AdvokatCard";
+import RevisorCard from "../components/cards/RevisorCard";
 
 export default async function Page() {
   const res = await fetch(
@@ -23,7 +25,7 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 mt-12.5 relative  "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 md:mb-20 mt-12.5 relative "
       >
         <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter']">
           <h1>Om Advosion</h1>
@@ -47,7 +49,7 @@ export default async function Page() {
             </p>
           </div>
 
-          <div className="w-80 h-80 relative overflow-hidden rounded-3xl shadow-md mt-12.5">
+          <div className="w-80 h-80  md:w-96 md:h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5">
             <Image
               className="object-cover"
               src="/img/businesspeople-having-discussion-office.jpg"
@@ -63,7 +65,7 @@ export default async function Page() {
         id="hero"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-10"
       >
-        <div className="w-full flex justify-start mb-2.5 ">
+        <div className="w-full flex justify-start mb-2.5 md:hidden">
           <Image
             className="w-35 h-10"
             src="/img/icon-swipe.svg"
@@ -72,12 +74,27 @@ export default async function Page() {
             alt="swipe icon"
           ></Image>
         </div>
+
         <div
-          className="w-screen h-auto flex overflow-x-auto gap-5 pr-15"
+          className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden"
           data-aos="fade-in"
         >
           <AdvokatCardMobile />
           <RevisorCardMobile />
+        </div>
+
+        <div data-aos="fade-right" className="mt-7.5 w-full mb-12.5 lg:w-179 ">
+          <div className="hidden md:block">
+            <AdvokatCard />
+          </div>
+        </div>
+        <div
+          data-aos="fade-left"
+          className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
+        >
+          <div className="hidden md:block">
+            <RevisorCard />
+          </div>
         </div>
       </section>
 
