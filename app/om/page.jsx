@@ -114,7 +114,7 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
             <AdvokatContainer />
           </div>
         </article>
@@ -132,7 +132,7 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
             <RevisorContainer />
           </div>
         </article>
@@ -150,7 +150,7 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+          <div className="w-max h-auto flex overflow-x-auto gap-5 pr-15">
             <AndetContainer />
           </div>
         </article>
