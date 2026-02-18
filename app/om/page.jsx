@@ -263,7 +263,7 @@ export default async function Page() {
         </div>
 
         <article className="w-full h-auto pb-12.5 pt-10">
-          <div className="w-full flex justify-start  ">
+          <div className="w-full flex justify-start lg:hidden">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"

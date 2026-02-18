@@ -9,7 +9,7 @@ export default async function ValueContainer() {
   const values = await res.json();
 
   return (
-    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 rounded-2xl py-2.5 pr-17 md:pr-40 lg:pr-100 xl:pr-200">
+    <div className="h-auto w-full flex overflow-x-auto gap-7.5 md:gap-15 rounded-2xl py-2.5 pr-17 md:pr-40 lg:flex-wrap lg:justify-center lg:pr-0 lg:gap-x-25 lg:gap-y-15">
       {values.map((value) => (
         <ValueCard key={value.id} value={value} />
       ))}
