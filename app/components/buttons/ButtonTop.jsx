@@ -13,7 +13,7 @@ export default function ButtonTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="w-40 h-10 gap-3 bg-(--cta-black) px-0 rounded-2xl font-bold text-lg text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out"
+      className="w-40 h-10 gap-3 bg-(--cta-black) px-0 rounded-2xl font-bold text-lg text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer"
     >
       <p>Til toppen</p>
 
