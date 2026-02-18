@@ -6,12 +6,20 @@ import "aos/dist/aos.css";
 
 export default function AOSInit() {
   useEffect(() => {
+    // Function to calculate offset based on viewport width
+    const getOffset = () => {
+      if (window.innerWidth < 768) return 120; // mobile
+      if (window.innerWidth < 1024) return 200; // tablet
+      return 250; // desktop
+    };
+
     AOS.init({
-      duration: 600, // animation duration
-      offset: 250, // when animation triggers
-      easing: "ease-in-out", // animation curve
-      once: false, // animate only once
-      /*  mirror: false, // don't animate on scroll up */
+      duration: 900, // slower = smoother
+      offset: getOffset(), // responsive offset
+      easing: "ease-out-cubic", // smooth deceleration
+      once: true, // animate only once to prevent flicker
+      mirror: false,
+      anchorPlacement: "top-bottom",
     });
   }, []);
 

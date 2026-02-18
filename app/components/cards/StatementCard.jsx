@@ -16,7 +16,7 @@ export default function StatementCard({ statement }) {
           {statement.acf.statement_title}
         </h1>
 
-        <div clasname="text-(--advokat-blue) italic">
+        <div className="text-(--advokat-blue) italic">
           <p className="italic">{statement.acf.statement_text}</p>
         </div>
 
