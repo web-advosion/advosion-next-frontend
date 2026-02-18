@@ -29,7 +29,7 @@ export default function TabletFooter() {
             <h2 className="text-base font-bold">Sider</h2>
             <ul className="text-xs font-medium gap-3 flex flex-col mt-3">
               <li>
-                <Link href="/">Om os</Link>
+                <Link href="/om">Om os</Link>
               </li>
               <li>
                 <Link href="/">Advokat</Link>

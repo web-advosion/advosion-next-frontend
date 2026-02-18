@@ -29,7 +29,7 @@ export default function MobileFooter() {
             <h2 className="text-2xl font-bold">Sider</h2>
             <ul className="text-base font-medium gap-3 flex flex-col mt-3">
               <li>
-                <Link href="/">Om os</Link>
+                <Link href="/om">Om os</Link>
               </li>
               <li>
                 <Link href="/">Advokat</Link>
