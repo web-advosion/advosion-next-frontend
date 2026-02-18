@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ButtonTop from "../components/buttons/ButtonTop";
 
 export default function Footer() {
   return (
@@ -167,6 +168,9 @@ export default function Footer() {
           </ul>
         </article>
       </section>
+      <div className="w-full mt-10 flex justify-center">
+        <ButtonTop />
+      </div>
     </footer>
   );
 }

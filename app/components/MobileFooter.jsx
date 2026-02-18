@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ButtonTop from "../components/buttons/ButtonTop";
 
 export default function MobileFooter() {
   return (
@@ -167,6 +168,9 @@ export default function MobileFooter() {
             </li>
           </ul>
         </article>
+        <div className="mt-5 flex justify-end">
+          <ButtonTop />
+        </div>
       </section>
     </footer>
   );
