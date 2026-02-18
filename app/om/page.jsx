@@ -274,7 +274,7 @@ export default async function Page() {
             </p>
           </div>
           <div
-            className="w-full h-full bg-(--cta-black) rounded-3xl shadow-md p-4 flex items-start hover:scale-105 transition-transform duration-300 ease-in-out justify-center mt-12.5"
+            className="w-full md:w-100 h-full md:h-100 md:items-center bg-(--cta-black) rounded-3xl shadow-md p-4 flex items-center  justify-center mt-12.5"
             data-aos="fade-in"
           >
             <Image
