@@ -1,6 +1,6 @@
 export default function ValueCard({ value }) {
   return (
-    <div className="min-w-72 h-72 bg-(--cards) rounded-3xl shadow-md p-4 flex items-start hover:scale-105 transition-transform duration-300 ease-in-out justify-center">
+    <div className="min-w-72 max-w-72 h-72 bg-(--cards) rounded-3xl shadow-md p-4 flex items-start justify-center">
       <div className=" text-(--advokat-blue) ">
         <h2 className=" text-2xl font-medium font-['Inter'] leading-9">
           {value.acf?.titel}
