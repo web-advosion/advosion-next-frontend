@@ -6,6 +6,8 @@ import RevisorContainer from "../components/RevisorContainer";
 import AndetContainer from "../components/AndetContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
 import GalleryContainer from "../components/GalleryContainer";
+import ButtonJoin from "../components/buttons/ButtonJoin";
+import ValueContainer from "../components/ValueContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -160,7 +162,7 @@ export default async function Page() {
       {/*Sektion: Faciliteterne */}
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-31.25 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Faciliteterne</h2>
@@ -195,8 +197,51 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+          <div>
             <GalleryContainer />
+            <div className="flex justify-end mt-7.5">
+              <ButtonJoin />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Vision */}
+      <section
+        id="hero"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-31.25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Vision og kerneværdier</h2>
+        </div>
+
+        <div className="mt-5 w-full h-auto">
+          <p>
+            Vi er ikke bare et hvilket som helst advokat- eller revisionsfirma.{" "}
+            <br /> <br />
+            Vi leverer <strong>helhedsorienteret rådgivning</strong> af højeste
+            kvalitet. Vi har markedets skarpeste fokus på krydsfeltet mellem
+            jura og revision, og sikrer dermed vores kunder
+            <strong>
+              {" "}
+              bedre løsninger og en bæredygtig vækst.
+            </strong> <br /> <br />
+            Her driver vi forretning efter følgende kerneværdier:
+          </p>
+        </div>
+
+        <article className="w-full h-auto pb-12.5 pt-10">
+          <div className="w-full flex justify-start  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <ValueContainer />
           </div>
         </article>
       </section>
