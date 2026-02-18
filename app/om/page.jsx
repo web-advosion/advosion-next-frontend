@@ -5,6 +5,7 @@ import AdvokatContainer from "../components/AdvokatContainer";
 import RevisorContainer from "../components/RevisorContainer";
 import AndetContainer from "../components/AndetContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
+import GalleryContainer from "../components/GalleryContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -78,7 +79,7 @@ export default async function Page() {
       {/*Sektion: Holdet */}
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-31.25 mt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5  mt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Holdet</h2>
@@ -154,6 +155,50 @@ export default async function Page() {
         <div>
           <ButtonContact />
         </div>
+      </section>
+
+      {/*Sektion: Faciliteterne */}
+      <section
+        id="hero"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-31.25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Faciliteterne</h2>
+        </div>
+
+        <div className="mt-5 w-full h-auto">
+          <p>
+            Vi bor i nogle dejlige og nye lækre bygninger, som vi flyttede til i
+            september 2024. <br /> <br />
+            Der er både <strong>åbne og lyse fællesarealer</strong> som lounge,
+            medarbejderkøkken, mødelokaler. <br /> <br />
+            Der er lyst og højt til loftet både i fysisk og overført forstand
+            her går vi op i at vores medarbejdere trives og gøre vores bedste
+            for facilitere det ved at stille de bedst mulige rammer til
+            rådighed. <br /> <br />
+            <strong>Socialt</strong> har vi fælles morgenmad hver onsdag og én
+            gang i måneden har vi fælles frokost om fredagen, hvor vi bestiller
+            en sandwich e.l. ude fra. <br /> <br />
+            Normalt spiser vi i vores fælles kantine, som vi deler med
+            bygningens øvrige virksomheder. <br /> <br />
+            Her kan du få et indblik, hvordan det kan se ud at arbejde hos os.
+          </p>
+        </div>
+
+        <article className="w-full h-auto pb-12.5 pt-10">
+          <div className="w-full flex justify-start  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15">
+            <GalleryContainer />
+          </div>
+        </article>
       </section>
     </main>
   );
