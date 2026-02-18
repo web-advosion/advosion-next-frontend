@@ -167,6 +167,7 @@ export default function MobileFooter() {
             </li>
           </ul>
         </article>
+        <ButtonToTop />
       </section>
     </footer>
   );
