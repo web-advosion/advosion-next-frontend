@@ -1,8 +1,14 @@
-export default function ExpertiseCardA({ expertise }) {
+export default function ExpertiseCardA({
+  expertise,
+  bgColor = "bg-white",
+  textColor = "text-black",
+}) {
   return (
-    <div className="min-w-72 max-w-72 h-72 bg-(--cards) rounded-3xl shadow-md p-4 flex items-start justify-center">
-      <div className=" text-(--advokat-blue) ">
-        <h2 className=" text-2xl font-medium font-['Inter'] leading-9">
+    <div
+      className={`${bgColor} ${textColor} min-w-72 max-w-72 min-h-48.5 h-auto rounded-3xl shadow-md p-4 flex items-start justify-center`}
+    >
+      <div>
+        <h2 className=" text-xl font-bold font-['Inter'] leading-9">
           {expertise.acf?.titel}
         </h2>
         <div className=" text-base font-normal">

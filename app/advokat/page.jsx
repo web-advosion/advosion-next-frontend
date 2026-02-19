@@ -121,8 +121,20 @@ export default async function Page() {
             skatteret rådgiver vi bl.a. om:
           </p>
         </div>
-        <article>
-          <ExpertiseContainer />
+        <article className="mt-12.5">
+          <ExpertiseContainer
+            typeId={10}
+            bgColor="bg-(--cards)"
+            textColor="text-(--advokat-blue)"
+          />
+        </article>
+
+        <article className="mt-12.5">
+          <ExpertiseContainer
+            typeId={9}
+            bgColor="bg-(--advokat-blue)"
+            textColor="text-(--primary-bg)"
+          />
         </article>
       </section>
     </main>
