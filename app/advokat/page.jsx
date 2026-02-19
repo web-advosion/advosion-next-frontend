@@ -2,6 +2,9 @@ import Image from "next/image";
 import ButtonExperts from "../components/buttons/ButtonExperts";
 import SkillsContainerA from "../components/SkillsContainerA";
 import ExpertiseContainer from "../components/ExpertiseContainer";
+import ButtonContact from "../components/buttons/ButtonContact";
+import AdvokatEmployeeCard from "../components/cards/AdvokatEmployeeCard";
+import SingleEmployee from "../components/SingleEmployee";
 
 export default async function Page() {
   const res = await fetch(
@@ -52,7 +55,7 @@ export default async function Page() {
         </div>
       </section>
 
-      {/*Sektion: Skatteret */}
+      {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
@@ -96,7 +99,7 @@ export default async function Page() {
       {/*Sektion: Skatteret */}
       <section
         id="skatteret"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Skatteret</h2>
@@ -122,19 +125,88 @@ export default async function Page() {
           </p>
         </div>
         <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
           <ExpertiseContainer
             typeId={10}
             bgColor="bg-(--cards)"
             textColor="text-(--advokat-blue)"
           />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
         </article>
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={124} />
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Erhvervs- og selskabsret */}
+      <section
+        id="skatteret"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Erhvervs- og selskabsret</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Vores store erfaring og specialisering indenfor erhvervs- og
+            selskabsretten kombineret med vores solide forretningsforståelse,
+            gør os til en
+            <strong> værdifuld sparringspartner og rådgiver</strong> for dig og
+            din virksomhed. <br /> <br /> Vi rådgiver dig på et{" "}
+            <strong>højt fagligt niveau </strong>
+            og sikrer dig, gennem vores unikke kombination af juridiske og
+            økonomiske kompetencer, en samlet løsning, der imødekommer dine
+            ønsker for fremtiden og din virksomheds behov. <br /> <br />{" "}
+            Indenfor erhvervs- og selskabsret rådgiver vi bl.a. om:
+          </p>
+        </div>
 
         <article className="mt-12.5">
           <ExpertiseContainer
-            typeId={9}
+            typeId={10}
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
           />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={111} />
+          </div>
         </article>
       </section>
     </main>
