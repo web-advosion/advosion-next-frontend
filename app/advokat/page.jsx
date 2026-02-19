@@ -162,7 +162,7 @@ export default async function Page() {
       {/*Sektion: Erhvervs- og selskabsret */}
       <section
         id="erhverv"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.15 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Erhvervs- og selskabsret</h2>
@@ -356,6 +356,143 @@ export default async function Page() {
           </div>
           <div>
             <SingleEmployee id={111} />
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Kontrakter */}
+      <section
+        id="kontrakt"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 "
+      >
+        <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Kontrakter</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Den gode kontrakt er gennemtænkt og grundigt udformet og skaber
+            klarhed over parternes rettigheder og forpligtelser. Den begrænser
+            dine og virksomhedens risici,{" "}
+            <strong>sikrer overholdelse af lovgivning</strong> og reducerer
+            virksomhedens omkostninger. <br />
+            <br />
+            Vi sætter os ind i og sikrer en grundlæggende forståelse af din
+            virksomhed, herunder virksomhedens forretningsmodel, produkter,
+            strategi og risikovillighed. Denne indsigt i din virksomhed er
+            afgørende for at udarbejde og forhandle en god kontrakt, der matcher
+            virksomhedens behov. <br />
+            <br />
+            Vores rådgivning ydes altid ud fra en{" "}
+            <strong>kommerciel synsvinkel</strong> og i kraft af vores erfaring
+            kan vi udarbejde kontraktvilkår, der er tilpasset specifikke
+            brancher. Vi arbejder proaktivt og vurderer gennem hele forløbet
+            både risici og kommercielle spørgsmål i forbindelse med
+            forhandlingen og udarbejdelsen af kontrakten. <br />
+            <br />
+            Indenfor virksomhedens kontrakter rådgiver vi bl.a. om:
+          </p>
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <ExpertiseContainer
+            typeId={14}
+            bgColor="bg-(--cards)"
+            textColor="text-(--advokat-blue)"
+          />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={111} />
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Konflikthåndtering */}
+      <section
+        id="konflikt"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
+      >
+        <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Konflikthåndtering</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Konflikter kræver din tid og energi i en ofte langvarig proces. De
+            relaterer sig til tidligere hændelser, hvor du og din virksomhed i
+            stedet skal have fokus på fremtiden. Derfor er en{" "}
+            <strong> effektiv og løsningsorienteret håndtering</strong> af en
+            konflikt afgørende.
+            <br />
+            <br /> Vi går aldrig på kompromis med vores{" "}
+            <strong> høje faglighed</strong>, men vi er samtidig
+            <strong> løsningsorienterede</strong>, og du får en ærlig vurdering,
+            så du kender dine muligheder og risici.
+            <br />
+            <br /> Det betyder også, at vi løbende er opmærksomme på
+            mulighederne for forlig, hvis det ud fra en samlet vurdering giver
+            <strong> det bedste resultat for dig</strong> og din virksomhed.
+            <br />
+            <br />
+            Indenfor konfliktløsning rådgiver vi bl.a. om:
+          </p>
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <ExpertiseContainer
+            typeId={15}
+            bgColor="bg-(--advokat-blue)"
+            textColor="text-(--primary-bg)"
+          />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={103} />
           </div>
         </article>
       </section>
