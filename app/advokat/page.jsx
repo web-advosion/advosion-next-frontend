@@ -254,7 +254,7 @@ export default async function Page() {
             ></Image>
           </div>
           <ExpertiseContainer
-            typeId={10}
+            typeId={12}
             bgColor="bg-(--cards)"
             textColor="text-(--advokat-blue)"
           />
