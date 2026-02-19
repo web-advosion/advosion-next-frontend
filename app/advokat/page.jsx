@@ -83,10 +83,10 @@ export default async function Page() {
         </div>
 
         <article className="mt-12.5">
-          <div className="w-full flex justify-end  ">
+          <div className="w-full flex justify-end py-2 ">
             <Image
               className="w-35 h-10"
-              src="/img/icon-genveje.svg"
+              src="/img/icon-genveje2.svg"
               width={150}
               height={50}
               alt="swipe icon"
@@ -125,7 +125,7 @@ export default async function Page() {
           </p>
         </div>
         <article className="mt-12.5">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -144,7 +144,7 @@ export default async function Page() {
           </div>
         </article>
         <article className="mt-12.5 items-center gap-10">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -184,7 +184,7 @@ export default async function Page() {
         </div>
 
         <article className="mt-12.5">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -197,6 +197,66 @@ export default async function Page() {
             typeId={11}
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
+          />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={111} />
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Generationsskifte */}
+      <section
+        id="generation"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Generationsskifte</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Vi er <strong>specialister</strong> i generationsskifte. Vi hjælper
+            hele vejen og vil gerne i dialog ved de første spæde tanker om et
+            generationsskifte. Derved kan vi, gennem vores unikke kombination af
+            juridiske og økonomiske kompetencer, skabe de bedste rammer for
+            generationsskiftet under{" "}
+            <strong> hensyntagen til dine ønsker og værdier.</strong> <br />{" "}
+            <br />
+            Et succesfuldt generationsskifte kræver god planlægning og omtanke.{" "}
+            <br /> <br />
+            Det er nødvendigt at have fokus på en række spørgsmål:
+          </p>
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <ExpertiseContainer
+            typeId={12}
+            bgColor="bg-(--cards)"
+            textColor="text-(--advokat-blue)"
           />
           <div className="mt-7.5">
             <ButtonContact />
@@ -219,32 +279,53 @@ export default async function Page() {
         </article>
       </section>
 
-      {/*Sektion: Generationsskifte */}
+      {/*Sektion: Virksomhedsoverdragelse */}
       <section
-        id="generation"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-25 pt-12.5 "
+        id="virksomhed"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
       >
-        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
-          <h2>Generationsskifte</h2>
+        <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <div className="md:hidden">
+            <h2>
+              Virksomheds- <br />
+              overdragelse
+            </h2>
+          </div>
+
+          <div className="hidden md:block">
+            <h2>Virksomhedsoverdragelse</h2>
+          </div>
         </div>
 
         <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
           <p>
-            Vi er <strong>specialister</strong> i generationsskifte. Vi hjælper
-            hele vejen og vil gerne i dialog ved de første spæde tanker om et
-            generationsskifte. Derved kan vi, gennem vores unikke kombination af
-            juridiske og økonomiske kompetencer, skabe de bedste rammer for
-            generationsskiftet under{" "}
-            <strong> hensyntagen til dine ønsker og værdier.</strong> <br />{" "}
+            En virksomhedsoverdragelse er ofte en kompliceret og intens proces,
+            hvor <strong>kompetent rådgivning</strong> af parterne kan være
+            afgørende for et succesfuldt og bæredygtigt resultat. <br /> <br />
+            Der ligger ofte mange overvejelser bag en virksomhedsoverdragelse.
+            Hvis du skal sælge din virksomhed, er det afgørende at få afklaret,
+            hvornår og hvordan det sker bedst muligt. <br />
+            <br /> Står du som køber, er der en lang række strategiske
+            overvejelser i forhold til din eksisterende virksomhed. Det er også
+            centralt at få afdækket og vurderet alle relevante forhold ved den
+            virksomhed, som du overvejer at købe. <br />
+            <br /> Vi bistår i alle dele af processen. Med vores stærke
+            forretningsforståelse er vi en{" "}
+            <strong>værdifuld sparringspartner og rådgiver</strong> for dig og
+            din virksomhed. <br />
             <br />
-            Et succesfuldt generationsskifte kræver god planlægning og omtanke.{" "}
-            <br /> <br />
-            Det er nødvendigt at have fokus på en række spørgsmål:
+            Vores unikke kombination af juridiske og økonomiske kompetencer
+            sikrer en <strong>helhedsorienteret rådgivning</strong> fra start
+            til slut. Vi gennemfører overdragelsen, uden at glemme de
+            menneskelige værdier.
+            <br />
+            <br />
+            Indenfor virksomhedsoverdragelse rådgiver vi bl.a. om:
           </p>
         </div>
 
         <article className="mt-12.5">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -254,9 +335,9 @@ export default async function Page() {
             ></Image>
           </div>
           <ExpertiseContainer
-            typeId={12}
-            bgColor="bg-(--cards)"
-            textColor="text-(--advokat-blue)"
+            typeId={13}
+            bgColor="bg-(--advokat-blue)"
+            textColor="text-(--primary-bg)"
           />
           <div className="mt-7.5">
             <ButtonContact />

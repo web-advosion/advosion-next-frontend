@@ -6,7 +6,7 @@ export default async function ExpertiseContainer({
   textColor,
 }) {
   const res = await fetch(
-    `https://cms.advosion.dk/wp-json/wp/v2/ekspertise?ekspertise_type=${typeId}&per_page=100&_embed`,
+    `https://cms.advosion.dk/wp-json/wp/v2/ekspertise?ekspertise_type=${typeId}&per_page=100&_embed&orderby=title&order=asc`,
     { next: { revalidate: 10 } },
   );
 
@@ -14,7 +14,7 @@ export default async function ExpertiseContainer({
   const expertisesData = Array.isArray(expertises) ? expertises : [];
 
   return (
-    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 md:gap-15 rounded-2xl  pr-17 md:pr-40 lg:flex-wrap lg:justify-center lg:pr-0 lg:gap-x-25 lg:gap-y-15">
+    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 rounded-2xl pb-2.5 pr-17 md:pr-40 lg:pr-80 xl:pr-120">
       {expertisesData.map((expertise, index) => (
         <ExpertiseCardA
           key={expertise.id}
