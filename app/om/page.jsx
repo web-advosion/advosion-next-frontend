@@ -64,10 +64,7 @@ export default async function Page() {
       </section>
 
       {/*Sektion Ekspertise*/}
-      <section
-        id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5"
-      >
+      <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5">
         <div className="w-full flex justify-start mb-2.5 md:hidden">
           <Image
             className="w-35 h-10"
@@ -103,7 +100,7 @@ export default async function Page() {
 
       {/*Sektion: Holdet */}
       <section
-        id="hero"
+        id="holdet"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5  mt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
@@ -192,10 +189,7 @@ export default async function Page() {
       </section>
 
       {/*Sektion: Faciliteterne */}
-      <section
-        id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pt-12.5 "
-      >
+      <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pt-12.5 ">
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Faciliteterne</h2>
         </div>
@@ -239,10 +233,7 @@ export default async function Page() {
       </section>
 
       {/*Sektion: Vision */}
-      <section
-        id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
-      >
+      <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 ">
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Vision og kerneværdier</h2>
         </div>
