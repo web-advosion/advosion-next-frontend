@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ButtonExperts from "../components/buttons/ButtonExperts";
 import SkillsContainerA from "../components/SkillsContainerA";
+import ExpertiseContainer from "../components/ExpertiseContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -51,10 +52,10 @@ export default async function Page() {
         </div>
       </section>
 
-      {/*Sektion: Ekspertiser */}
+      {/*Sektion: Skatteret */}
       <section
-        id="skatteret"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
+        id="ekspertiser"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Ekspertiser</h2>
@@ -89,6 +90,39 @@ export default async function Page() {
             ></Image>
           </div>
           <SkillsContainerA />
+        </article>
+      </section>
+
+      {/*Sektion: Skatteret */}
+      <section
+        id="skatteret"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Skatteret</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            De skattemæssige overvejelser indgår som et væsentligt element i
+            vores rådgivning indenfor mange områder af juraen. Dette fordi de
+            skattemæssige konsekvenser af en given disposition kan være
+            afgørende for, hvilken løsning der er den rigtige for dig og din
+            virksomhed. <br /> <br />
+            Vi har <strong>specialistviden</strong> og{" "}
+            <strong>mangeårige erfaring</strong> med at rådgive indenfor alle
+            aspekter af skatteretten. Vores unikke kombination af juridiske og
+            økonomiske kompetencer under samme tag gør, at du altid kan være
+            sikker på at modtage en{" "}
+            <strong>helhedsorienteret rådgivning</strong>.
+            <br /> <br />
+            Vi tager alle relevante forretningsmæssige parametre i betragtning
+            for at finde den bedste løsning for dig og din virksomhed.Indenfor
+            skatteret rådgiver vi bl.a. om:
+          </p>
+        </div>
+        <article>
+          <ExpertiseContainer />
         </article>
       </section>
     </main>
