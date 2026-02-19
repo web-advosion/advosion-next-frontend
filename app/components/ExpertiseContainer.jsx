@@ -14,7 +14,7 @@ export default async function ExpertiseContainer({
   const expertisesData = Array.isArray(expertises) ? expertises : [];
 
   return (
-    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 md:gap-15 rounded-2xl py-2.5 pr-17 md:pr-40 lg:flex-wrap lg:justify-center lg:pr-0 lg:gap-x-25 lg:gap-y-15">
+    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 md:gap-15 rounded-2xl  pr-17 md:pr-40 lg:flex-wrap lg:justify-center lg:pr-0 lg:gap-x-25 lg:gap-y-15">
       {expertisesData.map((expertise, index) => (
         <ExpertiseCardA
           key={expertise.id}

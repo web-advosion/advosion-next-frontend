@@ -161,8 +161,8 @@ export default async function Page() {
 
       {/*Sektion: Erhvervs- og selskabsret */}
       <section
-        id="skatteret"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-25 pt-12.5 "
+        id="erhverv"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.15 pt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Erhvervs- og selskabsret</h2>
@@ -184,10 +184,79 @@ export default async function Page() {
         </div>
 
         <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
           <ExpertiseContainer
-            typeId={10}
+            typeId={11}
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
+          />
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        <article className="mt-12.5 items-center gap-10">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-expert4.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <div>
+            <SingleEmployee id={111} />
+          </div>
+        </article>
+      </section>
+
+      {/*Sektion: Generationsskifte */}
+      <section
+        id="generation"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Generationsskifte</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Vi er <strong>specialister</strong> i generationsskifte. Vi hjælper
+            hele vejen og vil gerne i dialog ved de første spæde tanker om et
+            generationsskifte. Derved kan vi, gennem vores unikke kombination af
+            juridiske og økonomiske kompetencer, skabe de bedste rammer for
+            generationsskiftet under{" "}
+            <strong> hensyntagen til dine ønsker og værdier.</strong> <br />{" "}
+            <br />
+            Et succesfuldt generationsskifte kræver god planlægning og omtanke.{" "}
+            <br /> <br />
+            Det er nødvendigt at have fokus på en række spørgsmål:
+          </p>
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5 md:hidden">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <ExpertiseContainer
+            typeId={10}
+            bgColor="bg-(--cards)"
+            textColor="text-(--advokat-blue)"
           />
           <div className="mt-7.5">
             <ButtonContact />
