@@ -1,0 +1,96 @@
+import Image from "next/image";
+import ButtonExperts from "../components/buttons/ButtonExperts";
+import SkillsContainerA from "../components/SkillsContainerA";
+
+export default async function Page() {
+  const res = await fetch(
+    "https://cms.advosion.dk/wp-json/wp/v2/pages?slug=forside",
+    { next: { revalidate: 10 } }, // ISR: rebuild hver 10 sekunder
+  );
+  const pages = await res.json();
+  const page = pages[0];
+
+  return (
+    <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
+      {/*Hero sektion */}
+
+      <section
+        id="hero"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
+      >
+        <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter']">
+          <h1>Advokat</h1>
+        </div>
+
+        <div
+          data-aos="fade-in"
+          className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+        >
+          <div className=" w-full h-auto lg:w-2/3">
+            <p>
+              Vores partnere og advokater har en solid
+              <strong> baggrund fra store danske advokatfirmaer</strong>. Dér
+              har vi lært betydningen af kvalitet, faglig dygtighed og
+              disciplin. <br /> <br />I ADVOSION har vi tilsat et
+              <strong>kundeorienteret servicekoncept</strong>, hvor
+              <strong>helhedsløsninger</strong> udvikles i tæt dialog med dig,
+              så de skaber værdi for dig og din virksomhed. <br /> <br />
+              Vi er passionerede omkring vores faglige kvalitet, finder de
+              bedste løsninger, og når altid i mål.
+            </p>
+          </div>
+
+          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 lg:mt-0">
+            <Image
+              className="object-cover"
+              src="/img/lawyers-background.jpg"
+              fill
+              alt="Adovosion kollegaer står tæt sammen og kigger på sag"
+            ></Image>
+          </div>
+        </div>
+      </section>
+
+      {/*Sektion: Ekspertiser */}
+      <section
+        id="skatteret"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
+      >
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <h2>Ekspertiser</h2>
+        </div>
+
+        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <p>
+            Vi leverer <strong>professionel erhvervsjuridisk rådgivning</strong>{" "}
+            . Vi har specialistviden og mangeårig erfaring særligt indenfor
+            følgende områder: <br />
+            <br />
+            Vi har et stort professionelt netværk{" "}
+            <strong>både lokalt og nationalt</strong>, og er gode til at skabe
+            og vedligeholde stærke relationer til de bedste rådgivere. <br />{" "}
+            <br />
+            Det gør, at vi altid kan sætte det bedste rådgivningshold i forhold
+            til dig og dine forretningsmæssige behov.
+          </p>
+        </div>
+        <div className="mt-7.5">
+          <ButtonExperts />
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-end  ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-genveje.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <SkillsContainerA />
+        </article>
+      </section>
+    </main>
+  );
+}

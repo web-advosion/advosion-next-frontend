@@ -103,7 +103,7 @@ export default async function Page() {
 
       {/*Sektion: Holdet */}
       <section
-        id="hero"
+        id="holdet"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5  mt-12.5 "
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
