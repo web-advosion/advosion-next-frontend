@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
-import ButtonTop from "../components/buttons/ButtonTop";
+import Link from "next/link";
+import ButtonTop from "./buttons/ButtonTop";
 
-export default function TabletFooter() {
+export default function FooterV2() {
   return (
-    <footer className="w-full h-auto py-10.5 bg-(--footer) flex flex-col items-center text-(--advokat-blue) px-10.75 gap-12.5">
-      <section className="w-full h-auto flex gap-20">
-        <article className="max-w-52">
+    <footer className="w-full md:w-full h-auto lg:h-133.5 py-12.5 md:py-10.5 bg-(--footer) flex flex-col items-center text-(--advokat-blue) px-7.5 md:px-10.75 lg:px-48 2xl:px-100 md:gap-12.5 md:items-start">
+      <section className="w-full h-auto flex flex-col md:flex-row md:gap-20 md:items-start justify-between">
+        <article className=" w-full md:max-w-52">
           <div className="mb-5">
             <Link href="/#hero">
               <Image
@@ -18,40 +18,44 @@ export default function TabletFooter() {
             </Link>
           </div>
 
-          <div className="w-full justify-start text-(--advokat-blue) text-xs font-medium font-['Inter'] leading-6">
+          <div className="w-64 md:w-full justify-start text-(--advokat-blue) text-base md:text-xs lg:text-base font-medium font-['Inter'] leading-6">
             Vi har siden xxxx hjulpet store og små virksomheder med skræddersyet
             juridisk og økonomisk rådgivning via vores dygtige eksperter
           </div>
         </article>
 
-        <article className="w-2xl h-52 flex justify-between">
+        <article className="w-full md:w-2xl flex flex-col md:flex-row justify-between items-start mt-11.5 md:mt-0 md:leading-6">
           <div>
-            <h2 className="text-base font-bold">Sider</h2>
-            <ul className="text-xs font-medium gap-3 flex flex-col mt-3">
+            <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
+              Sider
+            </h2>
+            <ul className="text-base md:text-xs lg:text-base font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/om">Om os</Link>
               </li>
               <li>
-                <Link href="/">Advokat</Link>
+                <Link href="/advokat">Advokat</Link>
               </li>
               <li>
-                <Link href="/">Revision</Link>
+                <Link href="/revision">Revision</Link>
               </li>
               <li>
-                <Link href="/">Karriere</Link>
+                <Link href="/karriere">Karriere</Link>
               </li>
               <li>
-                <Link href="/">Kontakt</Link>
+                <Link href="/kontakt">Kontakt</Link>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="mt-11.5 md:mt-0">
             <Link href="/kontakt">
-              <h2 className="text-base font-bold">Kontakt</h2>
+              <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
+                Kontakt
+              </h2>
             </Link>
 
-            <ul className="text-xs font-medium gap-2 flex flex-col mt-3">
+            <ul className="text-base md:text-xs lg:text-base font-medium gap-2 flex flex-col mt-3">
               <li>
                 <Link className="flex items-center gap-2" href="/">
                   <Image
@@ -79,9 +83,11 @@ export default function TabletFooter() {
             </ul>
           </div>
 
-          <div>
-            <h2 className="text-base font-bold">Information</h2>
-            <ul className="text-xs font-medium gap-3 flex flex-col mt-3">
+          <div className="mt-11.5 md:mt-0">
+            <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
+              Information
+            </h2>
+            <ul className="text-base md:text-xs lg:text-base font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/">Forretningsbetingelser</Link>
               </li>
@@ -96,9 +102,9 @@ export default function TabletFooter() {
         </article>
       </section>
 
-      <section className="w-full h-auto flex justify-between">
-        <article className="flex gap-14 mr-30">
-          <div className="text-(--advokat-blue) text-xs w-auto">
+      <section className="w-full h-auto flex flex-col md:flex-row mt-19 md:mt-0 justify-between">
+        <article className="flex flex-col md:flex-row gap-11.5 md:gap-14 md:mr-30">
+          <div className="text-(--advokat-blue) text-sm md:text-xs lg:text-sm w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               ADVOKATPARTNERSELSKAB
@@ -109,7 +115,7 @@ export default function TabletFooter() {
               CVR: 37 55 75 60
             </p>
           </div>
-          <div className="text-(--advokat-blue) text-xs w-auto">
+          <div className="text-(--advokat-blue) text-sm md:text-xs lg:text-sm w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               STATSAUT. REVISORPARTNERSELSKAB
@@ -122,11 +128,11 @@ export default function TabletFooter() {
           </div>
         </article>
 
-        <article className="flex items-end justify-end">
-          <ul className=" text-base font-medium gap-8 flex items-end">
+        <article className="flex items-end justify-start md:justify-end mt-11.5 md:mt-0">
+          <ul className=" text-base font-medium gap-8 flex flex-col md:flex-row items-start md:items-end">
             <li>
               <Link
-                className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="flex flex-col md:flex-row items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
                 href="/"
               >
                 <Image
@@ -168,8 +174,11 @@ export default function TabletFooter() {
             </li>
           </ul>
         </article>
+        <div className="w-full mt-5 flex justify-end md:items-end md:hidden">
+          <ButtonTop />
+        </div>
       </section>
-      <div className="w-full mt-5 flex justify-end items-end">
+      <div className="w-full mt-5 justify-end md:items-end hidden md:flex">
         <ButtonTop />
       </div>
     </footer>
