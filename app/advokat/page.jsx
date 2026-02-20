@@ -157,7 +157,7 @@ export default async function Page() {
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -220,7 +220,7 @@ export default async function Page() {
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -277,13 +277,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -361,13 +361,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -434,13 +434,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -504,13 +504,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
