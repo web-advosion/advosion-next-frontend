@@ -4,9 +4,9 @@ import ButtonTop from "./buttons/ButtonTop";
 
 export default function FooterV2() {
   return (
-    <footer className="max-w-screen h-auto py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-7.5 gap-80">
-      <section className="w-full h-auto flex flex-col">
-        <article className="mr-47.5 w-full">
+    <footer className="max-w-full md:w-full h-auto py-12.5 md:py-10.5 bg-(--footer) flex flex-col items-center text-(--advokat-blue) px-7.5 md:px-10.75 md:gap-12.5 md:items-start">
+      <section className="w-full h-auto flex flex-col md:flex-row md:gap-20 md:items-start">
+        <article className="mr-47.5 w-full md:max-w-52 md:mr-0">
           <div className="mb-5">
             <Link href="/#hero">
               <Image
@@ -18,16 +18,16 @@ export default function FooterV2() {
             </Link>
           </div>
 
-          <div className="w-64 justify-start text-(--advokat-blue) text-base font-medium font-['Inter'] leading-6">
+          <div className="w-64 md:w-full justify-start text-(--advokat-blue) text-base md:text-xs font-medium font-['Inter'] leading-6">
             Vi har siden xxxx hjulpet store og små virksomheder med skræddersyet
             juridisk og økonomisk rådgivning via vores dygtige eksperter
           </div>
         </article>
 
-        <article className="w-full h-52 flex flex-col justify-between mt-11.5">
+        <article className="w-full md:w-2xl flex flex-col md:flex-row justify-between items-start mt-11.5 md:mt-0 md:leading-6">
           <div>
-            <h2 className="text-2xl font-bold">Sider</h2>
-            <ul className="text-base font-medium gap-3 flex flex-col mt-3">
+            <h2 className="text-2xl md:text-base font-bold">Sider</h2>
+            <ul className="text-base md:text-xs font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/om">Om os</Link>
               </li>
@@ -46,12 +46,12 @@ export default function FooterV2() {
             </ul>
           </div>
 
-          <div className="mt-11.5">
+          <div className="mt-11.5 md:mt-0">
             <Link href="/kontakt">
-              <h2 className="text-2xl font-bold">Kontakt</h2>
+              <h2 className="text-2xl md:text-base font-bold">Kontakt</h2>
             </Link>
 
-            <ul className="text-base font-medium gap-2 flex flex-col mt-3">
+            <ul className="text-base md:text-xs font-medium gap-2 flex flex-col mt-3">
               <li>
                 <Link className="flex items-center gap-2" href="/">
                   <Image
@@ -79,9 +79,9 @@ export default function FooterV2() {
             </ul>
           </div>
 
-          <div className="mt-11.5">
-            <h2 className="text-2xl font-bold">Information</h2>
-            <ul className="text-base font-medium gap-3 flex flex-col mt-3">
+          <div className="mt-11.5 md:mt-0">
+            <h2 className="text-2xl md:text-base font-bold">Information</h2>
+            <ul className="text-base md:text-xs font-medium gap-3 flex flex-col mt-3">
               <li>
                 <Link href="/">Forretningsbetingelser</Link>
               </li>
@@ -96,9 +96,9 @@ export default function FooterV2() {
         </article>
       </section>
 
-      <section className="w-full h-auto flex flex-col mt-19 justify-between">
-        <article className="flex flex-col gap-11.5">
-          <div className="text-(--advokat-blue) text-sm w-auto">
+      <section className="w-full h-auto flex flex-col md:flex-row mt-19 md:mt-0 justify-between">
+        <article className="flex flex-col md:flex-row gap-11.5 md:gap-14 md:mr-30">
+          <div className="text-(--advokat-blue) text-sm md:text-xs w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               ADVOKATPARTNERSELSKAB
@@ -109,7 +109,7 @@ export default function FooterV2() {
               CVR: 37 55 75 60
             </p>
           </div>
-          <div className="text-(--advokat-blue) text-sm w-auto">
+          <div className="text-(--advokat-blue) text-sm md:text-xs w-auto">
             <h4 className="font-bold">
               ADVOSION <br />
               STATSAUT. REVISORPARTNERSELSKAB
@@ -122,11 +122,11 @@ export default function FooterV2() {
           </div>
         </article>
 
-        <article className="flex items-end justify-start mt-11.5">
-          <ul className=" text-base font-medium gap-8 flex flex-col items-start">
+        <article className="flex items-end justify-start md:justify-end mt-11.5 md:mt-0">
+          <ul className=" text-base font-medium gap-8 flex flex-col md:flex-row items-start md:items-end">
             <li>
               <Link
-                className="flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="flex flex-col md:flex-row items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
                 href="/"
               >
                 <Image
@@ -168,10 +168,13 @@ export default function FooterV2() {
             </li>
           </ul>
         </article>
-        <div className="mt-5 flex justify-end">
+        <div className="w-full mt-5 flex justify-end md:items-end md:hidden">
           <ButtonTop />
         </div>
       </section>
+      <div className="w-full mt-5 justify-end md:items-end hidden md:flex">
+        <ButtonTop />
+      </div>
     </footer>
   );
 }

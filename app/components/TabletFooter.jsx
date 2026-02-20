@@ -4,7 +4,7 @@ import ButtonTop from "../components/buttons/ButtonTop";
 
 export default function TabletFooter() {
   return (
-    <footer className="w-full h-auto py-10.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-10.75 gap-12.5">
+    <footer className="w-full h-auto py-10.5 bg-(--footer) flex flex-col items-center text-(--advokat-blue) px-10.75 gap-12.5">
       <section className="w-full h-auto flex gap-20">
         <article className="max-w-52">
           <div className="mb-5">
