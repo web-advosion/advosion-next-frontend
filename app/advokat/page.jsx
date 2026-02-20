@@ -22,7 +22,7 @@ export default async function Page() {
         id="hero"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
       >
-        <div className="flex">
+        <div className="md:flex">
           <div>
             <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
               <h1>Advokat</h1>
@@ -32,7 +32,7 @@ export default async function Page() {
               data-aos="fade-in"
               className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
             >
-              <div className=" w-full h-auto md:w-[80%] lg:w-2/3">
+              <div className=" w-full h-auto md:w-[90%] lg:w-2/3">
                 <p>
                   Vores partnere og advokater har en solid
                   <strong> baggrund fra store danske advokatfirmaer</strong>.
@@ -48,7 +48,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 lg:mt-0">
+          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
             <Image
               className="object-cover"
               src="/img/lawyers-background.jpg"

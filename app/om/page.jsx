@@ -29,30 +29,35 @@ export default async function Page() {
       >
         <div
           data-aos="fade-in"
-          className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+          className=" lg:flex lg:gap-12.5 lg:items-start md:flex"
         >
           <div className=" w-full h-auto lg:w-2/3">
             <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
               <h1>Om Advosion</h1>
             </div>
-
-            <p className="mt-5">
-              ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
-              <strong>jura</strong> og <strong>revision</strong>. <br /> <br />
-              Vores forstærkede forretningsforståelse giver os en unik mulighed
-              for at tilbyde virksomheder en{" "}
-              <strong>helhedsorienteret og professionel rådgiving.</strong>{" "}
-              <br /> <br />
-              Vores{" "}
-              <strong>specialistkompetencer er samlet under ét tag</strong> og
-              synenergien mellem de to forretningsområder betyder, at vi
-              udvikler endnu bedre løsninger til gavn for dig og din virksomhed.
-              Vi er eksperter i at rådgive i krydsfeltet mellem økonomi og jura.
-              Hurtigt og enkelt, og uden fordyrrende mellemled.
-            </p>
+            <div className="mt-5 w-full h-auto md:w-[90%] lg:w-2/3">
+              <p>
+                ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
+                <strong>jura</strong> og <strong>revision</strong>. <br />{" "}
+                <br />
+                Vores forstærkede forretningsforståelse giver os en unik
+                mulighed for at tilbyde virksomheder en{" "}
+                <strong>
+                  helhedsorienteret og professionel rådgiving.
+                </strong>{" "}
+                <br /> <br />
+                Vores{" "}
+                <strong>specialistkompetencer er samlet under ét tag</strong> og
+                synenergien mellem de to forretningsområder betyder, at vi
+                udvikler endnu bedre løsninger til gavn for dig og din
+                virksomhed. Vi er eksperter i at rådgive i krydsfeltet mellem
+                økonomi og jura. Hurtigt og enkelt, og uden fordyrrende
+                mellemled.
+              </p>
+            </div>
           </div>
 
-          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 lg:mt-0">
+          <div className="w-80 h-80  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
             <Image
               className="object-cover"
               src="/img/businesspeople-having-discussion-office.jpg"
