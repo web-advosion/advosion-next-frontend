@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function RevisorCard() {
   return (
     <Link href="/revisor">
-      <div className="w-full h-96 bg-(--revision-green) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20">
+      <div className="w-full h-96 bg-(--revision-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20">
         <article>
           <div className="w-full h-full p-">
             <div className=" text-(--advokat-blue) ">
-              <h2 className="text-3xl font-medium text-(--primary-bg) ">
+              <h2 className="text-3xl font-medium text-(--advokat-blue) ">
                 Vi er eksperter i:
               </h2>
-              <ul className="text-(--primary-bg) text-xl list-disc pl-5">
+              <ul className=" text-xl list-disc pl-5">
                 <li>Regnskab og revision</li>
                 <li>Skat, moms og afgifter</li>
                 <li>Finansiering</li>
@@ -24,7 +24,7 @@ export default function RevisorCard() {
               <p>Læs mere</p>
             </div>
 
-            <div className="justify-start text-white text-5xl font-medium">
+            <div className="justify-start text-(--advokat-blue) text-5xl font-medium">
               <h3 className="text-2xl">Statsaut.</h3>
               Revison
             </div>
