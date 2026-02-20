@@ -82,7 +82,7 @@ export default async function Page() {
           <ButtonExperts />
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-end py-2 ">
             <Image
               className="w-35 h-10"
@@ -125,7 +125,7 @@ export default async function Page() {
           </p>
         </div>
         <article className="mt-12.5">
-          <div className="w-full flex justify-start mb-2.5 ">
+          <div className="w-full flex justify-start mb-2.5" data-aos="fade-in">
             <Image
               className="w-35 h-10"
               src="/img/icon-swipe.svg"
@@ -143,7 +143,7 @@ export default async function Page() {
             <ButtonContact />
           </div>
         </article>
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -183,7 +183,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5 ">
             <Image
               className="w-35 h-10"
@@ -203,7 +203,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -243,7 +243,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -263,7 +263,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5 md:hidden">
             <Image
               className="w-35 h-10"
@@ -324,7 +324,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -344,7 +344,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5 md:hidden">
             <Image
               className="w-35 h-10"
@@ -394,7 +394,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -414,7 +414,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5 md:hidden">
             <Image
               className="w-35 h-10"
@@ -461,7 +461,7 @@ export default async function Page() {
           </p>
         </div>
 
-        <article className="mt-12.5">
+        <article className="mt-12.5" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
@@ -481,7 +481,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5 items-center gap-10">
+        <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
           <div className="w-full flex justify-start mb-2.5 md:hidden">
             <Image
               className="w-35 h-10"
