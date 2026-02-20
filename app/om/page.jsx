@@ -112,7 +112,10 @@ export default async function Page() {
           <h2>Holdet</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
             dedikerede og entusiatiske medarbejdere, forretningsmæssige
@@ -199,7 +202,10 @@ export default async function Page() {
           <h2>Faciliteterne</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Vi bor i nogle dejlige og nye lækre bygninger, som vi flyttede til i
             september 2024. <br /> <br />
@@ -243,7 +249,10 @@ export default async function Page() {
           <h2>Vision og kerneværdier</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Vi er ikke bare et hvilket som helst advokat- eller revisionsfirma.{" "}
             <br /> <br />
@@ -278,7 +287,10 @@ export default async function Page() {
             <h3>Hjerte for det lokale</h3>
           </div>
 
-          <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+          <div
+            className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+            data-aos="fade-in"
+          >
             <p>
               Udover at levere juridisk og økonomisk rådgivning har vi også er
               hjerte for det lokale liv her i Skanderborg og omegn. <br />{" "}
