@@ -27,16 +27,16 @@ export default async function Page() {
         id="hero"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
       >
-        <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter']">
-          <h1>Om Advosion</h1>
-        </div>
-
         <div
           data-aos="fade-in"
           className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
         >
           <div className=" w-full h-auto lg:w-2/3">
-            <p>
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
+              <h1>Om Advosion</h1>
+            </div>
+
+            <p className="mt-5">
               ADVOSION er nyt og innovativt firmakoncept, der kombinerer{" "}
               <strong>jura</strong> og <strong>revision</strong>. <br /> <br />
               Vores forstærkede forretningsforståelse giver os en unik mulighed
