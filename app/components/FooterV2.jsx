@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonTop from "../components/buttons/ButtonTop";
+import ButtonTop from "./buttons/ButtonTop";
 
-export default function MobileFooter() {
+export default function FooterV2() {
   return (
     <footer className="max-w-screen h-auto py-12.5 bg-(--footer) flex flex-col items-center justify-en text-(--advokat-blue) px-7.5 gap-80">
       <section className="w-full h-auto flex flex-col">
