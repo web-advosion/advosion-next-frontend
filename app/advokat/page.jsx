@@ -30,7 +30,7 @@ export default async function Page() {
           data-aos="fade-in"
           className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
         >
-          <div className=" w-full h-auto lg:w-2/3">
+          <div className=" w-full h-auto md:w-[80%] lg:w-2/3">
             <p>
               Vores partnere og advokater har en solid
               <strong> baggrund fra store danske advokatfirmaer</strong>. Dér
@@ -58,13 +58,16 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5"
       >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
           <h2>Ekspertiser</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+          data-aos="fade-in"
+        >
           <p>
             Vi leverer <strong>professionel erhvervsjuridisk rådgivning</strong>{" "}
             . Vi har specialistviden og mangeårig erfaring særligt indenfor
@@ -82,7 +85,7 @@ export default async function Page() {
           <ButtonExperts />
         </div>
 
-        <article className="mt-12.5" data-aos="fade-in">
+        <article className="mt-12.5 md:max-w-80" data-aos="fade-in">
           <div className="w-full flex justify-end py-2 ">
             <Image
               className="w-35 h-10"
@@ -105,7 +108,10 @@ export default async function Page() {
           <h2>Skatteret</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             De skattemæssige overvejelser indgår som et væsentligt element i
             vores rådgivning indenfor mange områder af juraen. Dette fordi de
@@ -120,8 +126,9 @@ export default async function Page() {
             <strong>helhedsorienteret rådgivning</strong>.
             <br /> <br />
             Vi tager alle relevante forretningsmæssige parametre i betragtning
-            for at finde den bedste løsning for dig og din virksomhed.Indenfor
-            skatteret rådgiver vi bl.a. om:
+            for at finde den bedste løsning for dig og din virksomhed. <br />{" "}
+            <br />
+            Indenfor skatteret rådgiver vi bl.a. om:
           </p>
         </div>
         <article className="mt-12.5">
@@ -150,7 +157,7 @@ export default async function Page() {
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -168,7 +175,10 @@ export default async function Page() {
           <h2>Erhvervs- og selskabsret</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Vores store erfaring og specialisering indenfor erhvervs- og
             selskabsretten kombineret med vores solide forretningsforståelse,
@@ -210,7 +220,7 @@ export default async function Page() {
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -228,7 +238,10 @@ export default async function Page() {
           <h2>Generationsskifte</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Vi er <strong>specialister</strong> i generationsskifte. Vi hjælper
             hele vejen og vil gerne i dialog ved de første spæde tanker om et
@@ -264,13 +277,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -297,7 +310,10 @@ export default async function Page() {
           </div>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             En virksomhedsoverdragelse er ofte en kompliceret og intens proces,
             hvor <strong>kompetent rådgivning</strong> af parterne kan være
@@ -345,13 +361,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -369,7 +385,10 @@ export default async function Page() {
           <h2>Kontrakter</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Den gode kontrakt er gennemtænkt og grundigt udformet og skaber
             klarhed over parternes rettigheder og forpligtelser. Den begrænser
@@ -415,13 +434,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
@@ -439,7 +458,10 @@ export default async function Page() {
           <h2>Konflikthåndtering</h2>
         </div>
 
-        <div className="mt-5 w-full lg:max-w-2/3 h-auto" data-aos="fade-in">
+        <div
+          className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+          data-aos="fade-in"
+        >
           <p>
             Konflikter kræver din tid og energi i en ofte langvarig proces. De
             relaterer sig til tidligere hændelser, hvor du og din virksomhed i
@@ -482,13 +504,13 @@ export default async function Page() {
         </article>
 
         <article className="mt-12.5 items-center gap-10" data-aos="fade-in">
-          <div className="w-full flex justify-start mb-2.5 md:hidden">
+          <div className="w-full flex justify-start mb-2.5 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="kontakt ekspert ikon med pil der peger mod medarbejderkort med fageksperten"
             ></Image>
           </div>
           <div>
