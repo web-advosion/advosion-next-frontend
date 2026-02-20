@@ -233,6 +233,9 @@ export default async function Page() {
                 ønsker for fremtiden og din virksomheds behov. <br /> <br />{" "}
                 Indenfor erhvervs- og selskabsret rådgiver vi bl.a. om:
               </p>
+              <div className="mt-7.5 hidden lg:block">
+                <ButtonContact />
+              </div>
             </div>
           </article>
 
@@ -271,7 +274,7 @@ export default async function Page() {
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
           />
-          <div className="mt-7.5">
+          <div className="mt-7.5 lg:hidden">
             <ButtonContact />
           </div>
         </article>
@@ -322,6 +325,9 @@ export default async function Page() {
                 omtanke. <br /> <br />
                 Det er nødvendigt at have fokus på en række spørgsmål:
               </p>
+              <div className="mt-7.5 hidden lg:block">
+                <ButtonContact />
+              </div>
             </div>
           </article>
 
@@ -360,7 +366,7 @@ export default async function Page() {
             bgColor="bg-(--cards)"
             textColor="text-(--advokat-blue)"
           />
-          <div className="mt-7.5">
+          <div className="mt-7.5 lg:hidden">
             <ButtonContact />
           </div>
         </article>
@@ -434,6 +440,9 @@ export default async function Page() {
                 <br />
                 Indenfor virksomhedsoverdragelse rådgiver vi bl.a. om:
               </p>
+              <div className="mt-7.5 hidden lg:block">
+                <ButtonContact />
+              </div>
             </div>
           </article>
 
@@ -472,7 +481,7 @@ export default async function Page() {
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
           />
-          <div className="mt-7.5">
+          <div className="mt-7.5 lg:hidden">
             <ButtonContact />
           </div>
         </article>
@@ -534,6 +543,9 @@ export default async function Page() {
                 <br />
                 Indenfor virksomhedens kontrakter rådgiver vi bl.a. om:
               </p>
+              <div className="mt-7.5 hidden lg:block">
+                <ButtonContact />
+              </div>
             </div>
           </article>
 
@@ -572,7 +584,7 @@ export default async function Page() {
             bgColor="bg-(--cards)"
             textColor="text-(--advokat-blue)"
           />
-          <div className="mt-7.5">
+          <div className="mt-7.5 lg:hidden">
             <ButtonContact />
           </div>
         </article>
@@ -631,6 +643,9 @@ export default async function Page() {
                 <br />
                 Indenfor konfliktløsning rådgiver vi bl.a. om:
               </p>
+              <div className="mt-7.5 hidden lg:block">
+                <ButtonContact />
+              </div>
             </div>
           </article>
 
@@ -669,7 +684,7 @@ export default async function Page() {
             bgColor="bg-(--advokat-blue)"
             textColor="text-(--primary-bg)"
           />
-          <div className="mt-7.5">
+          <div className="mt-7.5 lg:hidden">
             <ButtonContact />
           </div>
         </article>
