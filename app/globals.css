@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-lg: 70rem;
+  --breakpoint-lg: 74rem;
 }
 
 :root {

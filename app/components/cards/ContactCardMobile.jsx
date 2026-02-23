@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ContactCardMobile() {
   return (
     <Link href="/kontakt">
-      <div className="w-80 h-auto bg-(--cards) rounded-3xl shadow-md flex-col p-5 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out">
+      <div className="w-full h-auto bg-(--cards) rounded-3xl shadow-md flex-col p-5 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out">
         <article className="w-full h-full flex flex-col justify-between">
           <div className=" text-5xl font-medium mb-5">Find os her</div>
           <div className="w-full h-full text-(--cta-black) flex flex-col justify-between">

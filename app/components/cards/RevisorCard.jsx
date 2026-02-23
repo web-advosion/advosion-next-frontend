@@ -7,7 +7,7 @@ export default function RevisorCard() {
     <Link href="/revisor">
       <div className="w-full h-96 bg-(--revision-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20">
         <article>
-          <div className="w-full h-full p-">
+          <div className="w-full h-full">
             <div className=" text-(--primary-bg) ">
               <h2 className="text-3xl font-medium ">Vi er eksperter i:</h2>
               <ul className=" text-xl list-disc pl-5">

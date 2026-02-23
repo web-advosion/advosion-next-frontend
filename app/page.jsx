@@ -88,7 +88,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-2.5 lg:mt-7.5 w-screen lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24 lg:pr-0 lg:overflow-visible "
+            className="mt-2 lg:mt-7.5 w-full lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24 lg:pr-0 lg:overflow-visible "
           >
             <WhoCardLeft />
             <WhoCardMid />
@@ -137,7 +137,7 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: kontakt */}
-        <section className=" w-screen h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
+        <section className=" w-full h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Kontakt
@@ -169,7 +169,7 @@ export default async function HomePage() {
           </Link>
 
           {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-2.5 w-screen h-auto">
+          <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
             <div className="w-full flex justify-start mb-0 ">
               <Image
                 className="w-35 h-10"
