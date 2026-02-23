@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-lg: 66rem;
+}
+
 :root {
   --primary-bg: #ffffff;
   --secondary-bg: #f8f8f8;

@@ -62,11 +62,14 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--cards) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
-          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
             <h2>Ekspertiser</h2>
+            <h3 className="text-lg font-normal opacity-70 leading-5">
+              (genveje)
+            </h3>
           </div>
 
           <div
@@ -93,7 +96,7 @@ export default async function Page() {
         </article>
 
         <article
-          className="mt-12.5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start"
+          className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start"
           data-aos="fade-in"
         >
           <div className="w-full flex justify-end py-2 ">
@@ -102,7 +105,7 @@ export default async function Page() {
               src="/img/icon-genveje2.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="genveje ikon"
             ></Image>
           </div>
 
@@ -117,7 +120,7 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="w-max justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="w-max justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <h2>Skatteret</h2>
             </div>
 
@@ -156,7 +159,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -195,7 +198,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -217,7 +220,7 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <h2>Erhvervs- og selskabsret</h2>
             </div>
 
@@ -248,7 +251,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -287,7 +290,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -305,11 +308,11 @@ export default async function Page() {
       {/*Sektion: Generationsskifte */}
       <section
         id="generation"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5"
       >
         <div className="lg:flex">
           <article>
-            <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <h2>Generationsskifte</h2>
             </div>
 
@@ -340,7 +343,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -379,7 +382,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -401,7 +404,7 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <div className="md:hidden">
                 <h2>
                   Virksomheds- <br />
@@ -455,7 +458,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -494,7 +497,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -516,7 +519,7 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <h2>Kontrakter</h2>
             </div>
 
@@ -558,7 +561,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -597,7 +600,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -619,7 +622,7 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+            <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
               <h2>Konflikthåndtering</h2>
             </div>
 
@@ -658,7 +661,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -697,7 +700,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5 ">
+          <div className="w-full flex justify-start mb-2 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"

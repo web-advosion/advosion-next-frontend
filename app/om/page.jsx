@@ -108,7 +108,7 @@ export default async function Page() {
         id="holdet"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5  mt-12.5 "
       >
-        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
           <h2>Holdet</h2>
         </div>
 
@@ -131,7 +131,7 @@ export default async function Page() {
 
         <article className="w-full h-auto pb-12.5 lg:pb-25 pt-10">
           <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
-            <h2>Advokaterne</h2>
+            <h3>Advokaterne</h3>
           </div>
           <div className="w-full flex justify-start  ">
             <Image
@@ -152,7 +152,7 @@ export default async function Page() {
 
         <article className="w-full h-auto pb-12.5 lg:pb-25  ">
           <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
-            <h2>Revisorne</h2>
+            <h3>Revisorne</h3>
           </div>
           <div className="w-full flex justify-start  ">
             <Image
@@ -172,8 +172,8 @@ export default async function Page() {
         </article>
 
         <article className="w-full h-auto pb-11.25 ">
-          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
-            <h2>Øvrigt personale</h2>
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter'] ">
+            <h3>Øvrigt personale</h3>
           </div>
           <div className="w-full flex justify-start  ">
             <Image
@@ -198,7 +198,7 @@ export default async function Page() {
 
       {/*Sektion: Faciliteterne */}
       <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pt-12.5 ">
-        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
           <h2>Faciliteterne</h2>
         </div>
 
@@ -245,7 +245,7 @@ export default async function Page() {
 
       {/*Sektion: Vision */}
       <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 ">
-        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
           <h2>Vision og kerneværdier</h2>
         </div>
 
@@ -283,7 +283,7 @@ export default async function Page() {
         </article>
 
         <article className="md:pt-12.5">
-          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter']">
+          <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter'] leading-7">
             <h3>Hjerte for det lokale</h3>
           </div>
 
