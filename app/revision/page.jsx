@@ -46,7 +46,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-106 aspect-square md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
+          <div className="w-full aspect-square md:max-w-96 md:max-h-96 lg:max-w-106 lg:max-h-106  md:min-w-96 md:min-h-96 lg:min-w-106 lg:min-h-106 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
             <Image
               className="object-cover"
               src="/img/accountant-hero-placeholder.jpg"
