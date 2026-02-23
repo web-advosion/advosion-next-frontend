@@ -25,30 +25,31 @@ export default async function Page() {
         <div className="md:flex">
           <div>
             <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
-              <h1>Advokat</h1>
+              <h1>Revision</h1>
             </div>
 
-            <div data-aos="fade-in" className="mt-5 lg:flex lg:items-start">
+            <div
+              data-aos="fade-in"
+              className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+            >
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
-                  Vores partnere og advokater har en solid
-                  <strong> baggrund fra store danske advokatfirmaer</strong>.
-                  Dér har vi lært betydningen af kvalitet, faglig dygtighed og
-                  disciplin. <br /> <br />I ADVOSION har vi tilsat et
-                  <strong>kundeorienteret servicekoncept</strong>, hvor
-                  <strong>helhedsløsninger</strong> udvikles i tæt dialog med
-                  dig, så de skaber værdi for dig og din virksomhed. <br />{" "}
-                  <br />
-                  Vi er passionerede omkring vores faglige kvalitet, finder de
-                  bedste løsninger, og når altid i mål.
+                  <strong>Revision, regnskab</strong> og{" "}
+                  <strong>rådgivning</strong> er vores kerneydelser. <br />{" "}
+                  <br />I tæt dialog med vores kunder og med anvendelse af
+                  moderne revisionsprogrammer udfører vi en{" "}
+                  <strong>effektiv full-service revision</strong> på et{" "}
+                  <strong>højt kvalitetsniveau</strong>. <br /> <br />
+                  Vi er statsautoriserede og kan derfor levere en bred vifte af
+                  økonomiske services.
                 </p>
               </div>
             </div>
           </div>
-          <div className="w-full aspect-square max-w-106  md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
+          <div className="w-full max-w-106 aspect-square md:min-w-96 md:min-h-96 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
             <Image
               className="object-cover"
-              src="/img/lawyers-background.jpg"
+              src="/img/accountant-hero-placeholder.jpg"
               fill
               alt="Adovosion kollegaer står tæt sammen og kigger på sag"
             ></Image>
