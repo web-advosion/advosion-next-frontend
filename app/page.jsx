@@ -71,7 +71,7 @@ export default async function HomePage() {
         {/*Sektion: Hvem er vi */}
         <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Hvem er vi?
             </h1>
           </Link>
@@ -103,7 +103,7 @@ export default async function HomePage() {
         {/*Ydelser */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Ydelser
             </h1>
           </Link>
@@ -139,7 +139,7 @@ export default async function HomePage() {
         {/*Sektion: kontakt */}
         <section className=" w-screen h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Kontakt
             </h1>
           </Link>
@@ -163,7 +163,7 @@ export default async function HomePage() {
         {/*Sektion: Kunde statements */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5">
+            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
               Det siger vores kunder
             </h1>
           </Link>
