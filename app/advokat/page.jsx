@@ -62,11 +62,12 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--cards) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
-          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter']">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-9">
             <h2>Ekspertiser</h2>
+            <h3 className="text-lg font-normal opacity-70">(genveje)</h3>
           </div>
 
           <div
