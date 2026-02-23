@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function RevisorCardMobile() {
   return (
     <Link href="/revision">
-      <div className="w-80 h-auto bg-(--revision-blue) rounded-3xl shadow-md flex-col items-center p-5 justify-between hover:scale-102 transition-transform duration-300 ease-in-out ">
+      <div className="w-full h-auto bg-(--revision-blue) rounded-3xl shadow-md flex-col items-center p-5 justify-between hover:scale-102 transition-transform duration-300 ease-in-out ">
         <article>
           <div className="w-full h-full p-">
             <div className=" text-(--primary-bg) ">
