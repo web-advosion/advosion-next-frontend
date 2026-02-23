@@ -94,7 +94,7 @@ export default async function Page() {
         </article>
 
         <article
-          className="mt-12.5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start"
+          className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start"
           data-aos="fade-in"
         >
           <div className="w-full flex justify-end py-2 ">
@@ -103,7 +103,7 @@ export default async function Page() {
               src="/img/icon-genveje2.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="genveje ikon"
             ></Image>
           </div>
 
@@ -157,7 +157,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -196,7 +196,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -249,7 +249,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -288,7 +288,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -341,7 +341,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -380,7 +380,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -456,7 +456,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -495,7 +495,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -559,7 +559,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -598,7 +598,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5">
+          <div className="w-full flex justify-start mb-2">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
@@ -659,7 +659,7 @@ export default async function Page() {
             className="mt-12.5 items-center gap-10 hidden md:hidden lg:block lg:mt-0 lg:items-start"
             data-aos="fade-in"
           >
-            <div className="w-full flex justify-start mb-2.5">
+            <div className="w-full flex justify-start mb-2">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-expert4.svg"
@@ -698,7 +698,7 @@ export default async function Page() {
           className="mt-12.5 items-center gap-10 lg:hidden"
           data-aos="fade-in"
         >
-          <div className="w-full flex justify-start mb-2.5 ">
+          <div className="w-full flex justify-start mb-2 ">
             <Image
               className="w-35 h-10"
               src="/img/icon-expert4.svg"
