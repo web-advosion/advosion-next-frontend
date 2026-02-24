@@ -6,12 +6,13 @@ import ButtonMeet from "./components/buttons/ButtonMeet";
 import AdvokatCard from "./components/cards/AdvokatCard";
 import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
-import StatementContainer from "./components/StatementContainer";
+import StatementContainer from "./components/StatementContainerClients";
 import Link from "next/link";
 import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "./components/cards/RevisorCardMobile";
 import ContactCardMobile from "./components/cards/ContactCardMobile";
 import ContactCardTablet from "./components/cards/ContactCardTablet";
+import StatementContainerClients from "./components/StatementContainerClients";
 
 export default async function HomePage() {
   const res = await fetch(
@@ -179,7 +180,7 @@ export default async function HomePage() {
                 alt="swipe icon"
               ></Image>
             </div>
-            <StatementContainer />
+            <StatementContainerClients />
           </div>
         </section>
       </main>

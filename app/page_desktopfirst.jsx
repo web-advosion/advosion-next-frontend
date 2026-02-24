@@ -6,7 +6,7 @@ import ButtonMeet from "./components/buttons/ButtonMeet";
 import AdvokatCard from "./components/cards/AdvokatCard";
 import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
-import StatementContainer from "./components/StatementContainer";
+import StatementContainer from "./components/StatementContainerClients";
 import Link from "next/link";
 
 export default async function HomePage() {

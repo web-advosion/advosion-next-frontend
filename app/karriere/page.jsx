@@ -7,6 +7,7 @@ import AdvokatEmployeeCard from "../components/cards/AdvokatEmployeeCard";
 import SingleEmployee from "../components/SingleEmployee";
 import SkillsContainerR from "../components/SkillsContainerR";
 import ButtonAbout from "../components/buttons/ButtonAbout";
+import StatementContainer from "../components/StatementContainerClients";
 
 export default async function Page() {
   const res = await fetch(
@@ -78,18 +79,63 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              Vi leverer{" "}
-              <strong>professionel økonomisk revision og rådgivning</strong>. Vi
-              har specialistviden og mangeårig erfaring særligt indenfor
-              følgende områder: <br />
-              <br /> Vores dygtige revisorer sikrer at du og din virksomhed
-              altid er i sikre hænder.
+              Som ansat hos os, går din udvikling ikke bare i stå fordi du nu er
+              i arbejde. Hvis du ønsker det, er der rig mulighed for faglig
+              udvikling! <br /> <br />
+              Om du drømmer om at blive statsutoriseret revisor eller trænger
+              til at få støvet selskabsretten af med et up-to-date kursus, så
+              finder ud af det. <br /> <br />
+              Vi ønsker at hjælpe dig med at være den bedst mulige medarbejder
+              og <strong>hjælpe dine ambitioner</strong> på vej. <br /> <br />
+              Har du spørgsmål, så tøv ikke med at kontakte os.
             </p>
           </div>
           <div className="mt-7.5">
             <ButtonContact />
           </div>
         </article>
+      </section>
+
+      {/*Sektion: Medarbejder statements */}
+      <section
+        id="medarbejder"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+      >
+        <article className="lg:w-2/3">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
+            <h2>Det siger vores medarbejdere</h2>
+          </div>
+
+          <div
+            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+            data-aos="fade-in"
+          >
+            <p>
+              Hvordan er det så at arbejder her, tænker du måske? <br /> <br />
+              Jamen der er ikke nogen bedre måde at forklare arbejdsmiljøet på
+              end at lade vores dygtige medarbejdere gøre det. <br /> <br />
+              Hvis du ellers har nogle spørgsmål, så tøv ikke med at kontakte en
+              af vores medarbejdere eller connecte med os på LinkedIn:
+            </p>
+          </div>
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
+
+        {/*Card gallery */}
+        <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
+          <div className="w-full flex justify-start mb-0 ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <StatementContainer />
+        </div>
       </section>
     </main>
   );
