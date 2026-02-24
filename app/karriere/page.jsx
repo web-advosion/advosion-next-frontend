@@ -1,22 +1,11 @@
 import Image from "next/image";
-import ButtonExperts from "../components/buttons/ButtonExperts";
-import SkillsContainerA from "../components/SkillsContainerA";
-import ExpertiseContainer from "../components/ExpertiseContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
-import AdvokatEmployeeCard from "../components/cards/AdvokatEmployeeCard";
-import SingleEmployee from "../components/SingleEmployee";
-import SkillsContainerR from "../components/SkillsContainerR";
 import ButtonAbout from "../components/buttons/ButtonAbout";
-import StatementContainer from "../components/StatementContainerClients";
+import StatementContainerEmployees from "../components/StatementContainerEmployees";
+import ButtonFind from "../components/buttons/ButtonFind";
+import JobContainer from "../components/JobContainer";
 
 export default async function Page() {
-  const res = await fetch(
-    "https://cms.advosion.dk/wp-json/wp/v2/pages?slug=forside",
-    { next: { revalidate: 10 } }, // ISR: rebuild hver 10 sekunder
-  );
-  const pages = await res.json();
-  const page = pages[0];
-
   return (
     <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
       {/*Hero sektion */}
@@ -134,7 +123,53 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <StatementContainer />
+          <StatementContainerEmployees />
+        </div>
+        <div className="mt-7.5">
+          <ButtonFind />
+        </div>
+      </section>
+
+      {/*Sektion: Stillinger */}
+      <section
+        id="stillinger"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+      >
+        <article className="lg:w-2/3">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
+            <h2>Aktuelle stillinger</h2>
+          </div>
+
+          <div
+            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+            data-aos="fade-in"
+          >
+            <p>
+              Er du <strong>jobsøgende revisor</strong> eller{" "}
+              <strong>advokat</strong>? <br />
+              Så kig med her! <br /> <br />
+              Bliv klogere på, hvad vi søger p.t. <br /> <br />
+              Scenarietekst/beskrivelse... <br /> <br />
+              Her kan du se hvilke stillinger vi søger i øjeblikket:
+            </p>
+          </div>
+        </article>
+
+        {/*Card gallery */}
+        <div data-aos="fade-in" className="mt-12.5 w-full h-auto">
+          <div className="w-full flex justify-start mb-0 ">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <JobContainer />
+        </div>
+        <div className="mt-7.5">
+          <ButtonFind />
         </div>
       </section>
     </main>
