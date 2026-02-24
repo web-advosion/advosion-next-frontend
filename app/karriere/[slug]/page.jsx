@@ -1,5 +1,5 @@
 export default async function DetailPage({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const res = await fetch(
     `https://cms.advosion.dk/wp-json/wp/v2/jobopslag?slug=${slug}&_embed`,
@@ -19,7 +19,7 @@ export default async function DetailPage({ params }) {
         id="hero"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative"
       >
-        <h1 className="text-4xl font-bold">{jobopslag.slug}</h1>
+        <h1 className="text-4xl font-bold">{jobopslag.title.rendered}</h1>
       </section>
     </main>
   );
