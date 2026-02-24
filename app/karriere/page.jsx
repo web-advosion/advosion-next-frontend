@@ -165,11 +165,7 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <JobContainer
-            typeId={12}
-            bgColor="bg-(--revision-blue)"
-            textColor="text-(--primary-bg)"
-          />
+          <JobContainer />
         </div>
       </section>
     </main>
