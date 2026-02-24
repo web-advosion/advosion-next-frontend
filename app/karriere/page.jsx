@@ -139,7 +139,6 @@ export default async function Page() {
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
             <h2>Aktuelle stillinger</h2>
           </div>
-
           <div
             className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
             data-aos="fade-in"
@@ -167,9 +166,6 @@ export default async function Page() {
             ></Image>
           </div>
           <JobContainer />
-        </div>
-        <div className="mt-7.5">
-          <ButtonFind />
         </div>
       </section>
     </main>
