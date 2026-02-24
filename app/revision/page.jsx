@@ -5,6 +5,7 @@ import ExpertiseContainer from "../components/ExpertiseContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
 import AdvokatEmployeeCard from "../components/cards/AdvokatEmployeeCard";
 import SingleEmployee from "../components/SingleEmployee";
+import SkillsContainerR from "../components/SkillsContainerR";
 
 export default async function Page() {
   const res = await fetch(
@@ -76,16 +77,11 @@ export default async function Page() {
           >
             <p>
               Vi leverer{" "}
-              <strong>professionel erhvervsjuridisk rådgivning</strong> . Vi har
-              specialistviden og mangeårig erfaring særligt indenfor følgende
-              områder: <br />
-              <br />
-              Vi har et stort professionelt netværk{" "}
-              <strong>både lokalt og nationalt</strong>, og er gode til at skabe
-              og vedligeholde stærke relationer til de bedste rådgivere. <br />{" "}
-              <br />
-              Det gør, at vi altid kan sætte det bedste rådgivningshold i
-              forhold til dig og dine forretningsmæssige behov.
+              <strong>professionel økonomisk revision og rådgivning</strong>. Vi
+              har specialistviden og mangeårig erfaring særligt indenfor
+              følgende områder: <br />
+              <br /> Vores dygtige revisorer sikrer at du og din virksomhed
+              altid er i sikre hænder.
             </p>
           </div>
           <div className="mt-7.5">
@@ -107,7 +103,7 @@ export default async function Page() {
             ></Image>
           </div>
 
-          <SkillsContainerA />
+          <SkillsContainerR />
         </article>
       </section>
 
