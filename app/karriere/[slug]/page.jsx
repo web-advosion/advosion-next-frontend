@@ -1,5 +1,6 @@
 import ButtonApply from "../../components/buttons/ButtonApply";
 import ButtonContact from "../../components/buttons/ButtonContact";
+import ButtonReturn from "../../components/buttons/ButtonReturn";
 
 export default async function DetailPage({ params }) {
   const { slug } = await params;
@@ -16,44 +17,150 @@ export default async function DetailPage({ params }) {
     return <div>Jobopslaget blev ikke fundet.</div>;
   }
 
+  const bullets =
+    jobopslag.acf?.arbejdsopgaver_liste
+      ?.split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean) || [];
+
+  const bulletsProfile =
+    jobopslag.acf?.profil_liste
+      ?.split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean) || [];
+
+  {
+    /*Theme logic done with AI help */
+  }
+  const themeMap = {
+    revisor: {
+      bg: "bg-(--revision-blue)",
+      textWhite: "text-(--primary-bg)",
+      textColored: "text-(--revision-blue)",
+      buttonBg: "bg-(--primary-bg)",
+      buttonText: "text-(--revision-blue)",
+      buttonContactBg: "bg-(--revision-blue)",
+      buttonContactText: "text-(--primary-bg)",
+      buttonApplyBg: "bg-(--primary-bg)",
+      buttonApplyText: "text-(--revision-blue)",
+      borderYes: "border-2",
+      borderColor: "border-(--revision-blue)",
+    },
+    advokat: {
+      bg: "bg-(--advokat-blue)",
+      textWhite: "text-(--primary-bg)",
+      textColored: "text-(--advokat-blue)",
+      buttonBg: "bg-white",
+      buttonText: "text-(--advokat-blue)",
+      buttonContactBg: "bg-(--advokat-blue)",
+      buttonContactText: "text-(--primary-bg)",
+      buttonApplyBg: "bg-(--primary-bg)",
+      buttonApplyText: "text-(--advokat-blue)",
+      borderYes: "border-2",
+      borderColor: "border-(--advokat-blue)",
+    },
+    andet: {
+      bg: "bg-(--cta-black)",
+      textWhite: "text-(--primary-bg)",
+      textColored: "text-(--cta-black)",
+      buttonBg: "bg-(--primary-bg)",
+      buttonText: "text-(--cta-black)",
+      buttonContactBg: "bg-(--cta-black)",
+      buttonContactText: "text-(--primary-bg)",
+      buttonApplyBg: "bg-(--primary-bg)",
+      buttonApplyText: "text-(--cta-black)",
+      borderYes: "border-2",
+      borderColor: "border-(--cta-black)",
+    },
+  };
+
+  const type = jobopslag.acf?.job_type?.toLowerCase().trim();
+  const theme = themeMap[type] || themeMap.andet;
+
   return (
-    <main className="w-screen h-auto overflow-hidden flex flex-col items-center bg-(--revision-blue)">
+    <main
+      className={`w-screen h-auto overflow-hidden flex flex-col items-center ${theme.bg}`}
+    >
       <section
         id="primary"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative"
+        className={`w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 mb-12.5 ${theme.textWhite} lg:mb-20 pt-12.5 relative`}
       >
-        <h1 className="text-4xl font-bold">{jobopslag.title.rendered}</h1>
+        <article>
+          <h1 className="text-4xl font-bold">{jobopslag.acf?.job_type}</h1>
+          <h2 className="text-3xl font-normal font-['Inter'] leading-9">
+            {jobopslag.acf?.underoverskrift || "no subheader"}
+          </h2>
+        </article>
 
-        <h2 className="text-xl font-normal font-['Inter'] leading-7">
-          {jobopslag.acf?.underoverskrift || "no subheader"}
-        </h2>
+        <article className="mt-5 text-base font-normal">
+          <p>{jobopslag.acf?.job_text || "no job description"}</p>
+        </article>
 
-        <p>{jobopslag.acf?.job_text || "no job description"}</p>
+        <article>
+          <h2 className="text-3xl font-bold mt-12.5">Arbejdsopgaver</h2>
+          <ul className="list-disc pl-6 mt-5 space-y-1 font-normal">
+            {bullets.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
 
-        <h2>Arbejdsopgaver</h2>
-        <p>{jobopslag.acf?.arbejdsopgaver || "no job description"}</p>
+          <p className="mt-5 text-base font-normal">
+            {jobopslag.acf?.arbejdsopgaver_tekst || "no job description"}
+          </p>
+
+          <p className="my-5 text-base font-normal">
+            <strong>Ansøgningsfrist:</strong>{" "}
+            {jobopslag.acf?.deadline || "no deadline"}
+          </p>
+        </article>
       </section>
 
       {/*Sektion: Din profil */}
       <section
         id="profil"
-        className="w-screen h-auto px-7.5 mx-7.5 md:px-10.75 lg:px-48 2xl:px-100 mb-12.5 lg:mb-20 mt-12.5 relative"
+        className={`w-screen h-auto px-7.5 mx-7.5 md:px-10.75 lg:px-48 2xl:px-100 mb-12.5 lg:mb-20 mt-12.5 relative ${theme.textColored}`}
       >
-        <div className="w-80 h-160 p-4 origin-top-left bg-(--primary-bg) rounded-2xl">
-          <h1 className="text-4xl font-bold">Din profil</h1>
+        <div className="w-80 h-auto p-4 origin-top-left bg-(--primary-bg) rounded-2xl flex flex-col">
+          <h1 className="text-3xl font-bold">Din profil</h1>
 
-          <p>{jobopslag.acf?.profilbeskrivelse || "no job description"}</p>
+          <p className="mt-5">
+            {jobopslag.acf?.profilbeskrivelse_top || "no job description"}
+          </p>
 
-          <article className="flex gap-2 py-7.5">
+          <ul className="list-disc pl-6 mt-5 space-y-1 font-bold">
+            {bulletsProfile.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+
+          <article className="flex flex-col gap-5 pt-7.5 mt-auto">
             <div>
-              <ButtonContact />
+              <p className="mt-5">
+                {jobopslag.acf?.kontakttekst_bund || "no job description"}
+              </p>
             </div>
-            <div>
-              <ButtonApply />
+            <div className="flex gap-2">
+              <div>
+                <ButtonContact
+                  bgColor={theme.buttonContactBg}
+                  textColor={theme.buttonContactText}
+                />
+              </div>
+              <div>
+                <ButtonApply
+                  bgColor={theme.buttonApplyBg}
+                  textColor={theme.buttonApplyText}
+                  borderYes={theme.borderYes}
+                  borderColor={theme.borderColor}
+                />
+              </div>
             </div>
           </article>
         </div>
       </section>
+      <div>
+        <ButtonReturn />
+      </div>
     </main>
   );
 }
