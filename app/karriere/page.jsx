@@ -133,7 +133,7 @@ export default async function Page() {
       {/*Sektion: Stillinger */}
       <section
         id="stillinger"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
@@ -167,6 +167,34 @@ export default async function Page() {
           </div>
           <JobContainer />
         </div>
+      </section>
+
+      {/*Sektion:  Søg uopfordret */}
+      <section
+        id="uopfordret"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+      >
+        <article className="lg:w-2/3">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
+            <h2>Søg uopfordret</h2>
+          </div>
+
+          <div
+            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+            data-aos="fade-in"
+          >
+            <p>
+              Hvordan er det så at arbejder her, tænker du måske? <br /> <br />
+              Jamen der er ikke nogen bedre måde at forklare arbejdsmiljøet på
+              end at lade vores dygtige medarbejdere gøre det. <br /> <br />
+              Hvis du ellers har nogle spørgsmål, så tøv ikke med at kontakte en
+              af vores medarbejdere eller connecte med os på LinkedIn:
+            </p>
+          </div>
+          <div className="mt-7.5">
+            <ButtonContact />
+          </div>
+        </article>
       </section>
     </main>
   );

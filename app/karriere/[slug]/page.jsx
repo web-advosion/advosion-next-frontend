@@ -1,5 +1,6 @@
 import ButtonApply from "../../components/buttons/ButtonApply";
 import ButtonContact from "../../components/buttons/ButtonContact";
+import ButtonContactDynamic from "../../components/buttons/ButtonContactDynamic";
 import ButtonReturnBlack from "../../components/buttons/ButtonReturnBlack";
 
 export default async function DetailPage({ params }) {
@@ -143,7 +144,7 @@ export default async function DetailPage({ params }) {
             </div>
             <div className="flex gap-4">
               <div>
-                <ButtonContact
+                <ButtonContactDynamic
                   bgColor={theme.buttonContactBg}
                   textColor={theme.buttonContactText}
                 />
