@@ -280,7 +280,8 @@ export default async function Page() {
                 <div className="w-1/3">
                   <h3 className="text-lg font-normal">Upload fil</h3>
                 </div>
-                <div className="w-full flex flex-col justify-center bg-(--secondary-bg) h-full p-4 rounded-2xl">
+
+                <div className="w-full flex flex-col justify-center bg-(--secondary-bg) h-full p-4 rounded-2xl text-black/40">
                   <div className="flex">
                     <input
                       id="file"
