@@ -1,6 +1,6 @@
 import ButtonApply from "../../components/buttons/ButtonApply";
 import ButtonContact from "../../components/buttons/ButtonContact";
-import ButtonReturn from "../../components/buttons/ButtonReturn";
+import ButtonReturnBlack from "../../components/buttons/ButtonReturnBlack";
 
 export default async function DetailPage({ params }) {
   const { slug } = await params;
@@ -79,14 +79,16 @@ export default async function DetailPage({ params }) {
 
   return (
     <main
-      className={`w-screen h-auto overflow-hidden flex flex-col items-center ${theme.bg}`}
+      className={`w-screen h-full lg:h-screen overflow-hidden flex flex-col items-center ${theme.bg} xl:flex-row`}
     >
       <section
         id="primary"
-        className={`w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 mb-12.5 ${theme.textWhite} lg:mb-20 pt-12.5 relative`}
+        className={`w-full h-auto px-7.5 md:px-10.75 lg:pl-30 2xl:px-100 ${theme.textWhite} lg:mb-20 pt-12.5 relative`}
       >
         <article>
-          <h1 className="text-4xl font-bold">{jobopslag.acf?.job_type}</h1>
+          <h1 className="text-4xl font-bold leading-none">
+            {jobopslag.acf?.job_type}
+          </h1>
           <h2 className="text-3xl font-normal font-['Inter'] leading-9">
             {jobopslag.acf?.underoverskrift || "no subheader"}
           </h2>
@@ -118,9 +120,9 @@ export default async function DetailPage({ params }) {
       {/*Sektion: Din profil */}
       <section
         id="profil"
-        className={`w-screen h-auto px-7.5 mx-7.5 md:px-10.75 lg:px-48 2xl:px-100 mb-12.5 lg:mb-20 mt-12.5 relative ${theme.textColored}`}
+        className={`w-full h-auto px-7.5 mx-7.5 md:px-10.75 lg:pr-20 2xl:px-100 mb-12.5 lg:mb-30 mt-12.5  relative ${theme.textColored} `}
       >
-        <div className="w-80 h-auto p-4 origin-top-left bg-(--primary-bg) rounded-2xl flex flex-col">
+        <div className="w-full h-auto p-4 md:p-8 origin-top-left bg-(--primary-bg) rounded-2xl flex flex-col">
           <h1 className="text-3xl font-bold">Din profil</h1>
 
           <p className="mt-5">
@@ -139,7 +141,7 @@ export default async function DetailPage({ params }) {
                 {jobopslag.acf?.kontakttekst_bund || "no job description"}
               </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-4">
               <div>
                 <ButtonContact
                   bgColor={theme.buttonContactBg}
@@ -158,8 +160,15 @@ export default async function DetailPage({ params }) {
           </article>
         </div>
       </section>
-      <div>
-        <ButtonReturn />
+
+      {/*Mobile button display */}
+      <div className="md:block lg:hidden self-end fixed bottom-7.5 pr-7.5">
+        <ButtonReturnBlack />
+      </div>
+
+      {/*Desktop button display */}
+      <div className="hidden lg:block self-start fixed top-7.5 pl-7.5">
+        <ButtonReturnBlack />
       </div>
     </main>
   );

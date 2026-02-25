@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export default function ButtonReturn() {
+export default function ButtonReturnWhite() {
   const router = useRouter();
 
   const goBack = () => {
@@ -13,10 +13,10 @@ export default function ButtonReturn() {
   return (
     <button
       onClick={goBack}
-      className="w-12 h-12 bg-(--primary-bg) rounded-4xl flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer shadow-md"
+      className="w-12 h-12 flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer "
     >
       <Image
-        src="/img/icon-go-back.svg"
+        src="/img/icon-go-back-white.svg"
         width={28}
         height={28}
         alt="Gå tilbage"

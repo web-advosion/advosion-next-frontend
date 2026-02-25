@@ -16,7 +16,7 @@ export default async function Page() {
       >
         <div className="md:flex">
           <div>
-            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12 md:leading-9">
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
               <h1>Bliv en del af holdet!</h1>
             </div>
 
