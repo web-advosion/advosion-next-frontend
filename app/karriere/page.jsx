@@ -184,16 +184,89 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              Hvordan er det så at arbejder her, tænker du måske? <br /> <br />
-              Jamen der er ikke nogen bedre måde at forklare arbejdsmiljøet på
-              end at lade vores dygtige medarbejdere gøre det. <br /> <br />
-              Hvis du ellers har nogle spørgsmål, så tøv ikke med at kontakte en
-              af vores medarbejdere eller connecte med os på LinkedIn:
+              Hvis ikke vi lige har slået nogle konkrete stillinger op, så prøv
+              endelig lykken med en <strong>uopfordret ansøgning!</strong>{" "}
+              <br /> <br />
+              Vi holder løbende øje med nye ansøgninger og det kan jo være vi
+              står og mangler dig en dag. <br />
+              <br />
+              Send din ansøgning til os enten via mail på mail@mail.dk <br />{" "}
+              <br />
+              eller via nedstående kontaktformular. <br /> <br />
+              Du er også altid velkommen til at ringe til os direkte, hvis du
+              har spørgsmål eller bare er nysgerrig på virksomheden!
             </p>
           </div>
           <div className="mt-7.5">
             <ButtonContact />
           </div>
+        </article>
+
+        <article className="mt-12.5">
+          <form
+            action=""
+            className="w-full overflow-hidden h-106 bg-(--cards) rounded-3xl p-6"
+          >
+            <h2>Kontaktformular</h2>
+            <h3>Vi glæder os til at høre fra dig!</h3>
+
+            <div>
+              <label htmlFor="topic"></label>
+              <input
+                id="topic"
+                type="text"
+                placeholder="Beskriv kort hvorfor du henvender dig..."
+                className="w-full"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="name"></label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Dit fulde navn..."
+                className="w-full"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="phone"></label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="+45 99 99 99 99"
+                className="w-full"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email"></label>
+              <input
+                id="email"
+                type="email"
+                placeholder="mail@mailadresse.dk"
+                className="w-full"
+              />
+            </div>
+
+            <div className="w-full flex justify-center">
+              <label htmlFor="file"></label>
+              <input
+                id="file"
+                type="file"
+                placeholder="Træk dine filer herhen eller klik ->"
+                className="w-full"
+              />
+              <button></button>
+              <Image
+                src="/img/icon-file-upload.svg"
+                width={24}
+                height={24}
+                alt="upload fil ikon"
+              ></Image>
+            </div>
+          </form>
         </article>
       </section>
     </main>
