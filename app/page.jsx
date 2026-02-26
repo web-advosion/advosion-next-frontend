@@ -6,7 +6,6 @@ import ButtonMeet from "./components/buttons/ButtonMeet";
 import AdvokatCard from "./components/cards/AdvokatCard";
 import RevisorCard from "./components/cards/RevisorCard";
 import ContactCard from "./components/cards/ContactCard";
-import StatementContainer from "./components/StatementContainerClients";
 import Link from "next/link";
 import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "./components/cards/RevisorCardMobile";

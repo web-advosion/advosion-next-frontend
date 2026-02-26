@@ -1,5 +1,6 @@
 import Link from "next/link.js";
 import Image from "next/image";
+import GoogleMap from "../GoogleMap";
 
 export default function ContactCardMobile() {
   return (
@@ -50,14 +51,8 @@ export default function ContactCardMobile() {
           </div>
         </article>
 
-        <article>
-          <Image
-            className="w-72 h-72 rounded-2xl"
-            src="/img/lawyers-background.jpg"
-            width={321}
-            height={321}
-            alt="Advokater in action"
-          ></Image>
+        <article className="w-72 h-72 aspect-square rounded-2xl">
+          <GoogleMap />
         </article>
       </div>
     </Link>
