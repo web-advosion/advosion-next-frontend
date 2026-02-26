@@ -51,7 +51,7 @@ export default function ContactCardMobile() {
           </div>
         </article>
 
-        <article className="w-72 h-72 aspect-square rounded-2xl">
+        <article className="w-full h-auto aspect-square rounded-2xl">
           <GoogleMap />
         </article>
       </div>
