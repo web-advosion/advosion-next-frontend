@@ -1,8 +1,8 @@
 import StatementCard from "./cards/StatementCard";
 
-export default async function StatementContainer() {
+export default async function StatementContainerEmployees() {
   const res = await fetch(
-    "https://cms.advosion.dk/wp-json/wp/v2/client_statement?_embed",
+    "https://cms.advosion.dk/wp-json/wp/v2/ansatte_statements?_embed",
     { next: { revalidate: 10 } },
   );
 

@@ -16,16 +16,16 @@ export default function StatementCard({ statement }) {
         height={192}
       />
 
-      <div className="w-56 h-60 justify-start">
+      <div className="w-56 h-60 flex flex-col">
         <h1 className="text-(--advokat-blue) text-lg font-bold font-['Inter'] leading-7">
           {statement.acf?.statement_title || "No title"}
         </h1>
 
         <div className="text-(--advokat-blue) italic">
-          <p className="italic">{statement.acf?.statement_text || ""}</p>
+          <p>{statement.acf?.statement_text || ""}</p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-auto">
           <p>{statement.acf?.client_name || ""}</p>
         </div>
       </div>
