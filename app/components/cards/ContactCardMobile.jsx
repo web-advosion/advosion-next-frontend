@@ -1,5 +1,4 @@
 import Link from "next/link.js";
-import ButtonFind from "../buttons/ButtonFind.jsx";
 import Image from "next/image";
 
 export default function ContactCardMobile() {
