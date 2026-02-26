@@ -4,6 +4,7 @@ import ButtonAbout from "../components/buttons/ButtonAbout";
 import StatementContainerEmployees from "../components/StatementContainerEmployees";
 import ButtonFind from "../components/buttons/ButtonFind";
 import JobContainer from "../components/JobContainer";
+import { sendContact } from "@/app/actions/contact";
 
 export default async function Page() {
   return (
@@ -204,7 +205,7 @@ export default async function Page() {
 
         <article className="mt-12.5">
           <form
-            action=""
+            action={sendContact}
             className="w-full overflow-hidden h-auto bg-(--cards) rounded-3xl p-6"
           >
             <div>
@@ -224,6 +225,7 @@ export default async function Page() {
                   <label htmlFor="topic"></label>
                   <input
                     id="topic"
+                    name="topic"
                     type="text"
                     placeholder="Beskriv kort hvorfor du henvender dig..."
                     className="w-full h-full"
@@ -239,6 +241,7 @@ export default async function Page() {
                   <label htmlFor="name"></label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     placeholder="Dit fulde navn..."
                     className="w-full"
@@ -253,6 +256,7 @@ export default async function Page() {
                 <div className="w-full flex flex-col justify-center bg-(--secondary-bg) h-full p-4 rounded-2xl">
                   <label htmlFor="phone"></label>
                   <input
+                    name="phone"
                     id="phone"
                     type="tel"
                     placeholder="+45 99 99 99 99"
@@ -269,6 +273,7 @@ export default async function Page() {
                   <label htmlFor="email"></label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="mail@mailadresse.dk"
                     className="w-full"
@@ -285,6 +290,7 @@ export default async function Page() {
                   <div className="flex">
                     <input
                       id="file"
+                      name="file"
                       type="file"
                       placeholder="Træk dine filer herhen eller klik ->"
                       className="w-full"
