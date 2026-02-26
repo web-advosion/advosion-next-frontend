@@ -13,7 +13,7 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
       >
         <div className="md:flex">
           <div>
@@ -23,7 +23,7 @@ export default async function Page() {
 
             <div
               data-aos="fade-in"
-              className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+              className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start"
             >
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
@@ -89,7 +89,7 @@ export default async function Page() {
       {/*Sektion: Medarbejder statements */}
       <section
         id="medarbejder"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
@@ -134,7 +134,7 @@ export default async function Page() {
       {/*Sektion: Stillinger */}
       <section
         id="stillinger"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
@@ -173,7 +173,7 @@ export default async function Page() {
       {/*Sektion:  Søg uopfordret */}
       <section
         id="uopfordret"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
       >
         <article className="lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-10 md:leading-7">
@@ -203,10 +203,13 @@ export default async function Page() {
           </div>
         </article>
 
-        <article className="mt-12.5">
+        <article
+          data-aos="fade-in"
+          className="mt-12.5 lg:mt-0 md:flex md:justify-center"
+        >
           <form
             action={sendContact}
-            className="w-full overflow-hidden h-auto bg-(--cards) rounded-3xl p-6"
+            className="w-full md:w-[70%] lg:w-full overflow-hidden h-auto bg-(--cards) rounded-3xl p-6"
           >
             <div>
               <h2 className="text-3xl font-medium">Kontaktformular</h2>
