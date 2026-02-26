@@ -1,0 +1,177 @@
+import Image from "next/image";
+import ButtonExperts from "../components/buttons/ButtonExperts";
+import ExpertiseContainer from "../components/ExpertiseContainer";
+import ButtonContact from "../components/buttons/ButtonContact";
+
+export default async function Page() {
+  const res = await fetch(
+    "https://cms.advosion.dk/wp-json/wp/v2/pages?slug=forside",
+    { next: { revalidate: 10 } }, // ISR: rebuild hver 10 sekunder
+  );
+  const pages = await res.json();
+  const page = pages[0];
+
+  return (
+    <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
+      {/*Hero sektion */}
+
+      <section
+        id="hero"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
+      >
+        <div className="md:flex">
+          <div>
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
+              <h1>Information</h1>
+            </div>
+
+            <div
+              data-aos="fade-in"
+              className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+            >
+              <div className=" w-full h-auto md:w-[90%]">
+                <p>
+                  Her finder du information omkring{" "}
+                  <strong>forretningsbetingelser, privatlivspolitik</strong> og
+                  <strong>bankoplysninger</strong> Hvis du mangler andet
+                  information, så tøv ikke med at kontakte os!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full aspect-square md:max-w-96 md:max-h-96 lg:max-w-106 lg:max-h-106  md:min-w-96 md:min-h-96 lg:min-w-106 lg:min-h-106 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
+            <Image
+              className="object-cover"
+              src="/img/accountant-hero-placeholder.jpg"
+              fill
+              alt="Adovosion kollegaer står tæt sammen og kigger på sag"
+            ></Image>
+          </div>
+        </div>
+      </section>
+
+      {/*Sektion: Forretningsbetingelser */}
+      <section
+        id="betingelser"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center"
+      >
+        <article className="lg:w-2/3">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
+            <h2>Forretningsbetingelser</h2>
+          </div>
+
+          <div
+            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+            data-aos="fade-in"
+          >
+            <p>
+              Vi vil gerne være så transparante som muligt, så derfor kan du
+              naturligvis også tilgå vores
+              <strong> forretningsbetingelser</strong>. <br /> <br />
+              Du skal blot downloade PDF’en ved at klikke på på knappen herunder
+              eller på ikonet.
+            </p>
+          </div>
+          <div className="mt-7.5">
+            <ButtonExperts />
+          </div>
+        </article>
+        <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
+          <Image
+            className="w-full h-full"
+            src="/img/icon-pdf.svg"
+            width={130}
+            height={130}
+            alt="swipe icon"
+          ></Image>
+        </article>
+      </section>
+
+      {/*Sektion: Privatlivspolitik */}
+      <section
+        id="betingelser"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center"
+      >
+        <article className="lg:w-2/3">
+          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
+            <h2>Privatlivspolitik</h2>
+          </div>
+
+          <div
+            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
+            data-aos="fade-in"
+          >
+            <p>
+              Her kan du få indblik i hvordan vi behandler din data via vores
+              <strong> privatlivspolitik</strong>. <br /> <br />
+              Du skal blot downloade PDF’en ved at klikke på på knappen herunder
+              eller på ikonet.
+            </p>
+          </div>
+          <div className="mt-7.5">
+            <ButtonExperts />
+          </div>
+        </article>
+        <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
+          <Image
+            className="w-full h-full"
+            src="/img/icon-pdf.svg"
+            width={130}
+            height={130}
+            alt="swipe icon"
+          ></Image>
+        </article>
+      </section>
+
+      {/*Sektion: Bankoplysninger */}
+      <section
+        id="regnskab"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start "
+      >
+        <div className="lg:flex">
+          <article>
+            <div className="w-max justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
+              <h2>Bankoplysninger</h2>
+            </div>
+
+            <div className="lg:flex lg:justify-between">
+              <div
+                className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+                data-aos="fade-in"
+              >
+                <p>
+                  Her kan du finde vores bankoplysninger angående vores
+                  advokatvirksomhed. <br /> <br />
+                  Har du spørgsmål til din faktura eller andre henvendelser
+                  omkring økonomi, så kontakt vores økonomiafdeling på følgende
+                  mail: mba@advosion.dk <br /> <br />
+                  ADVOSION Advokatpartnerselskab CVR nr: 37 55 75 60
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <article className="mt-12.5">
+          <div className="w-full flex justify-start mb-2.5" data-aos="fade-in">
+            <Image
+              className="w-35 h-10"
+              src="/img/icon-swipe.svg"
+              width={150}
+              height={50}
+              alt="swipe icon"
+            ></Image>
+          </div>
+          <ExpertiseContainer
+            typeId={16}
+            bgColor="bg-(--cards)"
+            textColor="text-(--advokat-blue)"
+          />
+          <div className="mt-7.5 lg:hidden">
+            <ButtonContact />
+          </div>
+        </article>
+      </section>
+    </main>
+  );
+}
