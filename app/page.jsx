@@ -10,7 +10,6 @@ import Link from "next/link";
 import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
 import RevisorCardMobile from "./components/cards/RevisorCardMobile";
 import ContactCardMobile from "./components/cards/ContactCardMobile";
-import ContactCardTablet from "./components/cards/ContactCardTablet";
 import StatementContainerClients from "./components/StatementContainerClients";
 
 export default async function HomePage() {
@@ -146,12 +145,8 @@ export default async function HomePage() {
 
           {/*Card container */}
           <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
-            <div className="hidden md:hidden lg:block">
+            <div className="hidden md:block lg:block">
               <ContactCard />
-            </div>
-
-            <div className="hidden md:block lg:hidden">
-              <ContactCardTablet />
             </div>
 
             <div className="md:hidden">

@@ -1,11 +1,12 @@
 import Link from "next/link.js";
 import Image from "next/image";
+import GoogleMap from "../GoogleMap";
 
 export default function ContactCard() {
   return (
     <Link href="/kontakt">
-      <div className="w-full h-96 bg-(--cards) rounded-3xl shadow-md flex p-8 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out">
-        <article className="w-2/3 h-full flex flex-col justify-between">
+      <div className="w-full h-96 bg-(--cards) rounded-3xl shadow-md flex p-8 align-top justify-between hover:scale-102 transition-transform duration-300 ease-in-out items-start gap-3">
+        <article className="w-full h-full flex flex-col justify-between">
           <div className="w-full h-full text-(--cta-black) flex flex-col justify-between">
             <div>
               <h2 className="text-2xl font-medium ">
@@ -49,14 +50,8 @@ export default function ContactCard() {
           </div>
         </article>
 
-        <article>
-          <Image
-            className="w-80 h-80 rounded-2xl"
-            src="/img/lawyers-background.jpg"
-            width={321}
-            height={321}
-            alt="Advokater in action"
-          ></Image>
+        <article className="w-1/2 xl:w-1/3 h-full rounded-2xl">
+          <GoogleMap />
         </article>
       </div>
     </Link>
