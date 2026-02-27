@@ -33,10 +33,7 @@ export default async function Page() {
               <h1>Information</h1>
             </div>
 
-            <div
-              data-aos="fade-in"
-              className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start"
-            >
+            <div className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   Her finder du information omkring{" "}
@@ -65,17 +62,14 @@ export default async function Page() {
       {/*Sektion: Forretningsbetingelser */}
       <section
         id="betingelser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center md:flex"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start md:flex"
       >
         <article className="md:w-3/4 lg:w-2/3">
           <div className="justify-start text-CTA-black text-3xl md:text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
             <h2>Forretningsbetingelser</h2>
           </div>
 
-          <div
-            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
-            data-aos="fade-in"
-          >
+          <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
             <p>
               Vi vil gerne være så transparante som muligt, så derfor kan du
               naturligvis også tilgå vores
@@ -88,7 +82,7 @@ export default async function Page() {
             <ButtonDownload documentPath={documentUrls.betingelser} />
           </div>
         </article>
-        <article className="w-32 h-32 mt-12.5" data-aos="fade-in">
+        <article className="w-32 h-32 mt-12.5">
           <ButtonPDF documentPath={documentUrls.betingelser} />
         </article>
       </section>
@@ -96,7 +90,7 @@ export default async function Page() {
       {/*Sektion: Privatlivspolitik */}
       <section
         id="privat"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center md:flex"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start md:flex"
       >
         <article className="md: w-3/4 lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">

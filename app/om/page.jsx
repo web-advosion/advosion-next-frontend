@@ -33,7 +33,7 @@ export default async function Page() {
               <h1>Om Advosion</h1>
             </div>
 
-            <div data-aos="fade-in" className="mt-5 lg:flex lg:items-start">
+            <div className="mt-5 lg:flex lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   ADVOSION er nyt og innovativt firmakoncept, der kombinerer
@@ -78,15 +78,12 @@ export default async function Page() {
           ></Image>
         </div>
 
-        <div
-          className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden"
-          data-aos="fade-in"
-        >
+        <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden">
           <AdvokatCardMobile />
           <RevisorCardMobile />
         </div>
 
-        <div data-aos="fade-right" className=" w-full lg:w-179 ">
+        <div className=" w-full lg:w-179 ">
           <div className="hidden md:block">
             <AdvokatCard />
           </div>

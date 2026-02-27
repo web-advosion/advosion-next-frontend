@@ -19,10 +19,7 @@ export default async function Page() {
               <h1>Kontakt os</h1>
             </div>
 
-            <div
-              data-aos="fade-in"
-              className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start"
-            >
+            <div className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   Advosion var ikke noget uden{" "}
@@ -59,7 +56,7 @@ export default async function Page() {
         </Link>
 
         {/*Card container */}
-        <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
+        <div className="mt-7.5 w-full mb-25">
           <div className="hidden md:block lg:block">
             <ContactCard />
           </div>

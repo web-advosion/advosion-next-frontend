@@ -29,10 +29,7 @@ export default async function Page() {
               <h1>Revision</h1>
             </div>
 
-            <div
-              data-aos="fade-in"
-              className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
-            >
+            <div className="mt-5 lg:flex lg:gap-12.5 lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   <strong>Revision, regnskab</strong> og{" "}
@@ -71,10 +68,7 @@ export default async function Page() {
             </h3>
           </div>
 
-          <div
-            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
-            data-aos="fade-in"
-          >
+          <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
             <p>
               Vi leverer{" "}
               <strong>professionel økonomisk revision og rådgivning</strong>. Vi
@@ -89,10 +83,7 @@ export default async function Page() {
           </div>
         </article>
 
-        <article
-          className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start"
-          data-aos="fade-in"
-        >
+        <article className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start">
           <div className="w-full flex justify-end py-2 ">
             <Image
               className="w-35 h-10"
