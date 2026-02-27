@@ -57,7 +57,10 @@ export default function FooterV2() {
 
             <ul className="text-base md:text-xs lg:text-base font-medium gap-2 flex flex-col mt-3">
               <li>
-                <Link className="flex items-center gap-2" href="/">
+                <a
+                  href={`tel:+45 40 82 71 01`}
+                  className="flex items-center gap-2"
+                >
                   <Image
                     className="w-5 h-5 text-(--advokat-blue)"
                     src="/img/icon-phone-blue.svg"
@@ -65,11 +68,15 @@ export default function FooterV2() {
                     height={26}
                     alt="telefon logo"
                   ></Image>
+
                   <p>+45 40 82 71 01</p>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="flex items-center gap-2" href="/">
+                <Link
+                  className="flex items-center gap-2"
+                  href={`mailto:kontakt@advosion.dk`}
+                >
                   <Image
                     className="w-5 h-5 text-(--advokat-blue)"
                     src="/img/icon-mail-blue.svg"
@@ -84,18 +91,22 @@ export default function FooterV2() {
           </div>
 
           <div className="mt-11.5 md:mt-0">
-            <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
-              Information
-            </h2>
+            <Link href="/information">
+              <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
+                Information
+              </h2>
+            </Link>
             <ul className="text-base md:text-xs lg:text-base font-medium gap-3 flex flex-col mt-3">
               <li>
-                <Link href="/">Forretningsbetingelser</Link>
+                <Link href="/information/#betingelser">
+                  Forretningsbetingelser
+                </Link>
               </li>
               <li>
-                <Link href="/">Privatlivspolitik</Link>
+                <Link href="/information/#privat">Privatlivspolitik</Link>
               </li>
               <li>
-                <Link href="/">Bankoplysninger</Link>
+                <Link href="/information/#bank">Bankoplysninger</Link>
               </li>
             </ul>
           </div>

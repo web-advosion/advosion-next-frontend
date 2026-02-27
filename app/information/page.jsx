@@ -95,7 +95,7 @@ export default async function Page() {
 
       {/*Sektion: Privatlivspolitik */}
       <section
-        id="betingelser"
+        id="privat"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center md:flex"
       >
         <article className="md: w-3/4 lg:w-2/3">
@@ -125,7 +125,7 @@ export default async function Page() {
 
       {/*Sektion: Bankoplysninger */}
       <section
-        id="regnskab"
+        id="bank"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start "
       >
         <div className="lg:flex">
