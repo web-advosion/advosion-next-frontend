@@ -2,6 +2,7 @@ import Image from "next/image";
 import ExpertiseContainer from "../components/ExpertiseContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
 import ButtonDownload from "../components/buttons/ButtonDownload";
+import ButtonPDF from "../components/buttons/ButtonPDF";
 
 export default async function Page() {
   const res = await fetch(
@@ -83,13 +84,7 @@ export default async function Page() {
           </div>
         </article>
         <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
-          <Image
-            className="w-full h-full"
-            src="/img/icon-pdf.svg"
-            width={130}
-            height={130}
-            alt="swipe icon"
-          ></Image>
+          <ButtonPDF documentPath={documentUrls.betingelser} />
         </article>
       </section>
 
@@ -119,13 +114,7 @@ export default async function Page() {
           </div>
         </article>
         <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
-          <Image
-            className="w-full h-full"
-            src="/img/icon-pdf.svg"
-            width={130}
-            height={130}
-            alt="swipe icon"
-          ></Image>
+          <ButtonPDF documentPath={documentUrls.privatliv} />
         </article>
       </section>
 
