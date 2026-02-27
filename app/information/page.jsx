@@ -35,7 +35,7 @@ export default async function Page() {
 
             <div
               data-aos="fade-in"
-              className="mt-5 lg:flex lg:gap-12.5 lg:items-start"
+              className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start"
             >
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
@@ -45,6 +45,9 @@ export default async function Page() {
                   Hvis du mangler andet information, så tøv ikke med at kontakte
                   os!
                 </p>
+              </div>
+              <div className="mt-7.5">
+                <ButtonContact />
               </div>
             </div>
           </div>
@@ -62,10 +65,10 @@ export default async function Page() {
       {/*Sektion: Forretningsbetingelser */}
       <section
         id="betingelser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center md:flex"
       >
-        <article className="lg:w-2/3">
-          <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
+        <article className="md:w-3/4 lg:w-2/3">
+          <div className="justify-start text-CTA-black text-3xl md:text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
             <h2>Forretningsbetingelser</h2>
           </div>
 
@@ -85,7 +88,7 @@ export default async function Page() {
             <ButtonDownload documentPath={documentUrls.betingelser} />
           </div>
         </article>
-        <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
+        <article className="w-32 h-32 mt-12.5" data-aos="fade-in">
           <ButtonPDF documentPath={documentUrls.betingelser} />
         </article>
       </section>
@@ -93,9 +96,9 @@ export default async function Page() {
       {/*Sektion: Privatlivspolitik */}
       <section
         id="betingelser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-center md:flex"
       >
-        <article className="lg:w-2/3">
+        <article className="md: w-3/4 lg:w-2/3">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
             <h2>Privatlivspolitik</h2>
           </div>
@@ -115,7 +118,7 @@ export default async function Page() {
             <ButtonDownload documentPath={documentUrls.privatliv} />
           </div>
         </article>
-        <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
+        <article className="w-32 h-32 mt-12.5" data-aos="fade-in">
           <ButtonPDF documentPath={documentUrls.privatliv} />
         </article>
       </section>
@@ -137,11 +140,22 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Her kan du finde vores bankoplysninger angående vores
-                  advokatvirksomhed. <br /> <br />
+                  Her kan du finde vores <strong>bankoplysninger</strong>{" "}
+                  angående vores advokatvirksomhed. <br /> <br />
                   Har du spørgsmål til din faktura eller andre henvendelser
-                  omkring økonomi, så kontakt vores økonomiafdeling på følgende
-                  mail: mba@advosion.dk <br /> <br />
+                  omkring <strong>økonomi</strong>, så kontakt vores
+                  økonomiafdeling på følgende mail:{" "}
+                  {
+                    <a href={`mailto: mba@advosion.dk`}>
+                      <button
+                        className="hover:cursor-pointer underline"
+                        type="mailto"
+                      >
+                        mba@advosion.dk
+                      </button>
+                    </a>
+                  }
+                  <br /> <br />
                   ADVOSION Advokatpartnerselskab CVR nr: 37 55 75 60
                 </p>
               </div>
