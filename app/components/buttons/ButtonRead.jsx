@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ButtonRead({
   bgColor = "bg-black",
   textColor = "text-(--primary-bg)",

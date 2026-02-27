@@ -108,13 +108,10 @@ export default async function Page() {
               af vores medarbejdere eller connecte med os på LinkedIn:
             </p>
           </div>
-          <div className="mt-7.5">
-            <ButtonContact />
-          </div>
         </article>
 
         {/*Card gallery */}
-        <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
+        <div data-aos="fade-in" className=" w-full h-auto mt-12.5">
           <div className="w-full flex justify-start mb-0 ">
             <Image
               className="w-35 h-10"

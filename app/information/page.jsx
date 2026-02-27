@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ButtonExperts from "../components/buttons/ButtonExperts";
 import ExpertiseContainer from "../components/ExpertiseContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
+import ButtonDownload from "../components/buttons/ButtonDownload";
 
 export default async function Page() {
   const res = await fetch(
@@ -10,6 +10,12 @@ export default async function Page() {
   );
   const pages = await res.json();
   const page = pages[0];
+
+  const documentUrls = {
+    betingelser:
+      "/documents/Forretningsbetingelser_Terms&Conditions_Advosion.PDF",
+    privatliv: "/documents/Privatlivspolitik_Advosion.pdf",
+  };
 
   return (
     <main className="w-screen h-auto overflow-hidden flex flex-col items-center">
@@ -73,7 +79,7 @@ export default async function Page() {
             </p>
           </div>
           <div className="mt-7.5">
-            <ButtonExperts />
+            <ButtonDownload documentPath={documentUrls.betingelser} />
           </div>
         </article>
         <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
@@ -109,7 +115,7 @@ export default async function Page() {
             </p>
           </div>
           <div className="mt-7.5">
-            <ButtonExperts />
+            <ButtonDownload documentPath={documentUrls.privatliv} />
           </div>
         </article>
         <article className="w-32 h-32 mb-2.5" data-aos="fade-in">
