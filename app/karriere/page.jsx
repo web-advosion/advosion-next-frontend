@@ -21,10 +21,7 @@ export default async function Page() {
               <h1>Bliv en del af holdet!</h1>
             </div>
 
-            <div
-              data-aos="fade-in"
-              className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start"
-            >
+            <div className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   Advosion var ikke noget uden{" "}
@@ -64,10 +61,7 @@ export default async function Page() {
             <h2>Karriereudvikling</h2>
           </div>
 
-          <div
-            className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]"
-            data-aos="fade-in"
-          >
+          <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
             <p>
               Som ansat hos os, går din udvikling ikke bare i stå fordi du nu er
               i arbejde. Hvis du ønsker det, er der rig mulighed for faglig
@@ -203,6 +197,7 @@ export default async function Page() {
         <article
           data-aos="fade-in"
           className="mt-12.5 lg:mt-0 md:flex md:justify-center"
+          id="kontaktform"
         >
           <form
             action={sendContact}

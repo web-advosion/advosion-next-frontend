@@ -33,7 +33,7 @@ export default async function Page() {
               <h1>Om Advosion</h1>
             </div>
 
-            <div data-aos="fade-in" className="mt-5 lg:flex lg:items-start">
+            <div className="mt-5 lg:flex lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   ADVOSION er nyt og innovativt firmakoncept, der kombinerer
@@ -64,7 +64,10 @@ export default async function Page() {
       </section>
 
       {/*Sektion Ekspertise*/}
-      <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5">
+      <section
+        id="ekspertise"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5"
+      >
         <div className="w-full flex justify-start mb-2.5 md:hidden">
           <Image
             className="w-35 h-10"
@@ -75,15 +78,12 @@ export default async function Page() {
           ></Image>
         </div>
 
-        <div
-          className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden"
-          data-aos="fade-in"
-        >
+        <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden">
           <AdvokatCardMobile />
           <RevisorCardMobile />
         </div>
 
-        <div data-aos="fade-right" className=" w-full lg:w-179 ">
+        <div className=" w-full lg:w-179 ">
           <div className="hidden md:block">
             <AdvokatCard />
           </div>
@@ -239,7 +239,10 @@ export default async function Page() {
       </section>
 
       {/*Sektion: Vision */}
-      <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 ">
+      <section
+        id="vision"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
+      >
         <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
           <h2>Vision og kerneværdier</h2>
         </div>

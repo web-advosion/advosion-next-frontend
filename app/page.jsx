@@ -101,7 +101,7 @@ export default async function HomePage() {
 
         {/*Ydelser */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/">
+          <Link href="/om/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Ydelser
             </h1>
@@ -137,7 +137,7 @@ export default async function HomePage() {
 
         {/*Sektion: kontakt */}
         <section className=" w-full h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/">
+          <Link href="/kontakt">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Kontakt
             </h1>
@@ -157,11 +157,11 @@ export default async function HomePage() {
 
         {/*Sektion: Kunde statements */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/">
+          <div>
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
               Det siger vores kunder
             </h1>
-          </Link>
+          </div>
 
           {/*Card gallery */}
           <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
