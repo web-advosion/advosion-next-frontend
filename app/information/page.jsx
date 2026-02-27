@@ -3,6 +3,7 @@ import ExpertiseContainer from "../components/ExpertiseContainer";
 import ButtonContact from "../components/buttons/ButtonContact";
 import ButtonDownload from "../components/buttons/ButtonDownload";
 import ButtonPDF from "../components/buttons/ButtonPDF";
+import BankoplysningerContainer from "../components/BankoplysningerContainer";
 
 export default async function Page() {
   const res = await fetch(
@@ -39,9 +40,10 @@ export default async function Page() {
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
                   Her finder du information omkring{" "}
-                  <strong>forretningsbetingelser, privatlivspolitik</strong> og
-                  <strong>bankoplysninger</strong> Hvis du mangler andet
-                  information, så tøv ikke med at kontakte os!
+                  <strong>forretningsbetingelser, privatlivspolitik</strong> og{" "}
+                  <strong> bankoplysninger</strong> <br /> <br />
+                  Hvis du mangler andet information, så tøv ikke med at kontakte
+                  os!
                 </p>
               </div>
             </div>
@@ -157,8 +159,8 @@ export default async function Page() {
               alt="swipe icon"
             ></Image>
           </div>
-          <ExpertiseContainer
-            typeId={16}
+          <BankoplysningerContainer
+            typeId={15}
             bgColor="bg-(--cards)"
             textColor="text-(--advokat-blue)"
           />
