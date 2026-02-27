@@ -114,8 +114,8 @@ export default async function Page() {
       >
         <div className="lg:flex">
           <article>
-            <div className="w-max justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
-              <h2>Regnskab</h2>
+            <div className="w-max justify-start text-CTA-black text-3xl md:text-4xl font-bold font-['Inter'] leading-7">
+              <h2>Regnskab og revision</h2>
             </div>
 
             <div className="lg:flex lg:justify-between">

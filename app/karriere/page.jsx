@@ -203,6 +203,7 @@ export default async function Page() {
         <article
           data-aos="fade-in"
           className="mt-12.5 lg:mt-0 md:flex md:justify-center"
+          id="kontaktform"
         >
           <form
             action={sendContact}

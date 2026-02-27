@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function RevisorCard() {
   return (
-    <Link href="/revisor">
+    <Link href="/revision">
       <div className="w-full h-96 bg-(--revision-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20">
         <article>
           <div className="w-full h-full">
