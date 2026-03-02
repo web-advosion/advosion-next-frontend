@@ -16,21 +16,22 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between md:text-sm lg:text-xl ">
-      <article>
+    <div className="w-full h-16 md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:px-4 md:py-3 lg:p-5 flex items-center justify-between md:text-base lg:text-xl">
+      <article className="h-full flex items-center">
         <Link href="/#hero">
           <Image
             src="/img/icon-footer.svg"
             width={235}
             height={50}
             alt="Advosion logo"
-            className="w-auto h-full"
+            className="h-8 md:h-10 lg:h-12 w-auto"
+            priority
           />
         </Link>
       </article>
 
       <article className="hidden md:flex">
-        <ul className="lg:font-medium gap-6 lg:gap-20 flex items-center">
+        <ul className="font-medium flex items-center gap-6 lg:gap-20">
           <li className="w-max">
             <Link href="/om" className={checkPath("/om")}>
               Om os
@@ -51,7 +52,9 @@ export default function NavBar() {
               Karriere
             </Link>
           </li>
-          <li className="md:w-32 lg:w-44 h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
+
+          {/* Kontakt: scale down on md so it matches text scale */}
+          <li className="md:w-32 lg:w-44 md:h-10 lg:h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
             <Link href="/kontakt" className={checkPath("/kontakt")}>
               Kontakt
             </Link>
