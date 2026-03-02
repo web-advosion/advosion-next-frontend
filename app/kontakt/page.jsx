@@ -15,7 +15,7 @@ export default async function Page() {
       >
         <div className="md:flex">
           <div>
-            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
               <h1>Kontakt os</h1>
             </div>
 

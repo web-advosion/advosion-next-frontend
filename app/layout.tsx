@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
-        <div className="flex justify-center fixed z-10">
+        <div className="w-screen h-auto flex justify-center sticky z-10 top-12.5">
           <NavBar />
         </div>
 
@@ -40,10 +40,6 @@ export default function RootLayout({
         <div>
           <FooterV2 />
         </div>
-
-        {/* <div className="hidden md:hidden lg:block ">
-          <Footer />
-        </div> */}
       </body>
     </html>
   );
