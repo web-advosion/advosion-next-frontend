@@ -1,31 +1,79 @@
 "use client";
 
 import Link from "next/link";
-
+import Image from "next/image";
 export default function MobileMenu({ onClose }) {
   return (
-    <div className="fixed inset-0 z-50 bg-white flex flex-col p-8">
-      <button onClick={onClose} className="self-end text-2xl">
-        ✕
-      </button>
+    <div className="fixed inset-0 z-50 bg-(--primary-bg) flex flex-col px-6.5">
+      <article className="flex justify-between items-center mt-12.5 py-2">
+        <Link href="/#hero" onClick={onClose}>
+          <img
+            src="/img/icon-footer.svg"
+            width={235}
+            height={50}
+            alt="Advosion logo"
+            className="w-auto h-full"
+          />
+        </Link>
+      </article>
 
-      <nav className="flex flex-col gap-8 text-2xl mt-12">
-        <Link href="/om" onClick={onClose}>
+      <h1 className="text-5xl font-bold mt-7.5">Menu</h1>
+
+      <nav className="flex flex-col gap-8 text-4xl mt-12">
+        <Link
+          href="/om"
+          onClick={onClose}
+          className="w-72 h-14 bg-(--cards) rounded-2xl p-2 flex"
+        >
           Om os
         </Link>
-        <Link href="/advokat" onClick={onClose}>
+
+        <Link
+          href="/advokat"
+          onClick={onClose}
+          className="w-72 h-14 bg-(--cards) rounded-2xl p-2 flex"
+        >
           Advokat
         </Link>
-        <Link href="/revision" onClick={onClose}>
+
+        <Link
+          href="/revision"
+          onClick={onClose}
+          className="w-72 h-14 bg-(--cards) rounded-2xl p-2 flex"
+        >
           Revision
         </Link>
-        <Link href="/karriere" onClick={onClose}>
+
+        <Link
+          href="/karriere"
+          onClick={onClose}
+          className="w-72 h-14 bg-(--cards) rounded-2xl p-2 flex"
+        >
           Karriere
         </Link>
-        <Link href="/kontakt" onClick={onClose}>
+
+        <Link
+          href="/kontakt"
+          onClick={onClose}
+          className="w-72 h-14 bg-(--cards) rounded-2xl p-2 flex"
+        >
           Kontakt
         </Link>
       </nav>
+
+      <div className="md:block lg:hidden self-end fixed bottom-7.5 pr-1">
+        <button
+          onClick={onClose}
+          className="w-12 h-12 bg-(--primary-bg) rounded-4xl flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer shadow-md/30"
+        >
+          <Image
+            src="/img/icon-go-back.svg"
+            width={28}
+            height={28}
+            alt="Gå tilbage"
+          />
+        </button>
+      </div>
     </div>
   );
 }

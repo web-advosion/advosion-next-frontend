@@ -16,8 +16,8 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between text-xl">
-      <article className="">
+    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between text-xl ">
+      <article>
         <Link href="/#hero">
           <Image
             src="/img/icon-footer.svg"
@@ -58,11 +58,12 @@ export default function NavBar() {
           </li>
         </ul>
       </article>
+
       <button className="md:hidden" onClick={() => setMenuOpen(true)}>
         <Image
           src="/img/icon-burgermenu.svg"
-          width={30}
-          height={30}
+          width={50}
+          height={50}
           alt="burgermenu ikon"
         />
       </button>
