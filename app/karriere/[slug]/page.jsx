@@ -84,7 +84,7 @@ export default async function DetailPage({ params }) {
     >
       <section
         id="primary"
-        className={`w-full h-auto px-7.5 md:px-10.75 lg:pl-30 2xl:px-100 ${theme.textWhite} lg:mb-20 relative margin-to-nav`}
+        className={`w-full h-auto px-7.5 md:px-10.75 lg:pl-30 2xl:px-100 ${theme.textWhite} lg:mb-20 relative`}
       >
         <article>
           <h1 className="text-4xl font-bold leading-none">
@@ -121,7 +121,7 @@ export default async function DetailPage({ params }) {
       {/*Sektion: Din profil */}
       <section
         id="profil"
-        className={`w-full h-auto px-7.5 mx-7.5 md:px-10.75 lg:pr-20 2xl:px-100 mb-12.5 lg:mb-30 mt-12.5  relative ${theme.textColored} `}
+        className={`w-full h-auto px-7.5 mx-7.5 md:px-10.75 lg:pr-20 2xl:px-100 mb-12.5 lg:mb-30 mt-12.5  relative ${theme.textColored}`}
       >
         <div className="w-full h-auto p-4 md:p-8 origin-top-left bg-(--primary-bg) rounded-2xl flex flex-col">
           <h1 className="text-3xl font-bold">Din profil</h1>
