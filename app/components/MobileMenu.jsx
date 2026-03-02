@@ -1,10 +1,28 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function MobileMenu({ onClose }) {
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    const prevHtmlOverflow = html.style.overflow;
+    const prevBodyOverflow = body.style.overflow;
+
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+
+    return () => {
+      html.style.overflow = prevHtmlOverflow;
+      body.style.overflow = prevBodyOverflow;
+    };
+  }, []);
+
   return (
-    <div className="fixed inset-0 z-50 bg-(--primary-bg) flex flex-col px-6.5">
+    <div className="fixed inset-0 z-50 bg-(--primary-bg) flex flex-col px-6.5 h-dvh overflow-hidden">
       <article className="flex justify-between items-center mt-12.5 py-2">
         <Link href="/#hero" onClick={onClose}>
           <img
