@@ -30,7 +30,7 @@ export default function MobileMenu({ onClose }) {
             width={235}
             height={50}
             alt="Advosion logo"
-            className="w-auto h-full"
+            className="w-auto h-12"
           />
         </Link>
       </article>
