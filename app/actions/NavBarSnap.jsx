@@ -25,7 +25,7 @@ export default function NavBarSnap() {
 
   return (
     <div
-      className={`fixed left-0 w-full z-50 flex justify-center transition-all duration-200 h-auto px-3.5 md:px-6.75 lg:px-44 2xl:px-100 " ${
+      className={`fixed left-0 w-full z-50 flex justify-center transition-all duration-200 h-auto px-3.5 md:px-6.75 lg:px-40 2xl:px-92 " ${
         stuck ? "top-0" : "top-12.5"
       }`}
     >

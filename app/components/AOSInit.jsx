@@ -10,7 +10,7 @@ export default function AOSInit() {
     const getOffset = () => {
       if (window.innerWidth < 768) return 120; // mobile
       if (window.innerWidth < 1024) return 200; // tablet
-      return 250; // desktop
+      return 200; // desktop
     };
 
     AOS.init({

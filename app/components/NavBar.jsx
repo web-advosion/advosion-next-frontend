@@ -31,7 +31,7 @@ export default function NavBar() {
       </article>
 
       <article className="hidden md:flex">
-        <ul className="font-medium flex items-center gap-6 lg:gap-20">
+        <ul className="font-medium flex items-center gap-6 md:gap-auto lg:gap-auto">
           <li className="w-max">
             <Link href="/om" className={checkPath("/om")}>
               Om os
