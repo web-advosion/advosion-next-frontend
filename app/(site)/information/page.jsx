@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ExpertiseContainer from "../components/ExpertiseContainer";
-import ButtonContact from "../components/buttons/ButtonContact";
-import ButtonDownload from "../components/buttons/ButtonDownload";
-import ButtonPDF from "../components/buttons/ButtonPDF";
-import BankoplysningerContainer from "../components/BankoplysningerContainer";
+import ExpertiseContainer from "../../components/ExpertiseContainer";
+import ButtonContact from "../../components/buttons/ButtonContact";
+import ButtonDownload from "../../components/buttons/ButtonDownload";
+import ButtonPDF from "../../components/buttons/ButtonPDF";
+import BankoplysningerContainer from "../../components/BankoplysningerContainer";
 
 export default async function Page() {
   const res = await fetch(

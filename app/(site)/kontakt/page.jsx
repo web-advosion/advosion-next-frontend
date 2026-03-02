@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonFind from "../components/buttons/ButtonFind";
-import ContactCard from "../components/cards/ContactCard";
-import ContactCardMobile from "../components/cards/ContactCardMobile";
+import ButtonFind from "../../components/buttons/ButtonFind";
+import ContactCard from "../../components/cards/ContactCard";
+import ContactCardMobile from "../../components/cards/ContactCardMobile";
 
 export default async function Page() {
   return (

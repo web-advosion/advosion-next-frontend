@@ -1,7 +1,7 @@
-import ButtonApply from "../../components/buttons/ButtonApply";
-import ButtonContact from "../../components/buttons/ButtonContact";
-import ButtonContactDynamic from "../../components/buttons/ButtonContactDynamic";
-import ButtonReturnBlack from "../../components/buttons/ButtonReturnBlack";
+import ButtonApply from "../../../components/buttons/ButtonApply";
+import ButtonContact from "../../../components/buttons/ButtonContact";
+import ButtonContactDynamic from "../../../components/buttons/ButtonContactDynamic";
+import ButtonReturnBlack from "../../../components/buttons/ButtonReturnBlack";
 
 export default async function DetailPage({ params }) {
   const { slug } = await params;

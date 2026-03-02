@@ -1,15 +1,15 @@
 import Image from "next/image";
-import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
-import RevisorCardMobile from "../components/cards/RevisorCardMobile";
-import AdvokatContainer from "../components/AdvokatContainer";
-import RevisorContainer from "../components/RevisorContainer";
-import AndetContainer from "../components/AndetContainer";
-import ButtonContact from "../components/buttons/ButtonContact";
-import GalleryContainer from "../components/GalleryContainer";
-import ButtonJoin from "../components/buttons/ButtonJoin";
-import ValueContainer from "../components/ValueContainer";
-import AdvokatCard from "../components/cards/AdvokatCard";
-import RevisorCard from "../components/cards/RevisorCard";
+import AdvokatCardMobile from "../../components/cards/AdvokatCardMobile";
+import RevisorCardMobile from "../../components/cards/RevisorCardMobile";
+import AdvokatContainer from "../../components/AdvokatContainer";
+import RevisorContainer from "../../components/RevisorContainer";
+import AndetContainer from "../../components/AndetContainer";
+import ButtonContact from "../../components/buttons/ButtonContact";
+import GalleryContainer from "../../components/GalleryContainer";
+import ButtonJoin from "../../components/buttons/ButtonJoin";
+import ValueContainer from "../../components/ValueContainer";
+import AdvokatCard from "../../components/cards/AdvokatCard";
+import RevisorCard from "../../components/cards/RevisorCard";
 
 export default async function Page() {
   const res = await fetch(
