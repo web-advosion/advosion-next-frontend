@@ -13,11 +13,11 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav"
       >
         <div className="md:flex">
           <div>
-            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
               <h1>Bliv en del af holdet!</h1>
             </div>
 
