@@ -5,6 +5,7 @@ import "animate.css";
 import "aos/dist/aos.css";
 import AOSInit from "./components/AOSInit";
 import FooterV2 from "./components/FooterV2";
+import NavBar from "./components/NavBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +32,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
+        <div className="flex justify-center fixed z-10">
+          <NavBar />
+        </div>
+
         {children}
         <div>
           <FooterV2 />
