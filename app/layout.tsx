@@ -4,8 +4,6 @@ import "./globals.css";
 import "animate.css";
 import "aos/dist/aos.css";
 import AOSInit from "./components/AOSInit";
-import NavBar from "./components/navBar";
-
 import FooterV2 from "./components/FooterV2";
 
 const inter = Inter({
@@ -33,7 +31,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
-        <div></div>
         {children}
         <div>
           <FooterV2 />
