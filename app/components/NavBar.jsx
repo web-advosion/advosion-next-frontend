@@ -3,9 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import MobileMenu from "./MobileMenu";
 
 export default function NavBar() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const checkPath = (path) =>
     pathname == path
@@ -13,20 +16,20 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-full h-20 bg-(--primary-bg) rounded-2xl shadow-lg p-5 flex items-center justify-between text-xl">
-      <article>
+    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between text-xl">
+      <article className="">
         <Link href="/#hero">
           <Image
             src="/img/icon-footer.svg"
             width={235}
             height={50}
             alt="Advosion logo"
-            className="w-60 h-full"
+            className="w-auto h-full"
           />
         </Link>
       </article>
 
-      <article>
+      <article className="hidden md:flex">
         <ul className="font-medium gap-20 flex items-center">
           <li className="w-max">
             <Link href="/om" className={checkPath("/om")}>
@@ -55,6 +58,16 @@ export default function NavBar() {
           </li>
         </ul>
       </article>
+      <button className="md:hidden" onClick={() => setMenuOpen(true)}>
+        <Image
+          src="/img/icon-burgermenu.svg"
+          width={30}
+          height={30}
+          alt="burgermenu ikon"
+        />
+      </button>
+
+      {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
     </div>
   );
 }
