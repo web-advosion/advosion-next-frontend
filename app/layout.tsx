@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer";
 import "animate.css";
 import "aos/dist/aos.css";
 import AOSInit from "./components/AOSInit";
-import MobileFooter from "./components/MobileFooter";
-import TabletFooter from "./components/TabletFooter";
+import NavBar from "./components/navBar";
+
 import FooterV2 from "./components/FooterV2";
 
 const inter = Inter({
@@ -34,9 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
-        <div>
-          <NavBar />
-        </div>
+        <div></div>
         {children}
         <div>
           <FooterV2 />
