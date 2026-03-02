@@ -13,7 +13,7 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-290 h-20 bg-(--primary-bg) rounded-2xl shadow-lg p-5 flex items-center justify-between text-xl">
+    <div className="w-full h-20 bg-(--primary-bg) rounded-2xl shadow-lg p-5 flex items-center justify-between text-xl">
       <article>
         <Link href="/#hero">
           <Image

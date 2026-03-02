@@ -32,8 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <AOSInit />
-
-        <NavBarSnap />
+        <div>
+          <NavBarSnap />
+        </div>
 
         {children}
         <div>
