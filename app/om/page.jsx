@@ -25,7 +25,7 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 mt-12.5 relative "
+        className="margin-to-nav w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 relative "
       >
         <div className="md:flex">
           <div>

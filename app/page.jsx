@@ -27,7 +27,7 @@ export default async function HomePage() {
 
         <section
           id="hero"
-          className="w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+          className="hero-section w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
         >
           <div className="absolute inset-0 bg-black/60"></div>
           {/* <video

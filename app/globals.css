@@ -27,6 +27,6 @@ body {
   color: var(--cta-black);
 }
 
-section {
-  margin-top: 6rem;
+.margin-to-nav {
+  margin-top: 12rem;
 }

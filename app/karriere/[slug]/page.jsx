@@ -84,7 +84,7 @@ export default async function DetailPage({ params }) {
     >
       <section
         id="primary"
-        className={`w-full h-auto px-7.5 md:px-10.75 lg:pl-30 2xl:px-100 ${theme.textWhite} lg:mb-20 pt-12.5 relative`}
+        className={`w-full h-auto px-7.5 md:px-10.75 lg:pl-30 2xl:px-100 ${theme.textWhite} lg:mb-20 relative margin-to-nav`}
       >
         <article>
           <h1 className="text-4xl font-bold leading-none">
