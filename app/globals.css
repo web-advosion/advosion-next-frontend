@@ -2,7 +2,7 @@
 
 @layer utilities {
   :root {
-    --breakpoint-lg: 74rem;
+    --breakpoint-lg: 60rem;
   }
 }
 
