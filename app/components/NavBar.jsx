@@ -16,7 +16,7 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between text-xl ">
+    <div className="w-full h-auto md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:p-5 flex items-center justify-between md:text-sm lg:text-xl ">
       <article>
         <Link href="/#hero">
           <Image
@@ -30,7 +30,7 @@ export default function NavBar() {
       </article>
 
       <article className="hidden md:flex">
-        <ul className="font-medium gap-20 flex items-center">
+        <ul className="lg:font-medium gap-6 lg:gap-20 flex items-center">
           <li className="w-max">
             <Link href="/om" className={checkPath("/om")}>
               Om os
@@ -51,7 +51,7 @@ export default function NavBar() {
               Karriere
             </Link>
           </li>
-          <li className="w-44 h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
+          <li className="md:w-32 lg:w-44 h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
             <Link href="/kontakt" className={checkPath("/kontakt")}>
               Kontakt
             </Link>
