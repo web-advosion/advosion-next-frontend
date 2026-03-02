@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ButtonContact from "../components/buttons/ButtonContact";
-import ButtonAbout from "../components/buttons/ButtonAbout";
-import StatementContainerEmployees from "../components/StatementContainerEmployees";
-import ButtonFind from "../components/buttons/ButtonFind";
-import JobContainer from "../components/JobContainer";
+import ButtonContact from "../../components/buttons/ButtonContact";
+import ButtonAbout from "../../components/buttons/ButtonAbout";
+import StatementContainerEmployees from "../../components/StatementContainerEmployees";
+import ButtonFind from "../../components/buttons/ButtonFind";
+import JobContainer from "../../components/JobContainer";
 import { sendContact } from "@/app/actions/contact";
 
 export default async function Page() {

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import ButtonExperts from "../components/buttons/ButtonExperts";
-import SkillsContainerA from "../components/SkillsContainerA";
-import ExpertiseContainer from "../components/ExpertiseContainer";
-import ButtonContact from "../components/buttons/ButtonContact";
-import AdvokatEmployeeCard from "../components/cards/AdvokatEmployeeCard";
-import SingleEmployee from "../components/SingleEmployee";
-import SkillsContainerR from "../components/SkillsContainerR";
+import ButtonExperts from "../../components/buttons/ButtonExperts";
+import SkillsContainerA from "../../components/SkillsContainerA";
+import ExpertiseContainer from "../../components/ExpertiseContainer";
+import ButtonContact from "../../components/buttons/ButtonContact";
+import AdvokatEmployeeCard from "../../components/cards/AdvokatEmployeeCard";
+import SingleEmployee from "../../components/SingleEmployee";
+import SkillsContainerR from "../../components/SkillsContainerR";
 
 export default async function Page() {
   const res = await fetch(

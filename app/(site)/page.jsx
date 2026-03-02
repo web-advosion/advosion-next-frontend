@@ -1,16 +1,16 @@
 import Image from "next/image";
-import WhoCardRight from "./components/cards/WhoCardRight";
-import WhoCardLeft from "./components/cards/WhoCardLeft";
-import WhoCardMid from "./components/cards/WhoCardMid";
-import ButtonMeet from "./components/buttons/ButtonMeet";
-import AdvokatCard from "./components/cards/AdvokatCard";
-import RevisorCard from "./components/cards/RevisorCard";
-import ContactCard from "./components/cards/ContactCard";
+import WhoCardRight from "../components/cards/WhoCardRight";
+import WhoCardLeft from "../components/cards/WhoCardLeft";
+import WhoCardMid from "../components/cards/WhoCardMid";
+import ButtonMeet from "../components/buttons/ButtonMeet";
+import AdvokatCard from "../components/cards/AdvokatCard";
+import RevisorCard from "../components/cards/RevisorCard";
+import ContactCard from "../components/cards/ContactCard";
 import Link from "next/link";
-import AdvokatCardMobile from "./components/cards/AdvokatCardMobile";
-import RevisorCardMobile from "./components/cards/RevisorCardMobile";
-import ContactCardMobile from "./components/cards/ContactCardMobile";
-import StatementContainerClients from "./components/StatementContainerClients";
+import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
+import RevisorCardMobile from "../components/cards/RevisorCardMobile";
+import ContactCardMobile from "../components/cards/ContactCardMobile";
+import StatementContainerClients from "../components/StatementContainerClients";
 
 export default async function HomePage() {
   const res = await fetch(

@@ -17,21 +17,21 @@ export default function NavBar() {
 
   return (
     <div className="w-full h-16 md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:px-4 md:py-3 lg:p-5 flex items-center justify-between md:text-base lg:text-xl">
-      <article className="h-full flex items-center">
+      <article className="h-full w-full flex items-center">
         <Link href="/#hero">
           <Image
             src="/img/icon-footer.svg"
             width={235}
             height={50}
             alt="Advosion logo"
-            className="h-8 md:h-10 lg:h-12 w-auto"
+            className="h-12 md:h-10 lg:h-12 w-auto"
             priority
           />
         </Link>
       </article>
 
       <article className="hidden md:flex">
-        <ul className="font-medium flex items-center gap-6 lg:gap-20">
+        <ul className="font-medium flex items-center gap-6 md:gap-auto lg:gap-auto">
           <li className="w-max">
             <Link href="/om" className={checkPath("/om")}>
               Om os

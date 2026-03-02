@@ -25,22 +25,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        <AOSInit />
-        <div>
-          <NavBarSnap />
-        </div>
-
-        {children}
-        <div>
-          <FooterV2 />
-        </div>
-      </body>
+    <html lang="da">
+      <body>{children}</body>
     </html>
   );
 }

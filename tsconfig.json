@@ -29,7 +29,9 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "app/page_desktopfirst.jsx"
+    "app/page_desktopfirst.jsx",
+    "app/(detail)/karriere/[slug]/layout.jsx",
+    "app/karriere/[slug]/layout.jsx"
   ],
   "exclude": ["node_modules"]
 }
