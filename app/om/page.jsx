@@ -243,7 +243,7 @@ export default async function Page() {
         id="vision"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) pb-25 pt-12.5 "
       >
-        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
+        <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-9 md:leading-7">
           <h2>Vision og kerneværdier</h2>
         </div>
 
