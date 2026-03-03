@@ -310,6 +310,7 @@ export default async function Page() {
                         id="file"
                         name="file"
                         type="file"
+                        multiple
                         placeholder="Træk dine filer herhen eller klik ->"
                         className="w-full h-full hover:cursor-pointer text-xs md:text-sm"
                       />
