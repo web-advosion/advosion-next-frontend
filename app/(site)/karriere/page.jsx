@@ -226,7 +226,7 @@ export default async function Page() {
                     id="topic"
                     name="topic"
                     type="text"
-                    placeholder="Beskriv kort hvorfor du henvender dig..."
+                    placeholder="F.eks. Ansøgning: Revisor"
                     className="w-full h-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
                   />
                 </div>
@@ -276,6 +276,25 @@ export default async function Page() {
                     type="email"
                     placeholder="mail@mailadresse.dk"
                     className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
+                  />
+                </div>
+              </article>
+
+              <article className="flex items-start gap-5">
+                <div className="w-1/3">
+                  <h3 className="text-md md:text-lg font-normal">Besked</h3>
+                </div>
+
+                <div className="w-full flex flex-col justify-center">
+                  <label htmlFor="message" className="sr-only">
+                    Besked
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    placeholder="Beskriv kort hvorfor du henvender dig..."
+                    className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm resize-none"
                   />
                 </div>
               </article>
