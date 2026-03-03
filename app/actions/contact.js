@@ -4,18 +4,13 @@ export async function sendContact(formData) {
   const endpoint = process.env.CMS_CONTACT_ENDPOINT;
   const secret = process.env.CMS_CONTACT_SECRET;
 
-  if (!endpoint || !secret) {
-    throw new Error(
-      "Missing CMS_CONTACT_ENDPOINT / CMS_CONTACT_SECRET env vars.",
-    );
-  }
+  if (!endpoint || !secret) throw new Error("Missing CMS env vars.");
+
+  formData.set("contact_secret", secret);
 
   const res = await fetch(endpoint, {
     method: "POST",
-    headers: {
-      "X-Contact-Secret": secret,
-    },
-    body: formData, // includes file upload
+    body: formData,
     cache: "no-store",
   });
 
