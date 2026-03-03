@@ -1,7 +1,6 @@
 "use server";
-{
-  /*Made entirely with AI */
-}
+
+/*Made entirely with AI */
 
 import nodemailer from "nodemailer";
 
@@ -39,7 +38,7 @@ export async function sendContact(formData) {
 
   await transporter.sendMail({
     from: process.env.SMTP_USER, // e.g. web@advosion.dk
-    to: "web@advosion.dk", // recipient inbox at the firm
+    to: "bhm@advosion.dk", // recipient inbox at the firm
     replyTo, // applicant email (if valid)
     subject: topic,
     text: `Navn: ${name}\nTelefon: ${phone}\nEmail: ${email}\n`,

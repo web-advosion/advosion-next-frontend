@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import Image from "next/image";
 import ButtonContact from "../../components/buttons/ButtonContact";
 import ButtonAbout from "../../components/buttons/ButtonAbout";
