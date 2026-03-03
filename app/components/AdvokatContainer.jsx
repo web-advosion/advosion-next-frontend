@@ -18,7 +18,7 @@ export default async function AdvokatContainer() {
     })),
   );
   return (
-    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 rounded-2xl py-2 pr-17 md:pr-40 lg:pr-80 xl:pr-120">
+    <div className="h-auto w-screen flex overflow-x-auto gap-7.5 rounded-2xl py-2 pr-auto">
       {advokater.map((medarbejder) => (
         <AdvokatEmployeeCard key={medarbejder.id} medarbejder={medarbejder} />
       ))}

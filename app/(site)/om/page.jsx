@@ -138,7 +138,7 @@ export default async function Page() {
             ></Image>
           </div>
           <div
-            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            className="w-full h-auto flex overflow-x-auto gap-5"
             data-aos="fade-in"
           >
             <AdvokatContainer />
@@ -159,7 +159,7 @@ export default async function Page() {
             ></Image>
           </div>
           <div
-            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            className="w-full h-auto flex overflow-x-auto gap-5"
             data-aos="fade-in"
           >
             <RevisorContainer />
@@ -180,7 +180,7 @@ export default async function Page() {
             ></Image>
           </div>
           <div
-            className="w-max h-auto flex overflow-x-auto gap-5 pr-15"
+            className="w-full h-auto flex overflow-x-auto gap-5"
             data-aos="fade-in"
           >
             <AndetContainer />
