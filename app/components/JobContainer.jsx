@@ -10,7 +10,7 @@ export default async function JobContainer() {
   const jobsData = Array.isArray(jobs) ? jobs : [];
 
   return (
-    <div className="h-auto w-screen flex overflow-x-auto gap-10 md:gap-16 rounded-2xl py-2.5 pr-30 md:pr-40 lg:pr-100 xl:pr-200">
+    <div className="h-auto w-full flex overflow-x-auto gap-10 md:gap-16 rounded-2xl py-2.5 pr-auto">
       {jobsData.map((job) => (
         <JobCard key={job.id} jobopslag={job} />
       ))}

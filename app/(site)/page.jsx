@@ -87,7 +87,7 @@ export default async function HomePage() {
           {/*Card container */}
           <div
             data-aos="fade-in"
-            className="mt-2 lg:mt-7.5 w-full lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-24 lg:pr-0 lg:overflow-visible "
+            className="mt-2 lg:mt-7.5 w-full lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-auto lg:overflow-visible "
           >
             <WhoCardLeft />
             <WhoCardMid />
