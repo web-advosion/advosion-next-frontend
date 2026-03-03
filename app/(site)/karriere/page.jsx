@@ -202,6 +202,7 @@ export default async function Page() {
         >
           <form
             action={sendContact}
+            encType="multipart/form-data"
             className="w-full md:w-[70%] lg:w-full overflow-hidden h-auto bg-(--cards) rounded-3xl p-6"
           >
             <div>
