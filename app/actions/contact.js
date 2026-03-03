@@ -1,5 +1,4 @@
 "use server";
-
 {
   /*Made entirely with AI */
 }
@@ -12,15 +11,15 @@ export async function sendContact(formData) {
   const phone = formData.get("phone")?.toString() || "";
   const email = formData.get("email")?.toString() || "";
 
+  // Optional: simple email sanity check
+  const replyTo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? email : undefined;
+
   const file = formData.get("file");
   const attachments = [];
 
   if (file && typeof file.arrayBuffer === "function" && file.size > 0) {
     const buffer = Buffer.from(await file.arrayBuffer());
-    attachments.push({
-      filename: file.name,
-      content: buffer,
-    });
+    attachments.push({ filename: file.name, content: buffer });
   }
 
   if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
@@ -30,7 +29,7 @@ export async function sendContact(formData) {
   const transporter = nodemailer.createTransport({
     host: "smtp.office365.com",
     port: 587,
-    secure: false, // STARTTLS on 587
+    secure: false,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
@@ -39,9 +38,9 @@ export async function sendContact(formData) {
   });
 
   await transporter.sendMail({
-    from: process.env.SMTP_USER, // must typically match the authenticated mailbox
-    to: "eaa24bdth@students.eaaa.dk",
-    replyTo: email || undefined,
+    from: process.env.SMTP_USER, // e.g. web@advosion.dk
+    to: "web@advosion.dk", // recipient inbox at the firm
+    replyTo, // applicant email (if valid)
     subject: topic,
     text: `Navn: ${name}\nTelefon: ${phone}\nEmail: ${email}\n`,
     attachments,
