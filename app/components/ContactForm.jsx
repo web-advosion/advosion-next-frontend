@@ -36,6 +36,28 @@ export default function ContactForm() {
     }
   }
 
+  const MAX_TOTAL_BYTES = 20 * 1024 * 1024; // 20MB total
+  const ALLOWED_TYPES = ["image/png", "image/jpeg", "application/pdf"];
+
+  function handleFileChange(e) {
+    const files = Array.from(e.target.files || []);
+
+    const badType = files.find((f) => !ALLOWED_TYPES.includes(f.type));
+    if (badType) {
+      setError("Kun PNG, JPG og PDF er tilladt.");
+      e.target.value = "";
+      return;
+    }
+
+    const total = files.reduce((sum, f) => sum + (f.size || 0), 0);
+    if (total > MAX_TOTAL_BYTES) {
+      setError("Den samlede størrelse må maks være 20MB.");
+      e.target.value = "";
+      return;
+    }
+
+    setError("");
+  }
   return (
     <>
       <form
@@ -55,7 +77,7 @@ export default function ContactForm() {
         <section className="flex flex-col gap-5 mt-7.5">
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Emne</h3>
+              <h3 className="text-md md:text-lg font-normal">Emne*</h3>
             </div>
 
             <div className="w-full flex flex-col justify-center h-auto ">
@@ -65,6 +87,7 @@ export default function ContactForm() {
                 name="topic"
                 type="text"
                 placeholder="F.eks. Ansøgning: Revisor"
+                required
                 className="w-full h-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -72,7 +95,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Navn</h3>
+              <h3 className="text-md md:text-lg font-normal">Navn*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full">
               <label htmlFor="name"></label>
@@ -81,6 +104,7 @@ export default function ContactForm() {
                 name="name"
                 type="text"
                 placeholder="Dit fulde navn..."
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -88,7 +112,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Tlf. nr.</h3>
+              <h3 className="text-md md:text-lg font-normal">Tlf. nr.*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full">
               <label htmlFor="phone"></label>
@@ -97,6 +121,7 @@ export default function ContactForm() {
                 id="phone"
                 type="tel"
                 placeholder="+45 99 99 99 99"
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -104,7 +129,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Mail</h3>
+              <h3 className="text-md md:text-lg font-normal">Mail*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full ">
               <label htmlFor="email"></label>
@@ -113,6 +138,7 @@ export default function ContactForm() {
                 name="email"
                 type="email"
                 placeholder="mail@mailadresse.dk"
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -150,6 +176,8 @@ export default function ContactForm() {
                     name="file"
                     type="file"
                     multiple
+                    accept=".png,.jpg,.jpeg,.pdf"
+                    onChange={handleFileChange}
                     className="w-full h-full hover:cursor-pointer text-xs md:text-sm"
                   />
 
@@ -185,13 +213,13 @@ export default function ContactForm() {
           </div>
 
           {success && (
-            <div className="mt-2 p-3 bg-green-100 text-green-800 rounded-2xl">
-              ✅ Din besked er sendt!
+            <div className=" w-full flex justify-center mt-2 p-3 bg-[#93DE97] text-(--primary-bg) font-medium rounded-2xl">
+              Din besked er sendt!
             </div>
           )}
 
           {error && (
-            <div className="mt-2 p-3 bg-red-100 text-red-800 rounded-2xl">
+            <div className=" w-full flex justify-center text-center mt-2 p-3  bg-[#FF9D9D] text-(--primary-bg) font-medium rounded-2xl">
               {error}
             </div>
           )}
