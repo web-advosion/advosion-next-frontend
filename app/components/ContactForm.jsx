@@ -55,7 +55,7 @@ export default function ContactForm() {
         <section className="flex flex-col gap-5 mt-7.5">
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Emne</h3>
+              <h3 className="text-md md:text-lg font-normal">Emne*</h3>
             </div>
 
             <div className="w-full flex flex-col justify-center h-auto ">
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Navn</h3>
+              <h3 className="text-md md:text-lg font-normal">Navn*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full">
               <label htmlFor="name"></label>
@@ -90,7 +90,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Tlf. nr.</h3>
+              <h3 className="text-md md:text-lg font-normal">Tlf. nr.*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full">
               <label htmlFor="phone"></label>
@@ -107,7 +107,7 @@ export default function ContactForm() {
 
           <article className="flex items-center gap-5">
             <div className="w-1/3">
-              <h3 className="text-md md:text-lg font-normal">Mail</h3>
+              <h3 className="text-md md:text-lg font-normal">Mail*</h3>
             </div>
             <div className="w-full flex flex-col justify-center h-full ">
               <label htmlFor="email"></label>
