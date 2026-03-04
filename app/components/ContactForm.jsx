@@ -65,6 +65,7 @@ export default function ContactForm() {
                 name="topic"
                 type="text"
                 placeholder="F.eks. Ansøgning: Revisor"
+                required
                 className="w-full h-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -81,6 +82,7 @@ export default function ContactForm() {
                 name="name"
                 type="text"
                 placeholder="Dit fulde navn..."
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -97,6 +99,7 @@ export default function ContactForm() {
                 id="phone"
                 type="tel"
                 placeholder="+45 99 99 99 99"
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -113,6 +116,7 @@ export default function ContactForm() {
                 name="email"
                 type="email"
                 placeholder="mail@mailadresse.dk"
+                required
                 className="w-full p-4 bg-(--secondary-bg) rounded-2xl text-xs md:text-sm"
               />
             </div>
@@ -185,13 +189,13 @@ export default function ContactForm() {
           </div>
 
           {success && (
-            <div className="mt-2 p-3 bg-green-100 text-green-800 rounded-2xl">
-              ✅ Din besked er sendt!
+            <div className=" w-full flex justify-center mt-2 p-3 bg-[#93DE97] text-(--primary-bg) font-medium rounded-2xl">
+              Din besked er sendt!
             </div>
           )}
 
           {error && (
-            <div className="mt-2 p-3 bg-red-100 text-red-800 rounded-2xl">
+            <div className=" w-full flex justify-center text-center mt-2 p-3  bg-[#FF9D9D] text-(--primary-bg) font-medium rounded-2xl">
               {error}
             </div>
           )}
