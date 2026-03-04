@@ -36,7 +36,7 @@ export default function ContactForm() {
     }
   }
 
-  const MAX_TOTAL_BYTES = 10 * 1024 * 1024; // 10MB total
+  const MAX_TOTAL_BYTES = 20 * 1024 * 1024; // 20MB total
   const ALLOWED_TYPES = ["image/png", "image/jpeg", "application/pdf"];
 
   function handleFileChange(e) {
@@ -51,7 +51,7 @@ export default function ContactForm() {
 
     const total = files.reduce((sum, f) => sum + (f.size || 0), 0);
     if (total > MAX_TOTAL_BYTES) {
-      setError("Den samlede størrelse må maks være 10MB.");
+      setError("Den samlede størrelse må maks være 20MB.");
       e.target.value = "";
       return;
     }
