@@ -36,6 +36,28 @@ export default function ContactForm() {
     }
   }
 
+  const MAX_TOTAL_BYTES = 10 * 1024 * 1024; // 10MB total
+  const ALLOWED_TYPES = ["image/png", "image/jpeg", "application/pdf"];
+
+  function handleFileChange(e) {
+    const files = Array.from(e.target.files || []);
+
+    const badType = files.find((f) => !ALLOWED_TYPES.includes(f.type));
+    if (badType) {
+      setError("Kun PNG, JPG og PDF er tilladt.");
+      e.target.value = "";
+      return;
+    }
+
+    const total = files.reduce((sum, f) => sum + (f.size || 0), 0);
+    if (total > MAX_TOTAL_BYTES) {
+      setError("Den samlede størrelse må maks være 10MB.");
+      e.target.value = "";
+      return;
+    }
+
+    setError("");
+  }
   return (
     <>
       <form
@@ -154,6 +176,8 @@ export default function ContactForm() {
                     name="file"
                     type="file"
                     multiple
+                    accept=".png,.jpg,.jpeg,.pdf"
+                    onChange={handleFileChange}
                     className="w-full h-full hover:cursor-pointer text-xs md:text-sm"
                   />
 
