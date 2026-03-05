@@ -29,7 +29,7 @@ export default async function Page() {
       >
         <div className="md:flex">
           <div>
-            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
+            <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
               <h1>Om Advosion</h1>
             </div>
 
@@ -83,7 +83,7 @@ export default async function Page() {
           <RevisorCardMobile />
         </div>
 
-        <div className=" w-full lg:w-179 ">
+        <div className=" w-full lg:w-179">
           <div className="hidden md:block">
             <AdvokatCard />
           </div>
