@@ -62,7 +62,7 @@ export default async function Page() {
       {/*Sektion: Forretningsbetingelser */}
       <section
         id="betingelser"
-        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start md:flex"
+        className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg)  pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start md:flex"
       >
         <article className="md:w-3/4 lg:w-2/3">
           <div className="justify-start text-CTA-black text-3xl md:text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
@@ -82,6 +82,7 @@ export default async function Page() {
             <ButtonDownload documentPath={documentUrls.betingelser} />
           </div>
         </article>
+
         <article className="w-32 h-32 mt-12.5">
           <ButtonPDF documentPath={documentUrls.betingelser} />
         </article>
@@ -112,6 +113,7 @@ export default async function Page() {
             <ButtonDownload documentPath={documentUrls.privatliv} />
           </div>
         </article>
+
         <article className="w-32 h-32 mt-12.5" data-aos="fade-in">
           <ButtonPDF documentPath={documentUrls.privatliv} />
         </article>
