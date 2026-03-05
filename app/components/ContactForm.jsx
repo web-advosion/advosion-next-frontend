@@ -144,7 +144,7 @@ export default function ContactForm() {
             </div>
           </article>
 
-          <article className="flex items-start gap-5">
+          <article className="flex items-center gap-5">
             <div className="w-1/3">
               <h3 className="text-md md:text-lg font-normal">Besked</h3>
             </div>
