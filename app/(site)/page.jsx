@@ -27,7 +27,7 @@ export default async function HomePage() {
 
         <section
           id="hero"
-          className="hero-section w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+          className="hero-section w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/03/DSC07275-scaled.jpg)] bg-no-repeat bg-cover relative"
           aria-label="miljøvideo af Advosions store og lyse lokaler"
         >
           <div className="absolute inset-0 bg-black/60"></div>
@@ -65,6 +65,7 @@ export default async function HomePage() {
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
               width={48}
               height={48}
+              alt=""
             />
           </div>
         </section>
