@@ -7,7 +7,7 @@
 :root {
   --primary-bg: #ffffff;
   --secondary-bg: #f8f8f8;
-  --advokat-blue: #033457;
+  --advokat-blue: #;
   --revision-green: #014629;
   --cta-black: #000000;
   --footer: #e1e1e1;
@@ -31,4 +31,24 @@ body {
 
 .margin-to-nav-mobile {
   margin-top: 10rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

@@ -36,7 +36,7 @@ export default async function Page() {
             <div className="mt-5 lg:flex lg:items-start">
               <div className=" w-full h-auto md:w-[90%]">
                 <p>
-                  ADVOSION er nyt og innovativt firmakoncept, der kombinerer
+                  ADVOSION er et nyt og innovativt firmakoncept, der kombinerer
                   <strong> jura</strong> og <strong>revision</strong>. <br />{" "}
                   <br />
                   Vores forstærkede forretningsforståelse giver os en unik
@@ -68,13 +68,14 @@ export default async function Page() {
         id="ekspertise"
         className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5"
       >
+        <h2 className="sr-only">Ekspertise</h2>
         <div className="w-full flex justify-start mb-2.5 md:hidden">
           <Image
             className="w-35 h-10"
             src="/img/icon-swipe.svg"
             width={150}
             height={50}
-            alt="swipe icon"
+            alt="Swipe vandret for at se flere kort"
           ></Image>
         </div>
 
@@ -113,7 +114,7 @@ export default async function Page() {
         >
           <p>
             De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
-            dedikerede og entusiatiske medarbejdere, forretningsmæssige
+            dedikerede og entusiastiske medarbejdere, forretningsmæssige
             totalløsninger og en helhedsorienteret rådgivning.
             <br /> <br />
             Organisatorisk er ADVOSION delt op i{" "}
@@ -134,7 +135,7 @@ export default async function Page() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe vandret for at se flere kort"
             ></Image>
           </div>
           <div
@@ -155,7 +156,7 @@ export default async function Page() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe vandret for at se flere kort"
             ></Image>
           </div>
           <div
@@ -176,7 +177,7 @@ export default async function Page() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe vandret for at se flere kort"
             ></Image>
           </div>
           <div
@@ -226,7 +227,7 @@ export default async function Page() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe vandret for at se flere kort"
             ></Image>
           </div>
           <div data-aos="fade-in">
@@ -272,7 +273,7 @@ export default async function Page() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe vandret for at se flere kort"
             ></Image>
           </div>
           <div data-aos="fade-in">
@@ -293,9 +294,9 @@ export default async function Page() {
               Udover at levere juridisk og økonomisk rådgivning har vi også er
               hjerte for det lokale liv her i Skanderborg og omegn. <br />{" "}
               <br />
-              Vi støtter aktivt op om det lokale erhvervsliv, samt de manger
+              Vi støtter aktivt op om det lokale erhvervsliv, samt de mange
               kulturelle og sportslige initiativer i Skanderborg. <br /> <br />
-              Vi har bland andet støttet: ..... & ..... & .... [konkrete
+              Vi har blandt andet støttet: ..... & ..... & .... [konkrete
               eksempler]
             </p>
           </div>

@@ -28,6 +28,7 @@ export default async function HomePage() {
         <section
           id="hero"
           className="hero-section w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/02/placeholder-hero.png')] bg-no-repeat bg-cover relative"
+          aria-label="miljøvideo af Advosions store og lyse lokaler"
         >
           <div className="absolute inset-0 bg-black/60"></div>
           {/* <video
@@ -42,13 +43,15 @@ export default async function HomePage() {
             type="video/mp4"
           />
         </video> */}
+
           <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
+            <h1 className="sr-only">Advosion - forside</h1>
             <div className="w-72 h-30">
               <Image
                 src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
                 width={320}
                 height={120}
-                alt="Advosion logo"
+                alt="Advosion logo med sloganet: det bedste fra begge verdener"
                 priority
               />
 
@@ -62,17 +65,16 @@ export default async function HomePage() {
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
               width={48}
               height={48}
-              alt="Hvid pil"
             />
           </div>
         </section>
 
         {/*Sektion: Hvem er vi */}
         <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+          <Link href="/om">
+            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Hvem er vi?
-            </h1>
+            </h2>
           </Link>
           <div className="w-full flex justify-start mt-5 lg:hidden">
             <Image
@@ -80,7 +82,7 @@ export default async function HomePage() {
               src="/img/icon-swipe.svg"
               width={150}
               height={50}
-              alt="swipe icon"
+              alt="Swipe for at se flere udtalelser"
             ></Image>
           </div>
 
@@ -102,9 +104,9 @@ export default async function HomePage() {
         {/*Ydelser */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/om/">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Ydelser
-            </h1>
+            </h2>
           </Link>
 
           {/*Card container */}
@@ -138,9 +140,9 @@ export default async function HomePage() {
         {/*Sektion: kontakt */}
         <section className=" w-full h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
           <Link href="/kontakt">
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Kontakt
-            </h1>
+            </h2>
           </Link>
 
           {/*Card container */}
@@ -158,20 +160,21 @@ export default async function HomePage() {
         {/*Sektion: Kunde statements */}
         <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 2xl:px-100">
           <div>
-            <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
+            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
               Det siger vores kunder
-            </h1>
+            </h2>
           </div>
 
           {/*Card gallery */}
           <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
             <div className="w-full flex justify-start mb-0 ">
+              <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
               <Image
                 className="w-35 h-10"
                 src="/img/icon-swipe.svg"
                 width={150}
                 height={50}
-                alt="swipe icon"
+                alt="Swipe for at se flere udtalelser"
               ></Image>
             </div>
             <StatementContainerClients />
