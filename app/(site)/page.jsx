@@ -65,6 +65,7 @@ export default async function HomePage() {
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
               width={48}
               height={48}
+              alt=""
             />
           </div>
         </section>
