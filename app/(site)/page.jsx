@@ -38,7 +38,7 @@ export default async function HomePage() {
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source
-              src="https://cms.advosion.dk/wp-content/uploads/2026/03/Advosion_HeroVideo_1min_v2_test.mov"
+              src="https://cms.advosion.dk/wp-content/uploads/2026/03/Advosion_HeroVideo_1min_v2_1080p_25p.m4v"
               type="video/mp4"
             />
           </video>
@@ -51,7 +51,7 @@ export default async function HomePage() {
 
               <div className="w-72">
                 <Image
-                  src="https://cms.advosion.dk/wp-content/uploads/2026/03/Advosion_HeroVideo_1min_v2_1080p_25p.m4v"
+                  src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
                   width={320}
                   height={120}
                   alt="Advosion logo med sloganet: det bedste fra begge verdener"
