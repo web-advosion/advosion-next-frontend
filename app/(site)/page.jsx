@@ -27,39 +27,43 @@ export default async function HomePage() {
 
         <section
           id="hero"
-          className="hero-section w-screen h-screen bg-[url('https://cms.advosion.dk/wp-content/uploads/2026/03/DSC07275-scaled.jpg')] bg-no-repeat bg-cover relative"
+          className="relative w-screen h-screen overflow-hidden"
           aria-label="miljøvideo af Advosions store og lyse lokaler"
         >
-          <div className="absolute inset-0 bg-black/60"></div>
-          {/* <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="relative w-full h-full object-cover z-0"
-        >
-          <source
-            src="https://cms.advosion.dk/wp-content/uploads/2026/02/VID_20260209_135839.mp4"
-            type="video/mp4"
-          />
-        </video> */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source
+              src="https://cms.advosion.dk/wp-content/uploads/2026/03/Advosion_HeroVideo_1min_v2_test.mov"
+              type="video/mp4"
+            />
+          </video>
 
-          <div className="flex flex-col justify-center w-fulll h-full items-start text-white relative animate__animated animate__fadeInDown animate__slow px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-            <h1 className="sr-only">Advosion - forside</h1>
-            <div className="w-72 h-30">
-              <Image
-                src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
-                width={320}
-                height={120}
-                alt="Advosion logo med sloganet: det bedste fra begge verdener"
-                priority
-              />
+          <div className="absolute inset-0 bg-black/60 z-10" />
 
-              <p className="mt-4">{page.acf.hero_description}</p>
+          <div className="absolute mt-50 inset-0 z-20 flex items-center">
+            <div className="px-7.5 md:px-10.75 lg:px-48 2xl:px-100 text-white animate__animated animate__fadeInDown animate__slow">
+              <h1 className="sr-only">Advosion - forside</h1>
+
+              <div className="w-72">
+                <Image
+                  src="https://cms.advosion.dk/wp-content/uploads/2026/02/logo-advosion-slogan.svg"
+                  width={320}
+                  height={120}
+                  alt="Advosion logo med sloganet: det bedste fra begge verdener"
+                  priority
+                />
+
+                <p className="mt-4">{page.acf.hero_description}</p>
+              </div>
             </div>
           </div>
 
-          <div className="absolute bottom-20 md:bottom-6 inset-x-0 flex justify-center z-10">
+          <div className="absolute bottom-20 md:bottom-6 inset-x-0 flex justify-center z-20">
             <Image
               className="animate__animated animate__pulse animate__infinite animate__fast"
               src="https://cms.advosion.dk/wp-content/uploads/2026/02/icon_arrow_white.svg"
