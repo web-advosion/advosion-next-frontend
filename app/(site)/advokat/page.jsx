@@ -25,7 +25,7 @@ export default async function Page() {
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
-              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
+              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
                 <h1>Advokat</h1>
               </div>
 
