@@ -55,7 +55,7 @@ export default function NavBar() {
             </li>
 
             {/* Kontakt: scale down on md so it matches text scale */}
-            <li className="md:w-32 lg:w-44 md:h-10 lg:h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
+            <li className=" h-full px-10 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
               <Link href="/kontakt" className={checkPath("/kontakt")}>
                 Kontakt
               </Link>

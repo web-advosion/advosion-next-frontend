@@ -27,7 +27,7 @@ export default async function HomePage() {
 
         <section
           id="hero"
-          className="relative w-screen h-screen overflow-hidden"
+          className="relative w-screen h-screen overflow-hidden flex justify-center"
           aria-label="miljøvideo af Advosions store og lyse lokaler"
         >
           <video
@@ -58,8 +58,8 @@ export default async function HomePage() {
 
           <div className="absolute inset-0 bg-black/60 z-10" />
 
-          <div className="absolute mt-50 inset-0 z-20 flex items-center">
-            <div className="px-7.5 md:px-10.75 lg:px-48 2xl:px-100 text-white animate__animated animate__fadeInDown animate__slow">
+          <div className="w-full max-w-6xl flex justify-start">
+            <div className="relative z-40 mt-80 mx-auto w-full px-6.5 md:px-6.5 lg:px-3.5 text-white animate__animated animate__fadeInDown animate__slow">
               <h1 className="sr-only">Advosion - forside</h1>
 
               <div className="w-72">
@@ -88,105 +88,14 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Hvem er vi */}
-        <section className="w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/om">
-            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
-              Hvem er vi?
-            </h2>
-          </Link>
-          <div className="w-full flex justify-start mt-5 lg:hidden">
-            <Image
-              className="w-35 h-10"
-              src="/img/icon-swipe.svg"
-              width={150}
-              height={50}
-              alt="Swipe for at se flere udtalelser"
-            ></Image>
-          </div>
-
-          {/*Card container */}
-          <div
-            data-aos="fade-in"
-            className="mt-2 lg:mt-7.5 w-full lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-auto lg:overflow-visible "
-          >
-            <WhoCardLeft />
-            <WhoCardMid />
-            <WhoCardRight />
-          </div>
-
-          <div className="my-12.5 flex justify-end w-full">
-            <ButtonMeet />
-          </div>
-        </section>
-
-        {/*Ydelser */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/om/">
-            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
-              Ydelser
-            </h2>
-          </Link>
-
-          {/*Card container */}
-          <div
-            data-aos="fade-right"
-            className="mt-7.5 w-full mb-12.5 lg:w-179 "
-          >
-            <div className="hidden md:block">
-              <AdvokatCard />
-            </div>
-
-            <div className="md:hidden">
-              <AdvokatCardMobile />
-            </div>
-          </div>
-
-          <div
-            data-aos="fade-left"
-            className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
-          >
-            <div className="hidden md:block">
-              <RevisorCard />
-            </div>
-
-            <div className=" md:hidden">
-              <RevisorCardMobile />
-            </div>
-          </div>
-        </section>
-
-        {/*Sektion: kontakt */}
-        <section className=" w-full h-auto bg-(--primary-bg) px-7.5 md:px-10.75 lg:px-48 2xl:px-100">
-          <Link href="/kontakt">
-            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
-              Kontakt
-            </h2>
-          </Link>
-
-          {/*Card container */}
-          <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
-            <div className="hidden md:block lg:block">
-              <ContactCard />
-            </div>
-
-            <div className="md:hidden">
-              <ContactCardMobile />
-            </div>
-          </div>
-        </section>
-
-        {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) px-7.5 pb-25 md:px-10.75 lg:px-48 2xl:px-100">
-          <div>
-            <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
-              Det siger vores kunder
-            </h2>
-          </div>
-
-          {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
-            <div className="w-full flex justify-start mb-0 ">
-              <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
+        <section className="w-full">
+          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+            <Link href="/om">
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+                Hvem er vi?
+              </h2>
+            </Link>
+            <div className="w-full flex justify-start mt-5 lg:hidden">
               <Image
                 className="w-35 h-10"
                 src="/img/icon-swipe.svg"
@@ -195,7 +104,106 @@ export default async function HomePage() {
                 alt="Swipe for at se flere udtalelser"
               ></Image>
             </div>
-            <StatementContainerClients />
+
+            {/*Card container */}
+            <div
+              data-aos="fade-in"
+              className="mt-2 lg:mt-7.5 w-full lg:w-full overflow-x-auto gap-5 flex justify-between  mb-12.5 rounded-3xl md:gap-20 py-2.5 pr-auto lg:overflow-visible "
+            >
+              <WhoCardLeft />
+              <WhoCardMid />
+              <WhoCardRight />
+            </div>
+
+            <div className="my-12.5 flex justify-end w-full">
+              <ButtonMeet />
+            </div>
+          </div>
+        </section>
+
+        {/*Ydelser */}
+        <section className=" w-screen h-auto bg-(--secondary-bg) ">
+          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+            <Link href="/om/">
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+                Ydelser
+              </h2>
+            </Link>
+
+            {/*Card container */}
+            <div
+              data-aos="fade-right"
+              className="mt-7.5 w-full mb-12.5 lg:w-179 "
+            >
+              <div className="hidden md:block">
+                <AdvokatCard />
+              </div>
+
+              <div className="md:hidden">
+                <AdvokatCardMobile />
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
+            >
+              <div className="hidden md:block">
+                <RevisorCard />
+              </div>
+
+              <div className=" md:hidden">
+                <RevisorCardMobile />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*Sektion: kontakt */}
+        <section className=" w-full h-auto bg-(--primary-bg)">
+          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+            <Link href="/kontakt">
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
+                Kontakt
+              </h2>
+            </Link>
+
+            {/*Card container */}
+            <div data-aos="fade-in" className="mt-7.5 w-full mb-25">
+              <div className="hidden md:block lg:block">
+                <ContactCard />
+              </div>
+
+              <div className="md:hidden">
+                <ContactCardMobile />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*Sektion: Kunde statements */}
+        <section className=" w-screen h-auto bg-(--secondary-bg) pb-12.5">
+          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+            <div>
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
+                Det siger vores kunder
+              </h2>
+            </div>
+
+            {/*Card gallery */}
+            <div data-aos="fade-in" className="mt-2.5 w-full h-auto">
+              <div className="w-full flex justify-start mb-0 ">
+                <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
+                <Image
+                  className="w-35 h-10"
+                  src="/img/icon-swipe.svg"
+                  width={150}
+                  height={50}
+                  alt="Swipe for at se flere udtalelser"
+                ></Image>
+              </div>
+              <StatementContainerClients />
+            </div>
           </div>
         </section>
       </main>
