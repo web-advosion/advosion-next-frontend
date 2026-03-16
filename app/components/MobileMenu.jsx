@@ -23,7 +23,7 @@ export default function MobileMenu({ onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 bg-(--primary-bg) flex flex-col px-6.5 h-dvh overflow-hidden">
-      <article className="flex justify-between items-center mt-12.5 py-2">
+      <article className="flex justify-between items-center mt-12.5 py-3">
         <Link href="/#hero" onClick={onClose}>
           <img
             src="/img/icon-footer.svg"
