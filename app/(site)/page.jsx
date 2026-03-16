@@ -59,7 +59,7 @@ export default async function HomePage() {
           <div className="absolute inset-0 bg-black/60 z-10" />
 
           <div className="w-full max-w-6xl flex justify-start">
-            <div className="relative z-40 mt-80 mx-auto w-full px-6.5 md:px-6.5 lg:px-3.5 text-white animate__animated animate__fadeInDown animate__slow">
+            <div className="relative z-40 mt-80 md:mt-110 mx-auto w-full px-6.5 md:px-6.5 lg:px-3.5 text-white animate__animated animate__fadeInDown animate__slow">
               <h1 className="sr-only">Advosion - forside</h1>
 
               <div className="w-72">
