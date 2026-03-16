@@ -16,62 +16,65 @@ export default function NavBar() {
       : "text-black hover:text-(--revision-blue) transition-colors";
 
   return (
-    <div className="w-full h-16 md:h-20 bg-(--primary-bg) rounded-2xl shadow-lg px-3 py-2 md:px-4 md:py-3 lg:p-5 flex items-center justify-between md:text-base lg:text-xl">
-      <article className="h-full w-full flex items-center">
-        <Link href="/#hero">
+    <div className="w-full h-auto bg-(--primary-bg) rounded-2xl shadow-lg max-w-6xl">
+      <div className="mx-auto w-full p-3 flex justify-between">
+        <article className="flex items-center shrink-0">
+          <Link href="/#hero">
+            <Image
+              src="/img/icon-footer.svg"
+              width={235}
+              height={50}
+              alt="Advosion logo"
+              className="h-12 w-auto"
+              priority
+            />
+          </Link>
+        </article>
+
+        <article className="hidden md:flex">
+          <ul className="font-medium flex items-center gap-6">
+            <li className="w-max">
+              <Link href="/om" className={checkPath("/om")}>
+                Om os
+              </Link>
+            </li>
+            <li className="w-max">
+              <Link href="/advokat" className={checkPath("/advokat")}>
+                Advokat
+              </Link>
+            </li>
+            <li className="w-max">
+              <Link href="/revision" className={checkPath("/revision")}>
+                Revision
+              </Link>
+            </li>
+            <li className="w-max">
+              <Link href="/karriere" className={checkPath("/karriere")}>
+                Karriere
+              </Link>
+            </li>
+
+            {/* Kontakt: scale down on md so it matches text scale */}
+            <li className="md:w-32 lg:w-44 md:h-10 lg:h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
+              <Link href="/kontakt" className={checkPath("/kontakt")}>
+                Kontakt
+              </Link>
+            </li>
+          </ul>
+        </article>
+
+        <button className="md:hidden" onClick={() => setMenuOpen(true)}>
           <Image
-            src="/img/icon-footer.svg"
-            width={235}
+            src="/img/icon-burgermenu.svg"
+            width={50}
             height={50}
-            alt="Advosion logo"
-            className="h-12 md:h-10 lg:h-12 w-auto"
-            priority
+            alt="burgermenu ikon"
+            className="w-full h-full"
           />
-        </Link>
-      </article>
+        </button>
 
-      <article className="hidden md:flex">
-        <ul className="font-medium flex items-center gap-6 md:gap-auto lg:gap-auto">
-          <li className="w-max">
-            <Link href="/om" className={checkPath("/om")}>
-              Om os
-            </Link>
-          </li>
-          <li className="w-max">
-            <Link href="/advokat" className={checkPath("/advokat")}>
-              Advokat
-            </Link>
-          </li>
-          <li className="w-max">
-            <Link href="/revision" className={checkPath("/revision")}>
-              Revision
-            </Link>
-          </li>
-          <li className="w-max">
-            <Link href="/karriere" className={checkPath("/karriere")}>
-              Karriere
-            </Link>
-          </li>
-
-          {/* Kontakt: scale down on md so it matches text scale */}
-          <li className="md:w-32 lg:w-44 md:h-10 lg:h-12 px-2.5 py-1 bg-(--cards) rounded-2xl flex items-center justify-center">
-            <Link href="/kontakt" className={checkPath("/kontakt")}>
-              Kontakt
-            </Link>
-          </li>
-        </ul>
-      </article>
-
-      <button className="md:hidden" onClick={() => setMenuOpen(true)}>
-        <Image
-          src="/img/icon-burgermenu.svg"
-          width={50}
-          height={50}
-          alt="burgermenu ikon"
-        />
-      </button>
-
-      {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
+        {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
+      </div>
     </div>
   );
 }
