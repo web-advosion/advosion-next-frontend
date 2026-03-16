@@ -22,7 +22,7 @@ export default async function Page() {
         id="hero"
         className="margin-to-nav w-screen h-auto px-7.5 md:px-10.75 lg:px-48 2xl:px-100 bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav-mobile"
       >
-        <div className="md:flex">
+        <div className="md:flex justify-between">
           <div>
             <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-9">
               <h1>Advokat</h1>
