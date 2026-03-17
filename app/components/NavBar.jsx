@@ -69,7 +69,7 @@ export default function NavBar() {
             width={50}
             height={50}
             alt="burgermenu ikon"
-            className="w-full h-full"
+            className="w-full h-full pr-2"
           />
         </button>
 
