@@ -23,7 +23,7 @@ export default function NavBar({ stuck }) {
           isHome
             ? stuck
               ? "text-white" // after scroll on home
-              : "text-white" // hero (home only)
+              : "text-white bg-transparant" // hero (home only)
             : "text-white" // all other pages
         }`}
       >
