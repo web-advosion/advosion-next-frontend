@@ -1,8 +1,6 @@
 "use client";
 
-{
-  /*Made with AI */
-}
+/*Made with AI */
 
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar2";
@@ -10,10 +8,13 @@ import { usePathname } from "next/navigation";
 
 export default function NavBarSnap() {
   const [stuck, setStuck] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
   useEffect(() => {
+    setMounted(true);
+
     const handleScroll = () => {
       setStuck(window.scrollY > 0);
     };
@@ -26,6 +27,8 @@ export default function NavBarSnap() {
     };
   }, []);
 
+  if (!mounted) return null;
+
   return (
     <div
       className={`fixed left-0 w-full z-50 flex justify-center transition-all duration-300 h-auto px-3.5 md:px-6.75 ${
@@ -36,7 +39,7 @@ export default function NavBarSnap() {
           : "bg-(--advokat-blue) shadow-md"
       }`}
     >
-      <NavBar />
+      <NavBar stuck={stuck} />
     </div>
   );
 }
