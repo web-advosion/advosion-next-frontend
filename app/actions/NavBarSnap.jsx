@@ -5,10 +5,13 @@
 }
 
 import { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar2";
+import { usePathname } from "next/navigation";
 
 export default function NavBarSnap() {
   const [stuck, setStuck] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +28,12 @@ export default function NavBarSnap() {
 
   return (
     <div
-      className={`fixed left-0 w-full z-50 flex justify-center transition-all duration-200 h-auto px-3.5 md:px-6.75" ${
-        stuck ? "top-0" : "top-12.5"
+      className={`fixed left-0 w-full z-50 flex justify-center transition-all duration-300 h-auto px-3.5 md:px-6.75 ${
+        isHome
+          ? stuck
+            ? "bg-(--advokat-blue) shadow-md"
+            : "bg-transparent"
+          : "bg-(--advokat-blue) shadow-md"
       }`}
     >
       <NavBar />
