@@ -78,7 +78,7 @@ export default function NavBar({ stuck }) {
 
           <button className="md:hidden" onClick={() => setMenuOpen(true)}>
             <Image
-              src="/img/icon-burgermenu.svg"
+              src="/img/icon-burgermenu-white.svg"
               width={50}
               height={50}
               alt="burgermenu ikon"
