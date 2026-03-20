@@ -16,7 +16,7 @@ export default function NavBarSnap() {
     setMounted(true);
 
     const handleScroll = () => {
-      setStuck(window.scrollY > 0);
+      setStuck(window.scrollY > 20);
     };
 
     handleScroll();
