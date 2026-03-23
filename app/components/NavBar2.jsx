@@ -54,7 +54,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/om/#holdet"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Holdet
                     </Link>
@@ -62,7 +62,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/om/#faciliteter"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Faciliteterne
                     </Link>
@@ -70,7 +70,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/om/#vision"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Vision og kerneværdier
                     </Link>
@@ -90,7 +90,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#ekspertiser"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Ekspertiser
                     </Link>
@@ -98,7 +98,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#skatteret"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Skatteret
                     </Link>
@@ -106,7 +106,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#erhverv"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Erhvervs- og selskabsret
                     </Link>
@@ -114,7 +114,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#generation"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Generationsskifte
                     </Link>
@@ -122,7 +122,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#virksomhed"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Virksomhedsoverdragelse
                     </Link>
@@ -130,7 +130,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#kontrakt"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Kontrakter
                     </Link>
@@ -138,7 +138,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#konflikt"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Konflikthåndtering
                     </Link>
@@ -146,7 +146,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Forretningsbetingelser
                     </Link>
@@ -154,7 +154,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Privatlivspolitik
                     </Link>
@@ -162,7 +162,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/advokat/#ledelse"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Bankoplysninger
                     </Link>
@@ -181,7 +181,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#ekspertiser"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Ekspertiser
                     </Link>
@@ -189,7 +189,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#regnskab"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Regnskab og revision
                     </Link>
@@ -197,7 +197,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#skat"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Skat, moms og afgifter
                     </Link>
@@ -205,7 +205,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#finansiering"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Finansiering
                     </Link>
@@ -213,7 +213,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#virksomhed"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Køb og salg af virksomhed
                     </Link>
@@ -221,7 +221,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#ledelse"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Ledelsesrådgivning
                     </Link>
@@ -229,7 +229,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Forretningsbetingelser
                     </Link>
@@ -237,7 +237,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Privatlivspolitik
                     </Link>
@@ -245,7 +245,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/revision/#"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Bankoplysninger
                     </Link>
@@ -265,7 +265,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/karriere/#karriere"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Karriereudvikling
                     </Link>
@@ -273,7 +273,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/karriere/#medarbejder"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Det siger vores medarbejdere
                     </Link>
@@ -282,7 +282,7 @@ export default function NavBar({ stuck }) {
                   <li>
                     <Link
                       href="/karriere/#uopfordret"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-white"
                     >
                       Søg uopfordret
                     </Link>
