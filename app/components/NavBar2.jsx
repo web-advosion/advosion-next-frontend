@@ -13,8 +13,8 @@ export default function NavBar({ stuck }) {
 
   const checkPath = (path) =>
     pathname == path
-      ? "font-bold text-(--revision-blue)"
-      : "hover:text-(--revision-blue) transition-colors";
+      ? " text-(--revision-blue) border-(--revision-blue)"
+      : "hover:text-(--revision-blue) transition-colors hover:border-(--revision-blue)";
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function NavBar({ stuck }) {
             : "text-white"
         }`}
       >
-        <div className="mx-auto w-full p-3 flex justify-between">
+        <div className="mx-auto w-full py-3 flex justify-between">
           <article className="flex items-center shrink-0">
             <Link href="/#hero">
               <Image
