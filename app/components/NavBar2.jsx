@@ -43,13 +43,39 @@ export default function NavBar({ stuck }) {
 
           <article className="hidden md:flex">
             <ul className="font-medium flex items-center gap-6">
-              <li className="w-max">
+              <li className="w-max group relative">
                 <Link
                   href="/om"
                   className={`${checkPath("/om")} inline-block py-2`}
                 >
                   Om os
                 </Link>
+                <ul className="absolute left-0 top-full hidden group-hover:block bg-white text-black rounded-2xl shadow-lg min-w-50 py-0 z-50 overflow-hidden">
+                  <li>
+                    <Link
+                      href="/om/#holdet"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Holdet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/om/#faciliteter"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Faciliteterne
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/om/#vision"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Vision og kerneværdier
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="relative group w-max">
@@ -117,6 +143,30 @@ export default function NavBar({ stuck }) {
                       Konflikthåndtering
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/advokat/#"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Forretningsbetingelser
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/advokat/#"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Privatlivspolitik
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/advokat/#ledelse"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Bankoplysninger
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
@@ -176,16 +226,68 @@ export default function NavBar({ stuck }) {
                       Ledelsesrådgivning
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/revision/#"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Forretningsbetingelser
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/revision/#"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Privatlivspolitik
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/revision/#"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Bankoplysninger
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
-              <li className="w-max">
+              <li className="w-max group relative">
                 <Link
                   href="/karriere"
                   className={`${checkPath("/karriere")} inline-block py-2`}
                 >
                   Karriere
                 </Link>
+
+                <ul className="absolute left-0 top-full hidden group-hover:block bg-white text-black rounded-2xl shadow-lg min-w-50 py-0 z-50 overflow-hidden">
+                  <li>
+                    <Link
+                      href="/karriere/#karriere"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Karriereudvikling
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/karriere/#medarbejder"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Det siger vores medarbejdere
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/karriere/#uopfordret"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Søg uopfordret
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li>
