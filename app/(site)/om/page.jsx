@@ -27,7 +27,7 @@ export default async function Page() {
         id="hero"
         className="margin-to-nav w-screen h-auto  bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav-mobile "
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
               <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
@@ -71,7 +71,7 @@ export default async function Page() {
         id="ekspertise"
         className="w-screen h-auto bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5 scroll-mt-15"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <h2 className="sr-only">Ekspertise</h2>
           <div className="w-full flex justify-start mb-2.5 md:hidden">
             <Image
@@ -109,7 +109,7 @@ export default async function Page() {
         id="holdet"
         className="w-screen h-auto  bg-(--primary-bg) mb-12.5  pt-12.5 scroll-mt-15"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
             <h2>Holdet</h2>
           </div>
@@ -204,7 +204,7 @@ export default async function Page() {
         className="w-screen h-auto  bg-(--secondary-bg) pt-12.5 scroll-mt-15"
         id="faciliteter"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
             <h2>Faciliteterne</h2>
           </div>
@@ -256,7 +256,7 @@ export default async function Page() {
         id="vision"
         className="w-screen h-auto  bg-(--primary-bg) pb-25 pt-12.5 scroll-mt-15"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-9 md:leading-7">
             <h2>Vision og kerneværdier</h2>
           </div>

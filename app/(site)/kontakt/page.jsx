@@ -13,7 +13,7 @@ export default async function Page() {
         id="hero"
         className="w-screen h-auto bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav margin-to-nav-mobile "
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
               <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
@@ -52,7 +52,7 @@ export default async function Page() {
 
       {/*Sektion: kontakt */}
       <section className=" w-full h-auto bg-(--primary-bg)">
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <Link href="/">
             <h1 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
               Kontakt
