@@ -27,7 +27,7 @@ export default function NavBar({ stuck }) {
             : "text-white"
         }`}
       >
-        <div className="mx-auto w-full py-3 flex justify-between">
+        <div className="mx-auto w-full py-3 flex justify-between pr-3">
           <article className="flex items-center shrink-0">
             <Link href="/#hero">
               <Image
@@ -293,7 +293,7 @@ export default function NavBar({ stuck }) {
               <li>
                 <Link
                   href="/kontakt"
-                  className={`${checkPath("/kontakt")} h-full px-10 py-1 border-2 border-(--primary-bg) rounded-2xl flex items-center justify-center`}
+                  className={`${checkPath("/kontakt")} h-full px-8 py-1 border-2 border-(--primary-bg) rounded-2xl flex items-center justify-center`}
                 >
                   Kontakt
                 </Link>
