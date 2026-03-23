@@ -221,7 +221,7 @@ export default async function Page() {
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
-              <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
+              <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-9">
                 <h2>Erhvervs- og selskabsret</h2>
               </div>
 
@@ -409,7 +409,7 @@ export default async function Page() {
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
-              <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
+              <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-9">
                 <div className="md:hidden">
                   <h2>
                     Virksomheds- <br />

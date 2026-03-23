@@ -62,21 +62,19 @@ export default function MobileMenu({ onClose }) {
 
             {openOm && (
               <div className="px-3 pb-3 flex flex-col gap-2">
-                <Link href="/om/erhverv" onClick={onClose} className="text-xl">
+                <Link href="/om/#holdet" onClick={onClose} className="text-xl">
                   Holdet
                 </Link>
+
                 <Link
-                  href="/advokat/privat"
+                  href="/om/#faciliteter"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Faciliteter
+                  Faciliteterne
                 </Link>
-                <Link
-                  href="/advokat/inkasso"
-                  onClick={onClose}
-                  className="text-xl"
-                >
+
+                <Link href="/om/#vision" onClick={onClose} className="text-xl">
                   Vision og kerneværdier
                 </Link>
               </div>
@@ -102,25 +100,62 @@ export default function MobileMenu({ onClose }) {
             {openAdvokat && (
               <div className="px-3 pb-3 flex flex-col gap-2">
                 <Link
-                  href="/advokat/erhverv"
+                  href="/advokat/#ekspertiser"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Erhverv
+                  Ekspertiser
                 </Link>
                 <Link
-                  href="/advokat/privat"
+                  href="/advokat/#skatteret"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Privat
+                  Skatteret
                 </Link>
                 <Link
-                  href="/advokat/inkasso"
+                  href="/advokat/#erhverv"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Inkasso
+                  Erhvervs- og selskabsret
+                </Link>
+                <Link
+                  href="/advokat/#generation"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Generationsskifte
+                </Link>
+                <Link
+                  href="/advokat/#virksomhed"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Virksomhedsoverdragelse
+                </Link>
+                <Link
+                  href="/advokat/#kontrakt"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Kontrakter{" "}
+                </Link>
+                <Link
+                  href="/advokat/#erhverv"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Konflikthåndtering
+                </Link>
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Forretningsbetingelser
+                </Link>
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Privatlivspolitik
+                </Link>
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Bankoplysninger
                 </Link>
               </div>
             )}
@@ -145,18 +180,63 @@ export default function MobileMenu({ onClose }) {
             {openadvokat && (
               <div className="px-3 pb-3 flex flex-col gap-2">
                 <Link
-                  href="/advokat/regnskab"
+                  href="/revision/#ekspertiser"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Regnskab
+                  Ekspertiser
                 </Link>
                 <Link
-                  href="/advokat/radgivning"
+                  href="/revision/#regnskab"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Rådgivning
+                  Regnskab og revision
+                </Link>
+                <Link
+                  href="/revision/#skat"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Skat, moms og afgifter
+                </Link>
+                <Link
+                  href="/revision/#finansiering"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Finansiering
+                </Link>
+                <Link
+                  href="/revision/#virksomhed"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Køb og salg af virksomhed
+                </Link>
+                <Link
+                  href="/revision/#ledelse"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Ledelsesrådgivning
+                </Link>
+                <Link
+                  href="/revision/#regnskab"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Regnskab og revision
+                </Link>
+
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Forretningsbetingelser
+                </Link>
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Privatlivspolitik
+                </Link>
+                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                  Bankoplysninger
                 </Link>
               </div>
             )}
@@ -179,18 +259,25 @@ export default function MobileMenu({ onClose }) {
             {openKarriere && (
               <div className="px-3 pb-3 flex flex-col gap-2">
                 <Link
-                  href="/advokat/regnskab"
+                  href="/karriere/#karriere"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Regnskab
+                  Karriereudvikling
                 </Link>
                 <Link
-                  href="/advokat/radgivning"
+                  href="/karriere/#medarbejder"
                   onClick={onClose}
                   className="text-xl"
                 >
-                  Rådgivning
+                  Det siger vores medarbejdere
+                </Link>
+                <Link
+                  href="/karriere/#uopfordret"
+                  onClick={onClose}
+                  className="text-xl"
+                >
+                  Søg uopfordret
                 </Link>
               </div>
             )}
