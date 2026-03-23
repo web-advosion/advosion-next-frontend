@@ -61,7 +61,7 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto bg-(--cards) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--cards) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
           <article className="lg:w-2/3">
@@ -111,7 +111,7 @@ export default async function Page() {
       {/*Sektion: Skatteret */}
       <section
         id="skatteret"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start "
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
@@ -216,7 +216,7 @@ export default async function Page() {
       {/*Sektion: Erhvervs- og selskabsret */}
       <section
         id="erhverv"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
@@ -310,7 +310,7 @@ export default async function Page() {
       {/*Sektion: Generationsskifte */}
       <section
         id="generation"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
@@ -404,7 +404,7 @@ export default async function Page() {
       {/*Sektion: Virksomhedsoverdragelse */}
       <section
         id="virksomhed"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
@@ -522,7 +522,7 @@ export default async function Page() {
       {/*Sektion: Kontrakter */}
       <section
         id="kontrakt"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
@@ -627,7 +627,7 @@ export default async function Page() {
       {/*Sektion: Konflikthåndtering */}
       <section
         id="konflikt"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="lg:flex">
