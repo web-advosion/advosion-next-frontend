@@ -23,7 +23,7 @@ export default async function Page() {
         id="hero"
         className="margin-to-nav w-screen h-auto bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav-mobile"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
               <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
@@ -60,9 +60,9 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto bg-(--cards) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-15"
+        className="w-screen h-auto bg-(--cards) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
           <article className="lg:w-2/3">
             <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
               <h2>Ekspertiser</h2>
@@ -105,9 +105,9 @@ export default async function Page() {
       {/*Sektion: Regnskab og revision */}
       <section
         id="regnskab"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start scroll-mt-15"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:justify-between lg:items-start scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
               <div className="w-max justify-start text-CTA-black text-3xl md:text-4xl font-bold font-['Inter'] leading-7">
@@ -166,9 +166,9 @@ export default async function Page() {
       {/*Sektion: Skat, moms og afgifter */}
       <section
         id="skat"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
               <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-10 md:leading-7">
@@ -220,9 +220,9 @@ export default async function Page() {
       {/*Sektion: Finansiering */}
       <section
         id="finansiering"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-15"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
               <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
@@ -274,9 +274,9 @@ export default async function Page() {
       {/*Sektion: Køb og salg af virksomhed */}
       <section
         id="virksomhed"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
               <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-10 md:leading-7">
@@ -331,9 +331,9 @@ export default async function Page() {
       {/*Sektion: Ledelsesrådgivning */}
       <section
         id="ledelse"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-15"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="lg:flex">
             <article>
               <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">

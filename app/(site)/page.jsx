@@ -58,7 +58,7 @@ export default async function HomePage() {
 
           <div className="absolute inset-0 bg-black/60 z-10" />
 
-          <div className="w-full max-w-6xl flex justify-start">
+          <div className="w-full max-w-6xl 2xl:max-w-350 flex justify-start">
             <div className="relative z-40 mt-80 md:mt-110 mx-auto w-full px-6.5 md:px-6.5 lg:px-3.5 text-white animate__animated animate__fadeInDown animate__slow">
               <h1 className="sr-only">Advosion - forside</h1>
 
@@ -89,7 +89,7 @@ export default async function HomePage() {
 
         {/*Sektion: Hvem er vi */}
         <section className="w-full">
-          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <Link href="/om">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Hvem er vi?
@@ -123,7 +123,7 @@ export default async function HomePage() {
 
         {/*Ydelser */}
         <section className=" w-screen h-auto bg-(--secondary-bg) ">
-          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <Link href="/om/">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Ydelser
@@ -161,7 +161,7 @@ export default async function HomePage() {
 
         {/*Sektion: kontakt */}
         <section className=" w-full h-auto bg-(--primary-bg)">
-          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <Link href="/kontakt">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Kontakt
@@ -183,7 +183,7 @@ export default async function HomePage() {
 
         {/*Sektion: Kunde statements */}
         <section className=" w-screen h-auto bg-(--secondary-bg) pb-12.5">
-          <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <div>
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
                 Det siger vores kunder
