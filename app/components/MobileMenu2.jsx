@@ -62,6 +62,9 @@ export default function MobileMenu({ onClose }) {
 
             {openOm && (
               <div className="px-3 pb-3 flex flex-col gap-2">
+                <Link href="/om" onClick={onClose} className="text-xl">
+                  Om os
+                </Link>
                 <Link href="/om/#holdet" onClick={onClose} className="text-xl">
                   Holdet
                 </Link>
@@ -99,6 +102,9 @@ export default function MobileMenu({ onClose }) {
 
             {openAdvokat && (
               <div className="px-3 pb-3 flex flex-col gap-2">
+                <Link href="/advokat" onClick={onClose} className="text-xl">
+                  Advokat
+                </Link>
                 <Link
                   href="/advokat/#ekspertiser"
                   onClick={onClose}
@@ -142,7 +148,7 @@ export default function MobileMenu({ onClose }) {
                   Kontrakter{" "}
                 </Link>
                 <Link
-                  href="/advokat/#erhverv"
+                  href="/advokat/#konflikt"
                   onClick={onClose}
                   className="text-xl"
                 >
@@ -179,6 +185,9 @@ export default function MobileMenu({ onClose }) {
 
             {openadvokat && (
               <div className="px-3 pb-3 flex flex-col gap-2">
+                <Link href="/revision" onClick={onClose} className="text-xl">
+                  Revision
+                </Link>
                 <Link
                   href="/revision/#ekspertiser"
                   onClick={onClose}
@@ -258,6 +267,9 @@ export default function MobileMenu({ onClose }) {
             </button>
             {openKarriere && (
               <div className="px-3 pb-3 flex flex-col gap-2">
+                <Link href="/karriere" onClick={onClose} className="text-xl">
+                  Karriere
+                </Link>
                 <Link
                   href="/karriere/#karriere"
                   onClick={onClose}

@@ -57,7 +57,7 @@ export default async function Page() {
       {/*Sektion: Karriereudvikling */}
       <section
         id="karriere"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-15 scroll-mt-15"
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <article className="lg:w-2/3">
@@ -88,7 +88,7 @@ export default async function Page() {
       {/*Sektion: Medarbejder statements */}
       <section
         id="medarbejder"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start scroll-mt-15 scroll-mt-15"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start scroll-mt-12.5 scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <article className="lg:w-2/3">
@@ -174,7 +174,7 @@ export default async function Page() {
       {/*Sektion:  Søg uopfordret */}
       <section
         id="uopfordret"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
           <article className="lg:w-2/3">
