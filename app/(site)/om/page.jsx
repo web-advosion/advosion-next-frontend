@@ -69,7 +69,7 @@ export default async function Page() {
       {/*Sektion Ekspertise*/}
       <section
         id="ekspertise"
-        className="w-screen h-auto bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5"
+        className="w-screen h-auto bg-(--secondary-bg) pb-7.5 pt-10 md:pt-12.5  md:pb-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <h2 className="sr-only">Ekspertise</h2>
@@ -107,7 +107,7 @@ export default async function Page() {
       {/*Sektion: Holdet */}
       <section
         id="holdet"
-        className="w-screen h-auto  bg-(--primary-bg) mb-12.5  mt-12.5 "
+        className="w-screen h-auto  bg-(--primary-bg) mb-12.5  pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
@@ -200,7 +200,10 @@ export default async function Page() {
       </section>
 
       {/*Sektion: Faciliteterne */}
-      <section className="w-screen h-auto  bg-(--secondary-bg) pt-12.5 ">
+      <section
+        className="w-screen h-auto  bg-(--secondary-bg) pt-12.5 scroll-mt-15"
+        id="faciliteter"
+      >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
             <h2>Faciliteterne</h2>
@@ -251,7 +254,7 @@ export default async function Page() {
       {/*Sektion: Vision */}
       <section
         id="vision"
-        className="w-screen h-auto  bg-(--primary-bg) pb-25 pt-12.5 "
+        className="w-screen h-auto  bg-(--primary-bg) pb-25 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-9 md:leading-7">

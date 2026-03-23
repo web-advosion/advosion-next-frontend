@@ -57,7 +57,7 @@ export default async function Page() {
       {/*Sektion: Karriereudvikling */}
       <section
         id="karriere"
-        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start"
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-15 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <article className="lg:w-2/3">
@@ -88,7 +88,7 @@ export default async function Page() {
       {/*Sektion: Medarbejder statements */}
       <section
         id="medarbejder"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start scroll-mt-15 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5">
           <article className="lg:w-2/3">
@@ -131,7 +131,7 @@ export default async function Page() {
       </section>
 
       {/*Sektion: Stillinger */}
-      <section
+      {/*  <section
         id="stillinger"
         className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 lg:flex-col lg:justify-between lg:items-start"
       >
@@ -153,10 +153,10 @@ export default async function Page() {
                 Her kan du se hvilke stillinger vi søger i øjeblikket:
               </p>
             </div>
-          </article>
+          </article> */}
 
-          {/*Card gallery */}
-          <div data-aos="fade-in" className="mt-12.5 w-full h-auto">
+      {/*Card gallery */}
+      {/* <div data-aos="fade-in" className="mt-12.5 w-full h-auto">
             <div className="w-full flex justify-start mb-0 ">
               <Image
                 className="w-35 h-10"
@@ -170,11 +170,11 @@ export default async function Page() {
           </div>
         </div>
       </section>
-
+ */}
       {/*Sektion:  Søg uopfordret */}
       <section
         id="uopfordret"
-        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 "
+        className="w-screen h-auto bg-(--secondary-bg) pb-12.5 pt-12.5 scroll-mt-15"
       >
         <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
           <article className="lg:w-2/3">
