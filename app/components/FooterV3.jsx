@@ -93,17 +93,18 @@ export default function FooterV3() {
             </div>
 
             <div className="mt-11.5 md:mt-0">
-              <Link href="/information">
-                <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
-                  Vilkår og oplysninger
-                </h2>
-              </Link>
+              <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
+                Vilkår og oplysninger
+              </h2>
+
               <ul className="text-base md:text-xs lg:text-base font-medium gap-3 flex flex-col mt-3">
                 <li>
-                  <Link href="/information/#privat">Privatlivspolitik</Link>
+                  <Link href="/information-advokat">Advokat - information</Link>
                 </li>
                 <li>
-                  <Link href="/information/#bank">Bankoplysninger</Link>
+                  <Link href="/information-revision">
+                    Revision - information
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -138,20 +139,6 @@ export default function FooterV3() {
 
           <article className="flex items-end justify-start md:justify-end mt-11.5 md:mt-0">
             <ul className=" text-base font-medium gap-8 flex flex-col md:flex-row items-start md:items-end">
-              <li>
-                <Link
-                  className="flex flex-col md:flex-row items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"
-                  href="/"
-                >
-                  <Image
-                    className=""
-                    src="/img/icon-trustpilot.svg"
-                    width={150}
-                    height={50}
-                    alt="telefon logo"
-                  ></Image>
-                </Link>
-              </li>
               <li>
                 <Link
                   className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 ease-in-out"

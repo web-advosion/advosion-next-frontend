@@ -133,7 +133,7 @@ export default async function HomePage() {
 
           <div className="mx-auto w-full">
             {/*Card container */}
-            <div data-aos="fade-right" className="mt-7.5 w-full lg:w-full ">
+            <div className="mt-7.5 w-full lg:w-full ">
               <div className="hidden md:block">
                 <AdvokatCard />
               </div>
@@ -143,7 +143,7 @@ export default async function HomePage() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className=" w-full lg:justify-self-end ">
+            <div className=" w-full lg:justify-self-end ">
               <div className="hidden md:block">
                 <RevisorCard />
               </div>
