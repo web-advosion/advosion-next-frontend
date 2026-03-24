@@ -95,15 +95,10 @@ export default function FooterV3() {
             <div className="mt-11.5 md:mt-0">
               <Link href="/information">
                 <h2 className="text-2xl md:text-base lg:text-2xl font-bold">
-                  Information
+                  Vilkår og oplysninger
                 </h2>
               </Link>
               <ul className="text-base md:text-xs lg:text-base font-medium gap-3 flex flex-col mt-3">
-                <li>
-                  <Link href="/information/#betingelser">
-                    Forretningsbetingelser
-                  </Link>
-                </li>
                 <li>
                   <Link href="/information/#privat">Privatlivspolitik</Link>
                 </li>
