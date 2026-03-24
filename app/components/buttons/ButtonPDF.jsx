@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export default function ButtonPDF({ documentPath }) {
+export default function ButtonPDF({ documentPath, imageURL }) {
   return (
-    <a href={`${documentPath}`} download>
+    <a href={documentPath} download>
       <Image
         className="w-full h-full"
-        src="/img/icon-pdf.svg"
+        src={imageURL}
         width={130}
         height={130}
         alt="swipe icon"

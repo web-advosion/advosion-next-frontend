@@ -154,15 +154,42 @@ export default function MobileMenu({ onClose }) {
                 >
                   Konflikthåndtering
                 </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Forretningsbetingelser
-                </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Privatlivspolitik
-                </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Bankoplysninger
-                </Link>
+
+                <li className="relative group/sub">
+                  <Link
+                    href="/information-advokat"
+                    className="text-xl block hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
+                  >
+                    Vilkår og oplysninger
+                  </Link>
+
+                  <ul className="flex flex-col pl-10 py-2 gap-2">
+                    <li>
+                      <Link
+                        href="/information-advokat/#betingelser"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Forretningsbetingelser
+                      </Link>
+                    </li>
+
+                    <Link
+                      href="/information-advokat/#privat"
+                      onClick={onClose}
+                      className="text-lg"
+                    >
+                      Privatlivspolitik
+                    </Link>
+                    <Link
+                      href="/information-advokat/#bank"
+                      onClick={onClose}
+                      className="text-lg"
+                    >
+                      Bankoplysninger
+                    </Link>
+                  </ul>
+                </li>
               </div>
             )}
           </div>
@@ -238,15 +265,41 @@ export default function MobileMenu({ onClose }) {
                   Regnskab og revision
                 </Link>
 
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Forretningsbetingelser
-                </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Privatlivspolitik
-                </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
-                  Bankoplysninger
-                </Link>
+                <li className="relative group/sub">
+                  <Link
+                    href="/information-revision"
+                    className="text-xl block hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
+                  >
+                    Vilkår og oplysninger
+                  </Link>
+
+                  <ul className="flex flex-col pl-10 py-2 gap-2">
+                    <li>
+                      <Link
+                        href="/information-revision/#betingelser"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Forretningsbetingelser
+                      </Link>
+                    </li>
+
+                    <Link
+                      href="/information-revision/#privat"
+                      onClick={onClose}
+                      className="text-lg"
+                    >
+                      Privatlivspolitik
+                    </Link>
+                    <Link
+                      href="/information-revision/#bank"
+                      onClick={onClose}
+                      className="text-lg"
+                    >
+                      Bankoplysninger
+                    </Link>
+                  </ul>
+                </li>
               </div>
             )}
           </div>

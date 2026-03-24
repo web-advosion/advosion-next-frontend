@@ -86,11 +86,11 @@ export default function NavBar({ stuck }) {
                   Advokat
                 </Link>
 
-                <ul className="absolute left-0 top-full hidden group-hover:block bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0 z-50 overflow-hidden">
+                <ul className="absolute left-0 top-full hidden group-hover:block bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0 z-50">
                   <li>
                     <Link
                       href="/advokat/#ekspertiser"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-t-2xl"
                     >
                       Ekspertiser
                     </Link>
@@ -143,29 +143,42 @@ export default function NavBar({ stuck }) {
                       Konflikthåndtering
                     </Link>
                   </li>
-                  <li>
+                  <li className="relative group/sub">
                     <Link
-                      href="/advokat/#"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
+                      href="/information-advokat"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
                     >
-                      Forretningsbetingelser
+                      Vilkår og oplysninger
                     </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/advokat/#"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
-                    >
-                      Privatlivspolitik
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/advokat/#ledelse"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
-                    >
-                      Bankoplysninger
-                    </Link>
+
+                    <div className="absolute left-full top-0 hidden group-hover/sub:block pl-0 z-50">
+                      <ul className="bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0">
+                        <li>
+                          <Link
+                            href="/information-revision/#betingelser"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg) hover:rounded-t-2xl"
+                          >
+                            Forretningsbetingelser
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/information-revision/#privat"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg)"
+                          >
+                            Privatlivspolitik
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/information-revision/#bank"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
+                          >
+                            Bankoplysninger
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -177,11 +190,11 @@ export default function NavBar({ stuck }) {
                 >
                   Revision
                 </Link>
-                <ul className="absolute left-0 top-full hidden group-hover:block bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0 z-50 overflow-hidden">
+                <ul className="absolute left-0 top-full hidden group-hover:block bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0 z-50">
                   <li>
                     <Link
                       href="/revision/#ekspertiser"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:rounded-t-2xl hover:text-(--primary-bg)"
                     >
                       Ekspertiser
                     </Link>
@@ -226,29 +239,42 @@ export default function NavBar({ stuck }) {
                       Ledelsesrådgivning
                     </Link>
                   </li>
-                  <li>
+                  <li className="relative group/sub">
                     <Link
-                      href="/revision/#"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
+                      href="/information-revision"
+                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
                     >
-                      Forretningsbetingelser
+                      Vilkår og oplysninger
                     </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/revision/#"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
-                    >
-                      Privatlivspolitik
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/revision/#"
-                      className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
-                    >
-                      Bankoplysninger
-                    </Link>
+
+                    <div className="absolute left-full top-0 hidden group-hover/sub:block pl-0 z-50">
+                      <ul className="bg-(--primary-bg) text-(--advokat-blue) rounded-2xl shadow-lg min-w-50 py-0">
+                        <li>
+                          <Link
+                            href="/information-revision/#betingelser"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg) hover:rounded-t-2xl"
+                          >
+                            Forretningsbetingelser
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/information-revision/#privat"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg)"
+                          >
+                            Privatlivspolitik
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/information-revision/#bank"
+                            className="block px-4 py-2 hover:bg-(--advokat-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
+                          >
+                            Bankoplysninger
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </li>

@@ -5,7 +5,7 @@ import ButtonTop from "./buttons/ButtonTop";
 export default function FooterV2() {
   return (
     <footer className="w-full bg-(--footer) text-(--advokat-blue)">
-      <div className="mx-auto w-full max-w-6xl px-6.5 lg:px-3.5 py-12.5 md:py-10.5 lg:py-12.5 flex flex-col gap-19 md:gap-12.5">
+      <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 py-12.5 md:py-10.5 lg:py-12.5 flex flex-col gap-19 md:gap-12.5">
         <section className="w-full h-auto flex flex-col md:flex-row md:gap-20 md:items-start justify-between">
           <article className=" w-full md:max-w-52">
             <div className="mb-5">
