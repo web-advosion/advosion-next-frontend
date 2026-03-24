@@ -250,13 +250,25 @@ export default function MobileMenu({ onClose }) {
                   Regnskab og revision
                 </Link>
 
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                <Link
+                  href="/information-revision/#betingelser"
+                  onClick={onClose}
+                  className="text-xl"
+                >
                   Forretningsbetingelser
                 </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                <Link
+                  href="/information-revision/#privat"
+                  onClick={onClose}
+                  className="text-xl"
+                >
                   Privatlivspolitik
                 </Link>
-                <Link href="/advokat/#" onClick={onClose} className="text-xl">
+                <Link
+                  href="/information-revision/#bank"
+                  onClick={onClose}
+                  className="text-xl"
+                >
                   Bankoplysninger
                 </Link>
               </div>

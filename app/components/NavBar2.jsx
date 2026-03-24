@@ -145,7 +145,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/advokat/#"
+                      href="/information-advokat/#betingelser"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Forretningsbetingelser
@@ -153,7 +153,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/advokat/#"
+                      href="/information-advokat/#privat"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Privatlivspolitik
@@ -161,7 +161,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/advokat/#ledelse"
+                      href="/information-advokat/#bank"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Bankoplysninger
@@ -228,7 +228,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/revision/#"
+                      href="/information-revision/#betingelser"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Forretningsbetingelser
@@ -236,7 +236,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/revision/#"
+                      href="/information-revision/#privat"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Privatlivspolitik
@@ -244,7 +244,7 @@ export default function NavBar({ stuck }) {
                   </li>
                   <li>
                     <Link
-                      href="/revision/#"
+                      href="/information-revision/#bank"
                       className="block px-4 py-2 hover:bg-(--revision-blue) hover:text-(--primary-bg)"
                     >
                       Bankoplysninger
