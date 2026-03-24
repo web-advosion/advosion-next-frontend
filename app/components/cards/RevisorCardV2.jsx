@@ -7,7 +7,7 @@ export default function RevisorCard() {
     <div className="w-full h-96 bg-(--revision-blue) shadow-md flex flex-row-reverse items-center px-8 justify-center transition-transform duration-300 ease-in-out">
       <section
         className="w-full flex flex-row-reverse max-w-6xl 2xl:max-w-350 mx-auto px-6.5 lg:px-3.5 justify-between"
-        data-aos="fade-in"
+        data-aos="fade-left"
       >
         <article className="self-end">
           <div className="flex flex-col text-(--primary-bg) text-7xl font-medium">
