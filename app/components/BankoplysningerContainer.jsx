@@ -10,7 +10,7 @@ export default async function BankoplysningerContainer({ bgColor, textColor }) {
   const dataArray = Array.isArray(data) ? data : [];
 
   return (
-    <div className="h-auto w-screen  flex overflow-x-auto gap-7.5 md:gap-14 rounded-2xl pb-2.5 pr-17 md:pr-40 lg:pr-80 xl:pr-100 lg:w-full">
+    <div className="h-auto w-screen  flex overflow-x-auto gap-7.5 md:gap-14 xl:gap-30 rounded-2xl pb-2.5 pr-17 md:pr-40 lg:pr-80 xl:pr-0 lg:w-full justify-start">
       {dataArray.map((data, index) => (
         <BankCard
           key={data.id}
