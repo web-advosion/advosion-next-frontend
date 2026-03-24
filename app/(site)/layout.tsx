@@ -1,5 +1,5 @@
 import NavBarSnap from "../actions/NavBarSnap";
-import FooterV2 from "../components/FooterV2";
+import FooterV3 from "../components/FooterV3";
 import AOSInit from "../components/AOSInit";
 
 export default function SiteLayout({
@@ -12,7 +12,7 @@ export default function SiteLayout({
       <AOSInit />
       <NavBarSnap />
       {children}
-      <FooterV2 />
+      <FooterV3 />
     </>
   );
 }

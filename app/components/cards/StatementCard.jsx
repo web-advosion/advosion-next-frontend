@@ -7,7 +7,7 @@ export default function StatementCard({ statement }) {
     "/img/image-error-message.svg";
 
   return (
-    <div className="w-64 h-125 bg-(--cards) rounded-2xl shadow-md items-center justify-start flex flex-col gap-4 p-4">
+    <div className="w-64 h-125 bg-(--primary-bg) rounded-2xl shadow-md items-center justify-start flex flex-col gap-4 p-4">
       <Image
         className="overflow-hidden rounded-2xl w-59 h-48 object-cover"
         src={imageURL}

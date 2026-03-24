@@ -122,12 +122,9 @@ export default async function HomePage() {
         </section>
 
         {/*Ydelser */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) ">
-          <div className="w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
-            <Link
-              href="/om/"
-              className="max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5"
-            >
+        <section className=" w-screen h-auto  ">
+          <div className="w-screen mx-auto max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 flex justify-start">
+            <Link href="/om/" className="">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Ydelser
               </h2>
@@ -146,10 +143,7 @@ export default async function HomePage() {
               </div>
             </div>
 
-            <div
-              data-aos="fade-left"
-              className=" w-full mb-12.5 lg:justify-self-end "
-            >
+            <div data-aos="fade-left" className=" w-full lg:justify-self-end ">
               <div className="hidden md:block">
                 <RevisorCard />
               </div>
@@ -184,10 +178,10 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--secondary-bg) pb-12.5">
+        <section className=" w-screen h-auto bg-(--advokat-blue) pb-12.5">
           <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <div>
-              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
+              <h2 className="font-bold text-3xl text-(--primary-bg) mt-12.5 mb-5 leading-7">
                 Det siger vores kunder
               </h2>
             </div>
@@ -198,7 +192,7 @@ export default async function HomePage() {
                 <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
                 <Image
                   className="w-35 h-10"
-                  src="/img/icon-swipe.svg"
+                  src="/img/icon-swipe-white.svg"
                   width={150}
                   height={50}
                   alt="Swipe for at se flere udtalelser"

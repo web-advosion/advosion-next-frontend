@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AdvokatCard() {
   return (
-    <div className="w-full h-96 bg-(--advokat-blue) shadow-md flex flex-row-reverse items-center px-8 justify-center transition-transform duration-300 ease-in-out">
-      <section className="flex flex-row-reverse gap-20">
+    <div className="w-full h-96 bg-(--advokat-blue) shadow-md flex flex-row-reverse items-center justify-center transition-transform duration-300 ease-in-out">
+      <section className="w-full flex flex-row-reverse max-w-6xl 2xl:max-w-350 mx-auto px-6.5 lg:px-3.5 justify-between">
         <article className="self-end">
           <div className="justify-start text-white text-7xl font-medium">
             Advokat
