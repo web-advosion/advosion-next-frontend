@@ -30,8 +30,12 @@ export default async function Page() {
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
-              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
-                <h1>Information</h1>
+              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-14">
+                <h1>
+                  {" "}
+                  Vilkår og oplsyninger - <br />
+                  Advokat
+                </h1>
               </div>
 
               <div className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start">
@@ -39,7 +43,8 @@ export default async function Page() {
                   <p>
                     Her finder du information omkring{" "}
                     <strong>forretningsbetingelser, privatlivspolitik</strong>{" "}
-                    og <strong> bankoplysninger</strong> <br /> <br />
+                    og <strong> bankoplysninger</strong> for vores
+                    advokatafdeling <br /> <br />
                     Hvis du mangler andet information, så tøv ikke med at
                     kontakte os!
                   </p>

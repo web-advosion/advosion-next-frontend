@@ -30,8 +30,11 @@ export default async function Page() {
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
             <div>
-              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-12">
-                <h1>Information</h1>
+              <div className="justify-start text-CTA-black text-5xl font-bold font-['Inter'] leading-14">
+                <h1>
+                  Vilkår og oplsyninger - <br />
+                  Revision
+                </h1>
               </div>
 
               <div className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start">
@@ -39,7 +42,8 @@ export default async function Page() {
                   <p>
                     Her finder du information omkring{" "}
                     <strong>forretningsbetingelser, privatlivspolitik</strong>{" "}
-                    og <strong> bankoplysninger</strong> <br /> <br />
+                    og <strong> bankoplysninger</strong> for vores
+                    revisionsafdeling <br /> <br />
                     Hvis du mangler andet information, så tøv ikke med at
                     kontakte os!
                   </p>
@@ -64,7 +68,7 @@ export default async function Page() {
       {/*Sektion: Forretningsbetingelser */}
       <section
         id="betingelser"
-        className=" w-screen h-auto  bg-(--advokat-blue) py-20 relative scroll-mt-12.5"
+        className=" w-screen h-auto  bg-(--revision-blue) py-20 relative scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
@@ -129,7 +133,7 @@ export default async function Page() {
             <article className="w-32 h-32 mt-12.5" data-aos="fade-in">
               <ButtonPDF
                 documentPath={documentUrls.privatliv}
-                imageURL="/img/icon-pdf.svg"
+                imageURL="/img/icon-pdf-revision-blue.svg"
               />
             </article>
           </div>
@@ -139,7 +143,7 @@ export default async function Page() {
       {/*Sektion: Bankoplysninger */}
       <section
         id="bank"
-        className=" w-screen h-auto  bg-(--advokat-blue) pt-12.5 pb-12.5 relative scroll-mt-12.5"
+        className=" w-screen h-auto  bg-(--revision-blue) pt-12.5 pb-12.5 relative scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">
