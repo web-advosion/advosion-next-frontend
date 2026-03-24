@@ -189,7 +189,7 @@ export default async function Page() {
             >
               <Image
                 className="w-35 h-10"
-                src="/img/icon-swipe.svg"
+                src="/img/icon-swipe-white.svg"
                 width={150}
                 height={50}
                 alt="swipe icon"
