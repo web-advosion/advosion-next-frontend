@@ -7,8 +7,8 @@ import AdvokatCard from "../components/cards/AdvokatCardV2";
 import RevisorCard from "../components/cards/RevisorCardV2";
 import ContactCard from "../components/cards/ContactCard";
 import Link from "next/link";
-import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
-import RevisorCardMobile from "../components/cards/RevisorCardMobile";
+import AdvokatCardMobile from "../components/cards/AdvokatCardMobileV2";
+import RevisorCardMobile from "../components/cards/RevisorCardMobileV2";
 import ContactCardMobile from "../components/cards/ContactCardMobile";
 import StatementContainerClients from "../components/StatementContainerClients";
 
