@@ -197,7 +197,7 @@ export default async function Page() {
             </div>
             <BankoplysningerContainer
               typeId={15}
-              bgColor="bg-(--cards)"
+              bgColor="bg-(--primary-bg)"
               textColor="text-(--advokat-blue)"
             />
             <div className="mt-7.5 lg:hidden">
