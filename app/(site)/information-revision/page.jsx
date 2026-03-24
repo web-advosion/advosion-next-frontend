@@ -25,7 +25,7 @@ export default async function Page() {
 
       <section
         id="hero"
-        className="margin-to-nav w-screen h-auto  bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav-mobile"
+        className="margin-to-nav w-screen h-auto  bg-(--primary-bg) mb-12.5 lg:mb-20 relative margin-to-nav-mobile scroll-mt-12.5"
       >
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
           <div className="md:flex justify-between">

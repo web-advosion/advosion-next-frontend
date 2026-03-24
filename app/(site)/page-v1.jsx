@@ -3,8 +3,8 @@ import WhoCardRight from "../components/cards/WhoCardRight";
 import WhoCardLeft from "../components/cards/WhoCardLeft";
 import WhoCardMid from "../components/cards/WhoCardMid";
 import ButtonMeet from "../components/buttons/ButtonMeet";
-import AdvokatCard from "../components/cards/AdvokatCardV2";
-import RevisorCard from "../components/cards/RevisorCardV2";
+import AdvokatCard from "../components/cards/AdvokatCard";
+import RevisorCard from "../components/cards/RevisorCard";
 import ContactCard from "../components/cards/ContactCard";
 import Link from "next/link";
 import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
@@ -122,18 +122,19 @@ export default async function HomePage() {
         </section>
 
         {/*Ydelser */}
-        <section className=" w-screen h-auto  ">
-          <div className="w-screen mx-auto max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 flex justify-start">
-            <Link href="/om/" className="">
+        <section className=" w-screen h-auto bg-(--secondary-bg) ">
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
+            <Link href="/om/">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Ydelser
               </h2>
             </Link>
-          </div>
 
-          <div className="mx-auto w-full">
             {/*Card container */}
-            <div className="mt-7.5 w-full lg:w-full ">
+            <div
+              data-aos="fade-right"
+              className="mt-7.5 w-full mb-12.5 lg:w-179 "
+            >
               <div className="hidden md:block">
                 <AdvokatCard />
               </div>
@@ -143,7 +144,10 @@ export default async function HomePage() {
               </div>
             </div>
 
-            <div className=" w-full lg:justify-self-end ">
+            <div
+              data-aos="fade-left"
+              className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
+            >
               <div className="hidden md:block">
                 <RevisorCard />
               </div>
@@ -178,10 +182,10 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--advokat-blue) pb-12.5">
+        <section className=" w-screen h-auto bg-(--secondary-bg) pb-12.5">
           <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <div>
-              <h2 className="font-bold text-3xl text-(--primary-bg) mt-12.5 mb-5 leading-7">
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
                 Det siger vores kunder
               </h2>
             </div>
@@ -192,7 +196,7 @@ export default async function HomePage() {
                 <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
                 <Image
                   className="w-35 h-10"
-                  src="/img/icon-swipe-white.svg"
+                  src="/img/icon-swipe.svg"
                   width={150}
                   height={50}
                   alt="Swipe for at se flere udtalelser"
