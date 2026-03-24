@@ -3,8 +3,8 @@ import WhoCardRight from "../components/cards/WhoCardRight";
 import WhoCardLeft from "../components/cards/WhoCardLeft";
 import WhoCardMid from "../components/cards/WhoCardMid";
 import ButtonMeet from "../components/buttons/ButtonMeet";
-import AdvokatCard from "../components/cards/AdvokatCardV2";
-import RevisorCard from "../components/cards/RevisorCardV2";
+import AdvokatCard from "../components/cards/AdvokatCard";
+import RevisorCard from "../components/cards/RevisorCard";
 import ContactCard from "../components/cards/ContactCard";
 import Link from "next/link";
 import AdvokatCardMobile from "../components/cards/AdvokatCardMobile";
@@ -123,20 +123,18 @@ export default async function HomePage() {
 
         {/*Ydelser */}
         <section className=" w-screen h-auto bg-(--secondary-bg) ">
-          <div className="w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
-            <Link
-              href="/om/"
-              className="max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5"
-            >
+          <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
+            <Link href="/om/">
               <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 leading-7">
                 Ydelser
               </h2>
             </Link>
-          </div>
 
-          <div className="mx-auto w-full">
             {/*Card container */}
-            <div data-aos="fade-right" className="mt-7.5 w-full lg:w-full ">
+            <div
+              data-aos="fade-right"
+              className="mt-7.5 w-full mb-12.5 lg:w-179 "
+            >
               <div className="hidden md:block">
                 <AdvokatCard />
               </div>
@@ -148,7 +146,7 @@ export default async function HomePage() {
 
             <div
               data-aos="fade-left"
-              className=" w-full mb-12.5 lg:justify-self-end "
+              className="mt-12.5 w-full mb-12.5 lg:w-179 lg:justify-self-end "
             >
               <div className="hidden md:block">
                 <RevisorCard />
