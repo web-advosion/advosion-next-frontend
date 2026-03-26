@@ -34,7 +34,7 @@ export default function AdvokatCardMobile() {
         <article>
           <Image
             className="w-72 h-72 rounded-2xl"
-            src="/img/lawyers-background.jpg"
+            src="/img/DSC07385-scaled.jpg"
             width={321}
             height={321}
             alt="Advokater in action"
