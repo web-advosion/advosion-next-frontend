@@ -34,7 +34,7 @@ export default function RevisorCardMobile() {
         <article>
           <Image
             className="w-auto h-auto aspect-square rounded-2xl"
-            src="/img/lawyers-background.jpg"
+            src="/img/DSC08310_16x9.jpg"
             width={321}
             height={321}
             alt="Advokater in action"

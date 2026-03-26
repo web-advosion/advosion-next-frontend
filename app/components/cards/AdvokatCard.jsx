@@ -34,7 +34,7 @@ export default function AdvokatCard() {
         <article>
           <Image
             className="w-80 h-80 rounded-2xl"
-            src="/img/lawyers-background.jpg"
+            src="/img/DSC07385-scaled.jpg"
             width={321}
             height={321}
             alt="Advokater in action"

@@ -36,8 +36,8 @@ export default function RevisorCard() {
 
         <article>
           <Image
-            className="w-80 h-80 rounded-2xl"
-            src="/img/lawyers-background.jpg"
+            className="w-80 h-auto aspect-square rounded-2xl"
+            src="/img/DSC08310-1-5.jpg"
             width={321}
             height={321}
             alt="Advokater in action"
