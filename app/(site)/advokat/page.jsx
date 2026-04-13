@@ -76,17 +76,16 @@ export default async function Page() {
 
             <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
               <p>
-                Vi leverer{" "}
-                <strong>professionel erhvervsjuridisk rådgivning</strong> . Vi
-                har specialistviden og mangeårig erfaring særligt indenfor
-                følgende områder: <br />
+                Vi leverer professionel erhvervsjuridisk rådgivning med afsæt i{" "}
+                <strong>specialistviden</strong> og{" "}
+                <strong>mangeårig erfaring</strong>.<br />
                 <br />
-                Vi har et stort professionelt netværk{" "}
-                <strong>både lokalt og nationalt</strong>, og er gode til at
-                skabe og vedligeholde stærke relationer til de bedste rådgivere.{" "}
-                <br /> <br />
-                Det gør, at vi altid kan sætte det bedste rådgivningshold i
-                forhold til dig og dine forretningsmæssige behov.
+                Vi har et stærkt netværk – lokalt og nationalt – og samarbejder
+                med nogle af de bedste rådgivere.
+                <br />
+                <br />
+                Det gør, at vi kan sammensætte det{" "}
+                <strong>rette rådgivningshold</strong>, der matcher dine behov.
               </p>
             </div>
             <div className="mt-7.5">
@@ -128,22 +127,26 @@ export default async function Page() {
                   data-aos="fade-in"
                 >
                   <p>
-                    De skattemæssige overvejelser indgår som et væsentligt
-                    element i vores rådgivning indenfor mange områder af juraen.
-                    Dette fordi de skattemæssige konsekvenser af en given
-                    disposition kan være afgørende for, hvilken løsning der er
-                    den rigtige for dig og din virksomhed. <br /> <br />
+                    Skattemæssige forhold spiller en central rolle i mange
+                    juridiske beslutninger, da de ofte er afgørende for, hvilken
+                    løsning der er den rigtige for dig og din virksomhed.
+                    <br />
+                    <br />
                     Vi har <strong>specialistviden</strong> og{" "}
-                    <strong>mangeårige erfaring</strong> med at rådgive indenfor
-                    alle aspekter af skatteretten. Vores unikke kombination af
-                    juridiske og økonomiske kompetencer under samme tag gør, at
-                    du altid kan være sikker på at modtage en{" "}
-                    <strong>helhedsorienteret rådgivning</strong>.
-                    <br /> <br />
-                    Vi tager alle relevante forretningsmæssige parametre i
-                    betragtning for at finde den bedste løsning for dig og din
-                    virksomhed. <br /> <br />
-                    Indenfor skatteret rådgiver vi bl.a. om:
+                    <strong>mangeårig erfaring</strong> med rådgivning inden for
+                    alle aspekter af skatteretten. Vi kombinerer{" "}
+                    <strong>juridisk ekspertise</strong> med en stærk
+                    forretningsforståelse og leverer{" "}
+                    <strong>helhedsorienteret rådgivning</strong>, hvor alle
+                    relevante forhold tænkes ind.
+                    <br />
+                    <br />
+                    Vi tager udgangspunkt i dine forretningsmæssige behov og
+                    inddrager alle relevante parametre for at finde den løsning,
+                    der skaber størst værdi for dig og din virksomhed.
+                    <br />
+                    <br />
+                    Inden for skatteret rådgiver vi blandt andet om:
                   </p>
                   <div className="mt-7.5 hidden lg:block">
                     <ButtonContact />
