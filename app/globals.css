@@ -25,6 +25,10 @@ body {
   color: var(--cta-black);
 }
 
+main {
+  background: var(--primary-bg);
+}
+
 .margin-to-nav {
   margin-top: 12rem;
 }
