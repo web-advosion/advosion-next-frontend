@@ -66,7 +66,7 @@ export default function FooterV3() {
                     >
                       <Image
                         className="w-5 h-5 text-(--advokat-blue)"
-                        src="/img/icon-phone-blue.svg"
+                        src="/img/icon-phone-white.svg"
                         width={26}
                         height={26}
                         alt="telefon logo"
@@ -82,7 +82,7 @@ export default function FooterV3() {
                     >
                       <Image
                         className="w-5 h-5"
-                        src="/img/icon-mail-blue.svg"
+                        src="/img/icon-mail-white.svg"
                         width={26}
                         height={26}
                         alt="telefon logo"
