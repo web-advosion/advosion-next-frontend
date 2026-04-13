@@ -60,9 +60,9 @@ export default async function Page() {
       {/*Sektion: Ekspertiser */}
       <section
         id="ekspertiser"
-        className="w-screen h-auto bg-(--cards) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-12.5"
+        className="w-screen h-auto bg-(--revision-blue) pb-12.5 pt-12.5 lg:flex lg:justify-between lg:items-start scroll-mt-12.5"
       >
-        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start">
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 lg:flex lg:justify-between lg:items-start text-(--primary-bg)">
           <article className="lg:w-2/3">
             <div className="justify-start text-CTA-black text-4xl font-bold font-['Inter'] flex items-end gap-3 leading-7">
               <h2>Ekspertiser</h2>
@@ -87,10 +87,10 @@ export default async function Page() {
           </article>
 
           <article className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start">
-            <div className="w-full flex justify-end py-2 ">
+            <div className="w-full flex justify-end pb-2 ">
               <Image
                 className="w-35 h-10"
-                src="/img/icon-genveje2.svg"
+                src="/img/icon-genveje4.svg"
                 width={150}
                 height={50}
                 alt="genveje ikon"

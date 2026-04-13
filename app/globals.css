@@ -21,8 +21,12 @@
 }
 
 body {
-  background: var(--primary-bg);
+  background: var(--advokat-blue);
   color: var(--cta-black);
+}
+
+main {
+  background: var(--primary-bg);
 }
 
 .margin-to-nav {
