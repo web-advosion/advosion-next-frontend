@@ -37,19 +37,25 @@ export default async function Page() {
               <div className="mt-5 lg:flex lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    ADVOSION er et nyt og innovativt firmakoncept, der
-                    kombinerer
-                    <strong> jura</strong> og <strong>revision</strong>. <br />{" "}
+                    ADVOSION er et innovativt firmakoncept, der kombinerer{" "}
+                    <strong>jura og revision</strong> – baseret på mere end 10
+                    års erfaring.
+                    <br /> <br />
+                    Vores forretningsforståelse gør os i stand til at rådgive
+                    med <strong>udgangspunkt i din virkelighed</strong> – ikke
+                    kun i teori. <br />
+                    Derfor tilbyder vi helhedsorienteret og professionel
+                    rådgivning, der skaber reel værdi for din virksomhed. <br />{" "}
                     <br />
-                    Vores forstærkede forretningsforståelse giver os en unik
-                    mulighed for at tilbyde virksomheder en helhedsorienteret og
-                    professionel rådgivning. <br /> <br />
-                    Vores <strong>specialistkompetencer</strong> er{" "}
-                    <strong>samlet under ét tag</strong> og synergien mellem de
-                    to forretningsområder betyder, at vi udvikler endnu bedre
-                    løsninger til gavn for dig og din virksomhed. Vi er
-                    eksperter i at rådgive i krydsfeltet mellem økonomi og jura.
-                    Hurtigt og enkelt, og uden fordyrrende mellemled.
+                    Vores{" "}
+                    <strong>
+                      specialistkompetencer er samlet under ét tag
+                    </strong>
+                    , og samspillet mellem jura og revision betyder, at vi
+                    udvikler stærkere og mere sammenhængende løsninger. Vi
+                    rådgiver i krydsfeltet mellem økonomi og jura, hvor den
+                    faglige synergi giver et bedre beslutningsgrundlag for dig
+                    og din virksomhed.
                   </p>
                 </div>
               </div>
@@ -119,15 +125,25 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
-              dedikerede og entusiastiske medarbejdere, forretningsmæssige
-              totalløsninger og en helhedsorienteret rådgivning.
-              <br /> <br />
-              Organisatorisk er ADVOSION delt op i{" "}
-              <strong>to separate firmaer:</strong> <br /> <br />
-              ADVOSION Advokatpartnerselskab <br /> <br />
-              ADVOSION Statsautoriseret Revisionspartnerselskab. <br /> <br />
-              Se her en samlet oversigt over vores dygtige medarbejdere.
+              Hos <strong>ADVOSION</strong> er det vores dygtige, dedikerede og
+              engagerede medarbejdere, der er de stærke kræfter bag vores{" "}
+              <strong>forretningsmæssige totalløsninger</strong> og{" "}
+              <strong>helhedsorienterede rådgivning</strong>.<br />
+              <br />
+              Vores organisation er opdelt i{" "}
+              <strong>to specialiserede enheder</strong>, der hver bidrager med
+              deres faglige styrker:
+              <br />
+              ADVOSION Advokatpartnerselskab
+              <br />
+              ADVOSION Statsautoriseret Revisionspartnerselskab
+              <br />
+              <br />
+              Tilsammen skaber vi et <strong>stærkt fagligt samspil</strong> på
+              tværs af jura og revision – til gavn for dig og din virksomhed.
+              <br />
+              <br />
+              Mød vores medarbejdere nedenfor.
             </p>
           </div>
 
@@ -214,20 +230,29 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              Vi bor i nogle dejlige og nye lækre bygninger, som vi flyttede til
-              i september 2024. <br /> <br />
-              Der er både <strong>åbne og lyse fællesarealer</strong> som
-              lounge, medarbejderkøkken, mødelokaler. <br /> <br />
-              Der er lyst og højt til loftet både i fysisk og overført forstand
-              her går vi op i at vores medarbejdere trives og gøre vores bedste
-              for facilitere det ved at stille de bedst mulige rammer til
-              rådighed. <br /> <br />
-              <strong>Socialt</strong> har vi fælles morgenmad hver onsdag og én
-              gang i måneden har vi fælles frokost om fredagen, hvor vi
-              bestiller en sandwich e.l. ude fra. <br /> <br />
-              Normalt spiser vi i vores fælles kantine, som vi deler med
-              bygningens øvrige virksomheder. <br /> <br />
-              Her kan du få et indblik, hvordan det kan se ud at arbejde hos os.
+              Vi holder til i <strong>nye og indbydende rammer</strong>, som vi
+              flyttede ind i i september 2024.
+              <br />
+              <br />
+              Her er <strong>åbne og lyse fællesarealer</strong> med blandt
+              andet lounge, medarbejderkøkken og{" "}
+              <strong>moderne mødelokaler</strong>.<br />
+              <br />
+              Der er lyst og højt til loftet – både fysisk og i overført
+              forstand. Vi går op i, at vores medarbejdere trives, og gør os
+              umage for at skabe de bedst mulige rammer for det i hverdagen.
+              <br />
+              <br />
+              Socialt samles vi til fælles morgenmad hver onsdag, og én gang om
+              måneden spiser vi fælles frokost om fredagen, hvor vi bestiller
+              mad udefra.
+              <br />
+              <br />
+              Til daglig spiser vi i den <strong>fælles kantine</strong>, som vi
+              deler med de øvrige virksomheder i bygningen.
+              <br />
+              <br />
+              Her kan du få et indblik i, hvordan det er at arbejde hos os.
             </p>
           </div>
 
@@ -266,16 +291,22 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              Vi er ikke bare et hvilket som helst advokat- eller
-              revisionsfirma. <br /> <br />
-              Vi leverer <strong>helhedsorienteret rådgivning</strong> af
-              højeste kvalitet. Vi har markedets skarpeste fokus på krydsfeltet
-              mellem jura og revision, og sikrer dermed vores kunder
-              <strong>
-                {" "}
-                bedre løsninger og en bæredygtig vækst.
-              </strong> <br /> <br />
-              Her driver vi forretning efter følgende kerneværdier:
+              Vi er ikke et traditionelt advokat- eller revisionsfirma.
+              <br />
+              <br />
+              Vi leverer <strong>helhedsorienteret rådgivning</strong> af høj
+              kvalitet med et skarpt fokus på krydsfeltet mellem jura og
+              revision. Det giver vores kunder <strong>bedre sammenhæng</strong>
+              , et <strong>stærkere beslutningsgrundlag</strong> og et solidt
+              fundament for bæredygtig vækst.
+              <br />
+              <br />
+              Vores tilgang bygger på en klar ambition om at skabe værdi gennem{" "}
+              <strong>faglighed</strong>, <strong>forretningsforståelse</strong>{" "}
+              og <strong>tæt samarbejde</strong>.<br />
+              <br />
+              Derfor driver vi vores forretning ud fra følgende{" "}
+              <strong>kerneværdier</strong>:
             </p>
           </div>
 
@@ -294,7 +325,7 @@ export default async function Page() {
             </div>
           </article>
 
-          <article className="md:pt-12.5">
+          {/* <article className="md:pt-12.5">
             <div className="justify-start text-CTA-black text-3xl font-bold font-['Inter'] leading-7">
               <h3>Hjerte for det lokale</h3>
             </div>
@@ -325,7 +356,7 @@ export default async function Page() {
                 alt="FC Skanderborgs klublogo"
               ></Image>
             </div>
-          </article>
+          </article> */}
         </div>
       </section>
     </main>

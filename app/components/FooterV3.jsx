@@ -12,7 +12,7 @@ export default function FooterV3() {
               <div className="mb-5">
                 <Link href="/#hero">
                   <Image
-                    src="/img/icon-footer.svg"
+                    src="/img/logo-advosion-v3.svg"
                     width={206}
                     height={42}
                     alt="Advosion logo"
