@@ -178,10 +178,10 @@ export default async function HomePage() {
         </section>
 
         {/*Sektion: Kunde statements */}
-        <section className=" w-screen h-auto bg-(--advokat-blue) pb-12.5">
+        <section className=" w-screen h-auto bg-(--primary-bg) pb-12.5">
           <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
             <div>
-              <h2 className="font-bold text-3xl text-(--primary-bg) mt-12.5 mb-5 leading-7">
+              <h2 className="font-bold text-3xl text-(--cta-black) mt-12.5 mb-5 leading-7">
                 Det siger vores kunder
               </h2>
             </div>
