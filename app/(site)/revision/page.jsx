@@ -33,14 +33,18 @@ export default async function Page() {
               <div className="mt-5 lg:flex lg:gap-12.5 lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    <strong>Revision, regnskab</strong> og{" "}
-                    <strong>rådgivning</strong> er vores kerneydelser. <br />{" "}
-                    <br />I tæt dialog med vores kunder og med anvendelse af
-                    moderne revisionsprogrammer udfører vi en{" "}
-                    <strong>effektiv full-service revision</strong> på et{" "}
-                    <strong>højt kvalitetsniveau</strong>. <br /> <br />
-                    Vi er statsautoriserede og kan derfor levere en bred vifte
-                    af økonomiske services.
+                    Revision, regnskab og rådgivning er centrale elementer i en
+                    sund og veldrevet virksomhed.
+                    <br />
+                    <br />
+                    Vi arbejder tæt sammen med vores kunder og leverer en{" "}
+                    <strong>effektiv og værdiskabende revision</strong>, der
+                    skaber overblik og styrker beslutningsgrundlaget.
+                    <br />
+                    <br />
+                    Som statsautoriserede revisorer leverer vi en bred vifte af
+                    ydelser med fokus på kvalitet, indsigt og
+                    forretningsforståelse.
                   </p>
                 </div>
               </div>
@@ -73,12 +77,18 @@ export default async function Page() {
 
             <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
               <p>
-                Vi leverer{" "}
-                <strong>professionel økonomisk revision og rådgivning</strong>.
-                Vi har specialistviden og mangeårig erfaring særligt indenfor
-                følgende områder: <br />
-                <br /> Vores dygtige revisorer sikrer at du og din virksomhed
-                altid er i sikre hænder.
+                Vi leverer professionel økonomisk revision og rådgivning med
+                afsæt i <strong>specialistviden</strong> og{" "}
+                <strong>mangeårig erfaring</strong> inden for en række centrale
+                områder.
+                <br />
+                <br />
+                Vi arbejder tæt sammen med vores kunder og bidrager med indsigt,
+                der skaber overblik og styrker det økonomiske fundament for din
+                virksomhed.
+                <br />
+                <br />
+                Vælg et område til højre for at læse mere.
               </p>
             </div>
             <div className="mt-7.5">
@@ -120,15 +130,24 @@ export default async function Page() {
                   data-aos="fade-in"
                 >
                   <p>
-                    Hvad angår <strong>regnskab og revision</strong>, tilbyder
-                    vi en lang række af forskellige services. <br />
+                    Regnskab og revision er fundamentet for en sund økonomi og
+                    et klart overblik over din virksomheds udvikling.
                     <br />
-                    Scenarietekst/beskrivelse.... <br /> <br />
-                    Uanset område, sikrer vi at du får den bedste mulige service
-                    fra vores <strong>
-                      dygtige rådgivere og revisorer
-                    </strong>. <br /> <br />
-                    Vi tilbyder følgende services indenfor regnskab og revision:
+                    <br />
+                    Vi hjælper med alt fra den daglige bogføring til den
+                    lovpligtige revision og sikrer, at dit regnskab er korrekt,
+                    opdateret og giver et <strong>retvisende billede</strong> af
+                    din virksomhed.
+                    <br />
+                    <br />
+                    Uanset omfang får du en løsning, der er tilpasset din
+                    virksomhed – med fokus på kvalitet,{" "}
+                    <strong>overblik</strong> og et solidt grundlag for dine
+                    beslutninger.
+                    <br />
+                    <br />
+                    Vi tilbyder blandt andet følgende ydelser inden for regnskab
+                    og revision:
                   </p>
                   <div className="mt-7.5 hidden lg:block">
                     <ButtonContact />
@@ -180,13 +199,23 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Vi er specialister i rådgivning indenfor{" "}
-                  <strong>skat, moms og afgifter</strong>
-                  og tilbyder i den forbindelse også en bred vifte af services.{" "}
-                  <br /> <br />
-                  Mere beskrivelsestekst/scenarie tekst... <br />
+                  Skat, moms og afgifter har stor betydning for din virksomheds
+                  økonomi og kræver løbende opmærksomhed.
                   <br />
-                  Vi tilbyder følgende services indenfor skat, moms og afgifter:
+                  <br />
+                  Vi rådgiver med fokus på korrekt håndtering, overblik og
+                  optimering, så du undgår fejl og får det fulde udbytte af de
+                  gældende regler.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>specialistviden</strong> og{" "}
+                  <strong>opdateret indsigt</strong> hjælper vi med at sikre, at
+                  din virksomhed træffer de rigtige beslutninger – både på kort
+                  og lang sigt.
+                  <br />
+                  <br />
+                  Vi tilbyder blandt andet følgende ydelser inden for skat, moms
+                  og afgifter:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -234,13 +263,18 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Indenfor <strong>finansiering</strong> tilbyder vi alsidig
-                  rådgivning. <br /> <br />
-                  Scenarietekst/beskrivelse.... <br />
-                  <br /> Vi har et{" "}
-                  <strong>bredt netværk både lokalt og nationalt</strong>, der
-                  giver adgang til de bedste pengeinstitutter, kreditforeninger,
-                  leasingselskaber, kapitalfonde og private investorer.
+                  Adgang til den rette finansiering er afgørende for at
+                  realisere din virksomheds potentiale.
+                  <br />
+                  <br />
+                  Vi hjælper med at afklare dine muligheder og strukturere
+                  finansieringen, så den understøtter både din drift og dine{" "}
+                  <strong>langsigtede mål</strong>.<br />
+                  <br />
+                  Gennem et <strong>stærkt netværk</strong> af finansielle
+                  samarbejdspartnere skaber vi adgang til relevante løsninger –
+                  fra traditionel bankfinansiering til{" "}
+                  <strong>alternative investeringsformer</strong>.
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -290,14 +324,22 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Indenfor <strong>køb og salg af virksomhed</strong> står vi
-                  også klar med
-                  <strong> specialistrådgivere</strong> og -revisorer, så du
-                  trygt kan indgå i virksomhedshandel. <br />
+                  Køb og salg af virksomhed er komplekse processer, hvor de
+                  rette beslutninger har stor betydning for det endelige
+                  resultat.
                   <br />
-                  Scenarietekst/beskrivelse... <br /> <br />
-                  Her tilbyder vi også en række services, som du kan se
-                  nedenfor:
+                  <br />
+                  Vi bistår gennem hele forløbet – fra de indledende
+                  overvejelser til den endelige gennemførelse – og sikrer et
+                  solidt grundlag for både køber og sælger.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>økonomisk indsigt</strong> og tæt
+                  samarbejde med juridiske specialister skaber vi overblik og
+                  bidrager til en <strong>veltilrettelagt proces</strong>.<br />
+                  <br />
+                  Vi tilbyder blandt andet følgende ydelser inden for køb og
+                  salg af virksomhed:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -345,10 +387,22 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Også indenfor <strong>ledelsesrådgivning</strong> er vi{" "}
-                  <strong>specialister</strong>. <br /> <br />
-                  Scenarietekst/beskrivelse af case... <br /> <br />
-                  Vi er din naturlige sparringspartner og rådgiver inden for:
+                  Ledelsesrådgivning handler om at træffe de rigtige
+                  beslutninger på det rigtige grundlag.
+                  <br />
+                  <br />
+                  Vi fungerer som en aktiv sparringspartner og bidrager med
+                  indsigt og struktur, der styrker din virksomheds udvikling og
+                  retning.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>økonomisk overblik</strong> og en stærk
+                  forretningsforståelse hjælper vi med at omsætte tal til
+                  handling og skabe et solidt grundlag for ledelsesmæssige
+                  beslutninger.
+                  <br />
+                  <br />
+                  Vi rådgiver blandt andet inden for:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
