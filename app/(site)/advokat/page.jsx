@@ -93,10 +93,10 @@ export default async function Page() {
           </article>
 
           <article className="mt-5  md:max-w-80 lg:mt-0 lg:w-full lg:items-start">
-            <div className="w-full flex justify-end py-2 ">
+            <div className="w-full flex justify-end pb-2">
               <Image
                 className="w-35 h-10"
-                src="/img/icon-genveje2.svg"
+                src="/img/icon-genveje4.svg"
                 width={150}
                 height={50}
                 alt="genveje ikon"
