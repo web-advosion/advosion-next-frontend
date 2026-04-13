@@ -235,16 +235,25 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Vores store erfaring og specialisering indenfor erhvervs- og
-                  selskabsretten kombineret med vores solide
-                  forretningsforståelse, gør os til en
-                  <strong> værdifuld sparringspartner og rådgiver</strong> for
-                  dig og din virksomhed. <br /> <br /> Vi rådgiver dig på et{" "}
-                  <strong>højt fagligt niveau </strong>
-                  og sikrer dig, gennem vores unikke kombination af juridiske og
-                  økonomiske kompetencer, en samlet løsning, der imødekommer
-                  dine ønsker for fremtiden og din virksomheds behov. <br />{" "}
-                  <br /> Indenfor erhvervs- og selskabsret rådgiver vi bl.a. om:
+                  Erhvervs- og selskabsret handler om at skabe det rette
+                  juridiske fundament for din virksomhed – både i det daglige og
+                  i forbindelse med større beslutninger.
+                  <br />
+                  <br />
+                  Vi har solid erfaring med selskabsretlige forhold og bistår
+                  som <strong>faglig sparringspartner</strong> i alt fra
+                  struktur og organisering til udvikling og ændringer i
+                  virksomheden.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>juridisk ekspertise</strong> og
+                  forretningsforståelse arbejder vi tæt sammen med dig for at
+                  sikre løsninger, der understøtter din virksomheds retning og
+                  mål.
+                  <br />
+                  <br />
+                  Inden for erhvervs- og selskabsret rådgiver vi blandt andet
+                  om:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -329,16 +338,24 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Vi er <strong>specialister</strong> i generationsskifte. Vi
-                  hjælper hele vejen og vil gerne i dialog ved de første spæde
-                  tanker om et generationsskifte. Derved kan vi, gennem vores
-                  unikke kombination af juridiske og økonomiske kompetencer,
-                  skabe de bedste rammer for generationsskiftet under{" "}
-                  <strong> hensyntagen til dine ønsker og værdier.</strong>{" "}
-                  <br /> <br />
-                  Et succesfuldt generationsskifte kræver god planlægning og
-                  omtanke. <br /> <br />
-                  Det er nødvendigt at have fokus på en række spørgsmål:
+                  Generationsskifte kræver rettidig planlægning og de rigtige
+                  beslutninger undervejs.
+                  <br />
+                  <br />
+                  Vi har solid erfaring med generationsskifte og indgår gerne i
+                  dialog allerede i de tidlige overvejelser. Det giver de bedste
+                  forudsætninger for at skabe et velforberedt og gennemarbejdet
+                  forløb.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>juridisk ekspertise</strong> og en stærk
+                  forretningsforståelse hjælper vi med at skabe de rette rammer
+                  – med respekt for dine ønsker, værdier og virksomhedens
+                  fremtid.
+                  <br />
+                  <br />
+                  Et succesfuldt generationsskifte forudsætter, at en række{" "}
+                  <strong>centrale forhold</strong> er gennemtænkt:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -432,31 +449,28 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  En virksomhedsoverdragelse er ofte en kompliceret og intens
-                  proces, hvor <strong>kompetent rådgivning</strong> af parterne
-                  kan være afgørende for et succesfuldt og bæredygtigt resultat.{" "}
-                  <br /> <br />
-                  Der ligger ofte mange overvejelser bag en
-                  virksomhedsoverdragelse. Hvis du skal sælge din virksomhed, er
-                  det afgørende at få afklaret, hvornår og hvordan det sker
-                  bedst muligt. <br />
-                  <br /> Står du som køber, er der en lang række strategiske
-                  overvejelser i forhold til din eksisterende virksomhed. Det er
-                  også centralt at få afdækket og vurderet alle relevante
-                  forhold ved den virksomhed, som du overvejer at købe. <br />
-                  <br /> Vi bistår i alle dele af processen. Med vores stærke
-                  forretningsforståelse er vi en{" "}
-                  <strong>værdifuld sparringspartner og rådgiver</strong> for
-                  dig og din virksomhed. <br />
-                  <br />
-                  Vores unikke kombination af juridiske og økonomiske
-                  kompetencer sikrer en{" "}
-                  <strong>helhedsorienteret rådgivning</strong> fra start til
-                  slut. Vi gennemfører overdragelsen, uden at glemme de
-                  menneskelige værdier.
+                  Virksomhedsoverdragelse er en kompleks proces, hvor de rette
+                  beslutninger undervejs er afgørende for et succesfuldt og
+                  bæredygtigt resultat.
                   <br />
                   <br />
-                  Indenfor virksomhedsoverdragelse rådgiver vi bl.a. om:
+                  Uanset om du står som køber eller sælger, er det vigtigt at få
+                  afklaret de centrale forhold i processen – herunder struktur,
+                  timing og risici.
+                  <br />
+                  <br />
+                  Vi bistår gennem hele forløbet og fungerer som en{" "}
+                  <strong>faglig sparringspartner</strong>, der sikrer fremdrift
+                  og overblik i en ofte krævende proces.
+                  <br />
+                  <br />
+                  Med afsæt i <strong>juridisk ekspertise</strong> og en stærk
+                  forretningsforståelse arbejder vi for at skabe en{" "}
+                  <strong>helhedsorienteret løsning</strong> – fra de indledende
+                  overvejelser til den endelige gennemførelse.
+                  <br />
+                  <br />
+                  Inden for virksomhedsoverdragelse rådgiver vi blandt andet om:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -541,27 +555,22 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Den gode kontrakt er gennemtænkt og grundigt udformet og
-                  skaber klarhed over parternes rettigheder og forpligtelser.
-                  Den begrænser dine og virksomhedens risici,{" "}
-                  <strong>sikrer overholdelse af lovgivning</strong> og
-                  reducerer virksomhedens omkostninger. <br />
+                  En god kontrakt skaber klarhed om rettigheder og forpligtelser
+                  og er afgørende for at reducere risici og sikre{" "}
+                  <strong>overholdelse af gældende lovgivning</strong>.<br />
                   <br />
-                  Vi sætter os ind i og sikrer en grundlæggende forståelse af
-                  din virksomhed, herunder virksomhedens forretningsmodel,
-                  produkter, strategi og risikovillighed. Denne indsigt i din
-                  virksomhed er afgørende for at udarbejde og forhandle en god
-                  kontrakt, der matcher virksomhedens behov. <br />
-                  <br />
-                  Vores rådgivning ydes altid ud fra en{" "}
-                  <strong>kommerciel synsvinkel</strong> og i kraft af vores
-                  erfaring kan vi udarbejde kontraktvilkår, der er tilpasset
-                  specifikke brancher. Vi arbejder proaktivt og vurderer gennem
-                  hele forløbet både risici og kommercielle spørgsmål i
-                  forbindelse med forhandlingen og udarbejdelsen af kontrakten.{" "}
+                  Vi tager udgangspunkt i din virksomhed og opnår en
+                  grundlæggende forståelse for forretningsmodel, produkter og
+                  risikoprofil. Det danner grundlag for kontrakter, der er
+                  tilpasset din virksomhed og dens behov.
                   <br />
                   <br />
-                  Indenfor virksomhedens kontrakter rådgiver vi bl.a. om:
+                  Med en <strong>kommerciel tilgang</strong> og solid juridisk
+                  erfaring udarbejder og forhandler vi kontrakter, der
+                  balancerer risiko og forretning – og som fungerer i praksis.
+                  <br />
+                  <br />
+                  Inden for kontrakter rådgiver vi blandt andet om:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
@@ -646,26 +655,22 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Konflikter kræver din tid og energi i en ofte langvarig
-                  proces. De relaterer sig til tidligere hændelser, hvor du og
-                  din virksomhed i stedet skal have fokus på fremtiden. Derfor
-                  er en{" "}
-                  <strong> effektiv og løsningsorienteret håndtering</strong> af
-                  en konflikt afgørende.
-                  <br />
-                  <br /> Vi går aldrig på kompromis med vores{" "}
-                  <strong> høje faglighed</strong>, men vi er samtidig
-                  <strong> løsningsorienterede</strong>, og du får en ærlig
-                  vurdering, så du kender dine muligheder og risici.
-                  <br />
-                  <br /> Det betyder også, at vi løbende er opmærksomme på
-                  mulighederne for forlig, hvis det ud fra en samlet vurdering
-                  giver
-                  <strong> det bedste resultat for dig</strong> og din
-                  virksomhed.
+                  Konflikter kræver tid og ressourcer og kan tage fokus fra din
+                  forretning. Derfor er en effektiv og målrettet håndtering
+                  afgørende.
                   <br />
                   <br />
-                  Indenfor konfliktløsning rådgiver vi bl.a. om:
+                  Vi kombinerer <strong>høj faglighed</strong> med en{" "}
+                  <strong>løsningsorienteret tilgang</strong> og giver dig et
+                  klart overblik over muligheder, risici og næste skridt.
+                  <br />
+                  <br />
+                  Vi vurderer løbende, om en forligsløsning er hensigtsmæssig,
+                  eller om sagen bør føres videre – altid med fokus på det{" "}
+                  <strong>bedste resultat</strong> for dig og din virksomhed.
+                  <br />
+                  <br />
+                  Inden for konflikthåndtering rådgiver vi blandt andet om:
                 </p>
                 <div className="mt-7.5 hidden lg:block">
                   <ButtonContact />
