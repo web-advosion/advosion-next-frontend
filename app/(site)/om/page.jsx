@@ -37,19 +37,25 @@ export default async function Page() {
               <div className="mt-5 lg:flex lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    ADVOSION er et nyt og innovativt firmakoncept, der
-                    kombinerer
-                    <strong> jura</strong> og <strong>revision</strong>. <br />{" "}
+                    ADVOSION er et innovativt firmakoncept, der kombinerer{" "}
+                    <strong>jura og revision</strong> – baseret på mere end 10
+                    års erfaring.
+                    <br /> <br />
+                    Vores forretningsforståelse gør os i stand til at rådgive
+                    med <strong>udgangspunkt i din virkelighed</strong> – ikke
+                    kun i teori. <br />
+                    Derfor tilbyder vi helhedsorienteret og professionel
+                    rådgivning, der skaber reel værdi for din virksomhed. <br />{" "}
                     <br />
-                    Vores forstærkede forretningsforståelse giver os en unik
-                    mulighed for at tilbyde virksomheder en helhedsorienteret og
-                    professionel rådgivning. <br /> <br />
-                    Vores <strong>specialistkompetencer</strong> er{" "}
-                    <strong>samlet under ét tag</strong> og synergien mellem de
-                    to forretningsområder betyder, at vi udvikler endnu bedre
-                    løsninger til gavn for dig og din virksomhed. Vi er
-                    eksperter i at rådgive i krydsfeltet mellem økonomi og jura.
-                    Hurtigt og enkelt, og uden fordyrrende mellemled.
+                    Vores{" "}
+                    <strong>
+                      specialistkompetencer er samlet under ét tag
+                    </strong>
+                    , og samspillet mellem jura og revision betyder, at vi
+                    udvikler stærkere og mere sammenhængende løsninger. Vi
+                    rådgiver i krydsfeltet mellem økonomi og jura, hvor den
+                    faglige synergi giver et bedre beslutningsgrundlag for dig
+                    og din virksomhed.
                   </p>
                 </div>
               </div>
@@ -119,15 +125,14 @@ export default async function Page() {
             data-aos="fade-in"
           >
             <p>
-              De stærke kræfter bag ADVOSION leverer, sammen med dygtige,
-              dedikerede og entusiastiske medarbejdere, forretningsmæssige
-              totalløsninger og en helhedsorienteret rådgivning.
-              <br /> <br />
-              Organisatorisk er ADVOSION delt op i{" "}
-              <strong>to separate firmaer:</strong> <br /> <br />
-              ADVOSION Advokatpartnerselskab <br /> <br />
-              ADVOSION Statsautoriseret Revisionspartnerselskab. <br /> <br />
-              Se her en samlet oversigt over vores dygtige medarbejdere.
+              De stærke kræfter bag ADVOSION arbejder tæt sammen med dygtige,
+              dedikerede og engagerede medarbejdere om at levere
+              forretningsmæssige totalløsninger og helhedsorienteret rådgivning.
+              Vores organisation er opdelt i to specialiserede enheder, der hver
+              bidrager med deres faglige styrker: ADVOSION Advokatpartnerselskab
+              ADVOSION Statsautoriseret Revisionspartnerselskab Tilsammen skaber
+              vi et stærkt fagligt samspil på tværs af jura og revision – til
+              gavn for dig og din virksomhed. Mød vores medarbejdere nedenfor.
             </p>
           </div>
 
