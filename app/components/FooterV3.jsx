@@ -8,7 +8,7 @@ export default function FooterV3() {
       <footer className="w-full bg-(--advokat-blue) ">
         <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5 py-12.5 md:py-10.5 lg:py-12.5 flex flex-col gap-19 md:gap-12.5">
           <section className="w-full h-auto flex flex-col md:flex-row md:gap-20 md:items-start justify-between">
-            <article className=" w-full md:max-w-52">
+            <article className=" w-full md:max-w-54">
               <div className="mb-5">
                 <Link href="/#hero">
                   <Image
@@ -20,10 +20,15 @@ export default function FooterV3() {
                 </Link>
               </div>
 
-              <div className="w-64 md:w-full justify-start  text-base md:text-xs lg:text-base font-medium font-['Inter'] leading-6">
-                Vi har siden xxxx hjulpet store og små virksomheder med
-                skræddersyet juridisk og økonomisk rådgivning via vores dygtige
-                eksperter
+              <div className="w-64 md:w-full justify-start  text-base md:text-xs lg:text-base font-normal font-['Inter'] leading-6">
+                <p>
+                  Vi hjælper virksomheder med juridisk og økonomisk rådgivning i
+                  høj kvalitet.
+                  <br />
+                  <br />
+                  Med afsæt i stærke faglige kompetencer skaber vi overblik og
+                  løsninger, der giver værdi – både på kort og lang sigt.
+                </p>
               </div>
             </article>
 
