@@ -41,12 +41,16 @@ export default async function Page() {
               <div className="mt-5 lg:flex-1 lg:gap-12.5 lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    Her finder du information omkring{" "}
-                    <strong>forretningsbetingelser, privatlivspolitik</strong>{" "}
-                    og <strong> bankoplysninger</strong> for vores
-                    advokatafdeling <br /> <br />
-                    Hvis du mangler andet information, så tøv ikke med at
-                    kontakte os!
+                    Her finder du information om vores{" "}
+                    <strong>
+                      forretningsbetingelser, privatlivspolitik og
+                      bankoplysninger
+                    </strong>{" "}
+                    for advokatafdelingen.
+                    <br />
+                    <br />
+                    Har du brug for yderligere information, er du altid
+                    velkommen til at kontakte os.
                   </p>
                 </div>
                 <div className="mt-7.5">
@@ -80,9 +84,9 @@ export default async function Page() {
 
               <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%] text-(--primary-bg)">
                 <p>
-                  Vi vil gerne være så transparante som muligt, så derfor kan du
-                  naturligvis også tilgå vores
-                  <strong> forretningsbetingelser</strong>. <br /> <br />
+                  Vi tilstræber høj gennemsigtighed og stiller derfor vores
+                  <strong> forretningsbetingelser</strong> til rådighed her.{" "}
+                  <br /> <br />
                   Du skal blot downloade PDF’en ved at klikke på på knappen
                   herunder eller på ikonet.
                 </p>
@@ -119,8 +123,8 @@ export default async function Page() {
                 data-aos="fade-in"
               >
                 <p>
-                  Her kan du få indblik i hvordan vi behandler din data via
-                  vores
+                  Her kan du læse, hvordan vi behandler personoplysninger i
+                  henhold til vores
                   <strong> privatlivspolitik</strong>. <br /> <br />
                   Du skal blot downloade PDF’en ved at klikke på på knappen
                   herunder eller på ikonet.
@@ -161,9 +165,8 @@ export default async function Page() {
                   <p>
                     Her kan du finde vores <strong>bankoplysninger</strong>{" "}
                     angående vores advokatvirksomhed. <br /> <br />
-                    Har du spørgsmål til din faktura eller andre henvendelser
-                    omkring <strong>økonomi</strong>, så kontakt vores
-                    økonomiafdeling på følgende mail:{" "}
+                    Har du spørgsmål til din faktura eller andre økonomiske
+                    forhold, er du velkommen til at kontakte os på:{" "}
                     {
                       <a href={`mailto: mba@advosion.dk`}>
                         <button
