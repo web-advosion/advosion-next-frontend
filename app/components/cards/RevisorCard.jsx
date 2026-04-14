@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function RevisorCard() {
   return (
     <Link href="/revision">
-      <div className="w-full h-96 bg-(--revision-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20">
+      <div className="w-full h-96 bg-(--revision-blue) rounded-3xl shadow-md flex items-center justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20 overflow-hidden">
         <article>
-          <div className="w-full h-full">
-            <div className=" text-(--primary-bg) ">
+          <div className="w-full h-full pl-8">
+            <div className=" text-(--primary-bg)">
               <h2 className="text-3xl font-medium ">Vi er eksperter i:</h2>
               <ul className=" text-xl list-disc pl-5">
                 <li>Regnskab og revision</li>
@@ -29,9 +29,9 @@ export default function RevisorCard() {
           </div>
         </article>
 
-        <article>
+        <article className="w-1/2 h-full">
           <Image
-            className="w-80 h-80 aspect-square rounded-2xl"
+            className="w-full h-full "
             src="/img/DSC08310-1-5.jpg"
             width={321}
             height={321}

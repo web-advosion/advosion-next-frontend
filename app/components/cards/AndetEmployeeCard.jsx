@@ -6,11 +6,11 @@ export default function AndetEmployeeCard({ medarbejder }) {
     "/img/image-error-message.svg"; // fallback image
 
   return (
-    <div className="min-w-64 max-w-64 h-auto bg-(--cta-black) rounded-2xl shadow-md flex flex-col p-4">
+    <div className="min-w-64 max-w-64 h-auto bg-(--cta-black) rounded-2xl shadow-md flex flex-col overflow-hidden">
       {/* Billede */}
       <div>
         <Image
-          className="overflow-hidden rounded-2xl w-full h-48 object-cover"
+          className="overflow-hidden  w-full h-48 object-cover"
           src={billede}
           alt={medarbejder.title.rendered}
           width={222}
@@ -18,7 +18,7 @@ export default function AndetEmployeeCard({ medarbejder }) {
         />
       </div>
 
-      <div className="flex flex-col flex-1 mt-3 gap-5 text-(--primary-bg)">
+      <div className="flex flex-col flex-1 gap-5 text-(--primary-bg) p-4">
         <div>
           <h1 className="text-xl font-bold">{medarbejder.acf.navn}</h1>
           <h2 className="text-base font-normal">{medarbejder.acf.stilling}</h2>

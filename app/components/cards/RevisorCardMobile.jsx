@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function RevisorCardMobile() {
   return (
     <Link href="/revision">
-      <div className="min-w-80 max-w-80 h-auto bg-(--revision-blue) rounded-3xl shadow-md flex-col items-center p-5 justify-between hover:scale-102 transition-transform duration-300 ease-in-out ">
+      <div className="min-w-80 max-w-80 h-auto bg-(--revision-blue) rounded-3xl shadow-md flex-col items-center justify-between hover:scale-102 transition-transform duration-300 ease-in-out overflow-hidden ">
         <article>
-          <div className="w-full h-full">
+          <div className="w-full h-full p-5">
             <div className=" text-(--primary-bg) ">
               <h2 className="text-3xl font-medium text-(--primary-bg) ">
                 Vi er eksperter i:
@@ -31,9 +31,9 @@ export default function RevisorCardMobile() {
           </div>
         </article>
 
-        <article>
+        <article className="h-72 w-full">
           <Image
-            className="w-72 h-72 rounded-2xl"
+            className="w-full h-full"
             src="/img/DSC08310-1-5.jpg"
             width={321}
             height={321}

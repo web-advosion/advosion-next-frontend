@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function RevisorCardMobile() {
   return (
-    <div className="w-full h-auto bg-(--revision-blue) shadow-md flex-col p-5 hover:scale-102 transition-transform duration-300 ease-in-out px-6.5 lg:px-3.5">
-      <section className="w-full flex flex-col items-center">
+    <div className="w-full h-auto bg-(--revision-blue) shadow-md flex-col p-5  transition-transform duration-300 ease-in-out px-6.5 lg:px-3.5">
+      <section className="w-full flex flex-col items-start">
         <article className="self-start">
           <div className="w-full h-full">
             <div className=" text-(--primary-bg) ">

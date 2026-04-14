@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function AdvokatCard() {
   return (
     <Link href="/advokat">
-      <div className="w-full h-96 bg-(--advokat-blue) rounded-3xl shadow-md flex items-center px-8 justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20 ">
+      <div className="w-full h-96 bg-(--advokat-blue) rounded-3xl shadow-md flex items-center justify-between hover:scale-102 transition-transform duration-300 ease-in-out gap-20 overflow-hidden">
         <article>
-          <div className="w-full h-full">
+          <div className="w-full h-full pl-8">
             <div className=" text-(--advokat-blue) ">
               <h2 className="text-3xl font-medium text-(--primary-bg) ">
                 Vi er eksperter i:
@@ -31,9 +31,9 @@ export default function AdvokatCard() {
           </div>
         </article>
 
-        <article>
+        <article className="w-1/2 h-full">
           <Image
-            className="w-80 h-80 rounded-2xl"
+            className="w-full h-full"
             src="/img/DSC07385-scaled.jpg"
             width={321}
             height={321}
