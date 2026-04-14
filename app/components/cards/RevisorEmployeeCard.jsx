@@ -17,7 +17,7 @@ export default function RevisorEmployeeCard({ medarbejder }) {
         />
       </div>
 
-      <div className="flex flex-col flex-1 mt-3 gap-5 text-(--primary-bg) p-4">
+      <div className="flex flex-col flex-1  gap-5 text-(--primary-bg) p-4">
         <div>
           <h1 className="text-xl font-bold">{medarbejder.acf.navn}</h1>
           <h2 className="text-base font-normal">{medarbejder.acf.stilling}</h2>
