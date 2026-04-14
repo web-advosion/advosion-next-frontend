@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AdvokatCardMobile() {
   return (
     <Link href="/advokat">
-      <div className="w-full h-auto bg-(--advokat-blue)  shadow-md flex-col items-center p-5 justify-between hover:scale-102 transition-transform duration-300 ease-in-out px-6.5 lg:px-3.5">
+      <div className="w-full h-auto bg-(--advokat-blue)  shadow-md flex-col items-center p-5 justify-between  transition-transform duration-300 ease-in-out px-6.5 lg:px-3.5">
         <article>
           <div className="w-full h-full">
             <div className=" text-(--advokat-blue) ">
