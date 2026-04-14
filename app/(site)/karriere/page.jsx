@@ -26,15 +26,18 @@ export default async function Page() {
               <div className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    Advosion var ikke noget uden{" "}
-                    <strong>dygtige medarbejdere</strong>! Måske du skal være
-                    den næste? <br />
+                    ADVOSION er drevet af dygtige medarbejdere – måske er du den
+                    næste.
                     <br />
-                    Blive en del af en arbejdsplads, hvor fagligheden er i top
-                    og hvor der er plads og fleksibilitet til at få dit
-                    hverdagsskema til at gå op. <br /> <br />
-                    Er du nysgerrig på vores vision og værdier? Så kan du læse
-                    mere om hvem vi er under “Om os”.
+                    <br />
+                    Hos os bliver du en del af et{" "}
+                    <strong>fagligt stærkt</strong> miljø med plads til både{" "}
+                    <strong>udvikling</strong> og <strong>fleksibilitet</strong>{" "}
+                    i hverdagen.
+                    <br />
+                    <br />
+                    Er du nysgerrig på, hvem vi er, og hvad vi står for, kan du
+                    læse mere under “Om os”.
                   </p>
                 </div>
                 <div className="mt-7.5">
@@ -67,15 +70,22 @@ export default async function Page() {
 
             <div className="mt-5 w-full lg:max-w-2/3 h-auto md:w-[80%]">
               <p>
-                Som ansat hos os, går din udvikling ikke bare i stå fordi du nu
-                er i arbejde. Hvis du ønsker det, er der rig mulighed for faglig
-                udvikling! <br /> <br />
-                Om du drømmer om at blive statsutoriseret revisor eller trænger
-                til at få støvet selskabsretten af med et up-to-date kursus, så
-                finder ud af det. <br /> <br />
-                Vi ønsker at hjælpe dig med at være den bedst mulige medarbejder
-                og <strong>hjælpe dine ambitioner</strong> på vej. <br /> <br />
-                Har du spørgsmål, så tøv ikke med at kontakte os.
+                Hos ADVOSION stopper din udvikling ikke, fordi du er i job – den
+                begynder for alvor.
+                <br />
+                <br />
+                Vi prioriterer <strong>faglig udvikling</strong> og giver dig
+                mulighed for at styrke dine kompetencer – uanset om du vil
+                specialisere dig, opnå autorisation eller holde din viden
+                opdateret.
+                <br />
+                <br />
+                Du får ansvar, sparring og de rette rammer til at udvikle dig –
+                både fagligt og personligt – i dit eget tempo og med dine
+                ambitioner i fokus.
+                <br />
+                <br />
+                Har du spørgsmål, er du altid velkommen til at kontakte os.
               </p>
             </div>
             <div className="mt-7.5">
@@ -101,12 +111,16 @@ export default async function Page() {
               data-aos="fade-in"
             >
               <p>
-                Hvordan er det så at arbejder her, tænker du måske? <br />{" "}
+                Hvordan er det egentlig at arbejde hos ADVOSION?
                 <br />
-                Jamen der er ikke nogen bedre måde at forklare arbejdsmiljøet på
-                end at lade vores dygtige medarbejdere gøre det. <br /> <br />
-                Hvis du ellers har nogle spørgsmål, så tøv ikke med at kontakte
-                en af vores medarbejdere eller connecte med os på LinkedIn:
+                <br />
+                Det bedste svar får du fra dem, der er her hver dag. Derfor har
+                vi ladet vores medarbejdere give deres perspektiv på{" "}
+                <strong>hverdagen, samarbejdet og kulturen.</strong>
+                <br />
+                <br />
+                Har du spørgsmål, er du altid velkommen til at kontakte os eller
+                connecte med os på LinkedIn.
               </p>
             </div>
           </article>
@@ -187,17 +201,20 @@ export default async function Page() {
               data-aos="fade-in"
             >
               <p>
-                Hvis ikke vi lige har slået nogle konkrete stillinger op, så
-                prøv endelig lykken med en{" "}
-                <strong>uopfordret ansøgning!</strong> <br /> <br />
-                Vi holder løbende øje med nye ansøgninger og det kan jo være vi
-                står og mangler dig en dag. <br />
+                Har vi ikke en stilling, der matcher lige nu, er du altid
+                velkommen til at sende en <strong>uopfordret ansøgning.</strong>
                 <br />
-                Send din ansøgning til os enten via mail på mail@mail.dk <br />{" "}
                 <br />
-                eller via nedstående kontaktformular. <br /> <br />
-                Du er også altid velkommen til at ringe til os direkte, hvis du
-                har spørgsmål eller bare er nysgerrig på virksomheden!
+                Vi gennemgår løbende ansøgninger og er altid interesserede i at
+                høre fra dygtige kandidater, der kan styrke vores team.
+                <br />
+                <br />
+                Du kan sende din ansøgning via <strong>mail</strong> eller
+                benytte <strong>kontaktformularen</strong> her på siden.
+                <br />
+                <br />
+                Har du spørgsmål, er du også velkommen til at kontakte os – vi
+                tager gerne en uforpligtende dialog.
               </p>
             </div>
             <div className="mt-7.5">
