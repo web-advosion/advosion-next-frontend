@@ -23,14 +23,17 @@ export default async function Page() {
               <div className="mt-5 lg:flex-col lg:gap-12.5 lg:items-start">
                 <div className=" w-full h-auto md:w-[90%]">
                   <p>
-                    Advosion var ikke noget uden{" "}
-                    <strong>dygtige medarbejdere!</strong> Måske du skal være
-                    den næste? <br /> <br />
-                    Blive en del af en arbejdsplads, hvor fagligheden er i top
-                    og hvor der er plads og fleksibilitet til at få dit
-                    hverdagsskema til at gå op. <br /> <br />
-                    Er du nysgerrig på vores vision og værdier? Så kan du læse
-                    mere om hvem vi er under “Om os”.
+                    Har du spørgsmål, eller ønsker du at høre mere om, hvordan
+                    vi kan hjælpe din virksomhed?
+                    <br />
+                    <br />
+                    Du er <strong>altid velkommen til at kontakte os</strong> –
+                    uanset om det drejer sig om juridisk rådgivning, revision
+                    eller en konkret sag.
+                    <br />
+                    <br />
+                    Vi står klar til en uforpligtende dialog og hjælper dig
+                    videre.
                   </p>
                 </div>
                 <div className="mt-7.5">
