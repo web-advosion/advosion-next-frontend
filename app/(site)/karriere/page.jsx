@@ -48,7 +48,7 @@ export default async function Page() {
             <div className="w-full aspect-square md:max-w-96 md:max-h-96 lg:max-w-106 lg:max-h-106  md:min-w-96 md:min-h-96 lg:min-w-106 lg:min-h-106 relative overflow-hidden rounded-3xl shadow-md mt-12.5 md:mt-0 lg:mt-0">
               <Image
                 className="object-cover"
-                src="/img/holdet-placeholder-hero.jpg"
+                src="/img/DSC08273-herobillede_1x1_v2.jpg"
                 fill
                 alt="Adovosion kollegaer står tæt sammen og kigger på sag"
               ></Image>
