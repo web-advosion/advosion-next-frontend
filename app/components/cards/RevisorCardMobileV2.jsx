@@ -9,7 +9,7 @@ export default function RevisorCardMobile() {
         <article className="self-start">
           <div className="w-full h-full">
             <div className=" text-(--primary-bg) ">
-              <h2 className="text-3xl font-medium text-(--primary-bg) ">
+              <h2 className="text-3xl font-medium text-(--primary-bg)">
                 Vi er eksperter i:
               </h2>
               <ul className=" text-xl list-disc pl-5">
