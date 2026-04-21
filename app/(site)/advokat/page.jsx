@@ -212,7 +212,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={124} />
+              <SingleEmployee id={115} />
             </div>
           </article>
         </div>
