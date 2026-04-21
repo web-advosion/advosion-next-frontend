@@ -12,7 +12,7 @@ export default function RevisorCardMobile() {
               <h2 className="text-3xl font-medium text-(--primary-bg) ">
                 Vi er eksperter i:
               </h2>
-              <ul className="text-(--advokat-blue) text-xl list-disc pl-5">
+              <ul className="text-(--primary-bg) text-xl list-disc pl-5">
                 <li>Regnskab og revision</li>
                 <li>Skat, moms og afgifter</li>
                 <li>Finansiering</li>

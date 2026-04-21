@@ -101,7 +101,7 @@ export default function MobileMenu({ onClose }) {
             </button>
 
             {openAdvokat && (
-              <div className="px-3 pb-3 flex flex-col gap-2">
+              <div className="px-3 pb-3 flex flex-col gap-2 ">
                 <Link href="/advokat" onClick={onClose} className="text-xl">
                   Advokat
                 </Link>
@@ -155,7 +155,7 @@ export default function MobileMenu({ onClose }) {
                   Konflikthåndtering
                 </Link>
 
-                <li className="relative group/sub">
+                <li className="relative group/sub list-none">
                   <Link
                     href="/information-advokat"
                     className="text-xl block hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
@@ -173,21 +173,24 @@ export default function MobileMenu({ onClose }) {
                         Forretningsbetingelser
                       </Link>
                     </li>
-
-                    <Link
-                      href="/information-advokat/#privat"
-                      onClick={onClose}
-                      className="text-lg"
-                    >
-                      Privatlivspolitik
-                    </Link>
-                    <Link
-                      href="/information-advokat/#bank"
-                      onClick={onClose}
-                      className="text-lg"
-                    >
-                      Bankoplysninger
-                    </Link>
+                    <li>
+                      <Link
+                        href="/information-advokat/#privat"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Privatlivspolitik
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/information-advokat/#bank"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Bankoplysninger
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </div>
@@ -265,7 +268,7 @@ export default function MobileMenu({ onClose }) {
                   Regnskab og revision
                 </Link>
 
-                <li className="relative group/sub">
+                <li className="relative group/sub list-none">
                   <Link
                     href="/information-revision"
                     className="text-xl block hover:bg-(--revision-blue) hover:text-(--primary-bg) hover:rounded-b-2xl"
@@ -283,21 +286,24 @@ export default function MobileMenu({ onClose }) {
                         Forretningsbetingelser
                       </Link>
                     </li>
-
-                    <Link
-                      href="/information-revision/#privat"
-                      onClick={onClose}
-                      className="text-lg"
-                    >
-                      Privatlivspolitik
-                    </Link>
-                    <Link
-                      href="/information-revision/#bank"
-                      onClick={onClose}
-                      className="text-lg"
-                    >
-                      Bankoplysninger
-                    </Link>
+                    <li>
+                      <Link
+                        href="/information-revision/#privat"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Privatlivspolitik
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/information-revision/#bank"
+                        onClick={onClose}
+                        className="text-lg"
+                      >
+                        Bankoplysninger
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </div>
