@@ -51,7 +51,7 @@ export default async function HomePage() {
             className="absolute inset-0 w-full h-full object-cover md:hidden"
           >
             <source
-              src="https://cms.advosion.dk/wp-content/uploads/2026/03/Advosion_HeroVideo_1min_mobile_v1.m4v"
+              src="https://cms.advosion.dk/wp-content/uploads/2026/04/Advosion_HeroVideo_1080p_9x16_v1.m4v"
               type="video/mp4"
             />
           </video>
