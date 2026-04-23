@@ -41,7 +41,7 @@ export default function ContactCardMobile() {
                     height={22}
                     alt="telefon ikon"
                   ></Image>
-                  <h3>kontakt@advosion.dk</h3>
+                  <h3>info@advosion.dk</h3>
                 </li>
               </ul>
               <div className="my-6 min-w-44 max-w-55 h-8 bg-(--cta-black) px-8 rounded-2xl font-bold text-lg text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out">

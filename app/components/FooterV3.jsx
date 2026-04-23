@@ -92,7 +92,7 @@ export default function FooterV3() {
                         height={26}
                         alt="telefon logo"
                       ></Image>
-                      <p>kontakt@advosion.dk</p>
+                      <p>info@advosion.dk</p>
                     </Link>
                   </li>
                 </ul>

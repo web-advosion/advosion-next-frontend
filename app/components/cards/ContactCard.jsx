@@ -63,7 +63,7 @@ export default function ContactCard() {
                 onClick={(e) => e.stopPropagation()}
                 className="hover:underline"
               >
-                kontakt@advosion.dk
+                info@advosion.dk
               </a>
             </li>
           </ul>
