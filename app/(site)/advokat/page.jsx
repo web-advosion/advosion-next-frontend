@@ -170,7 +170,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={124} />
+                <SingleEmployee id={124} type="advokat" />
               </div>
             </article>
           </div>
@@ -212,7 +212,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={124} />
+              <SingleEmployee id={124} type="advokat" />
             </div>
           </article>
         </div>
@@ -276,7 +276,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={111} />
+                <SingleEmployee id={111} type="advokat" />
               </div>
             </article>
           </div>
@@ -315,7 +315,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={111} />
+              <SingleEmployee id={111} type="advokat" />
             </div>
           </article>
         </div>
@@ -378,7 +378,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={104} />
+                <SingleEmployee id={104} type="advokat" />
               </div>
             </article>
           </div>
@@ -417,7 +417,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={104} />
+              <SingleEmployee id={104} type="advokat" />
             </div>
           </article>
         </div>
@@ -493,7 +493,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={111} />
+                <SingleEmployee id={111} type="advokat" />
               </div>
             </article>
           </div>
@@ -532,7 +532,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={111} />
+              <SingleEmployee id={111} type="advokat" />
             </div>
           </article>
         </div>
@@ -593,7 +593,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={103} />
+                <SingleEmployee id={103} type="advokat" />
               </div>
             </article>
           </div>
@@ -632,7 +632,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={103} />
+              <SingleEmployee id={103} type="advokat" />
             </div>
           </article>
         </div>
@@ -693,7 +693,7 @@ export default async function Page() {
                 ></Image>
               </div>
               <div>
-                <SingleEmployee id={124} />
+                <SingleEmployee id={124} type="advokat" />
               </div>
             </article>
           </div>
@@ -732,7 +732,7 @@ export default async function Page() {
               ></Image>
             </div>
             <div>
-              <SingleEmployee id={103} />
+              <SingleEmployee id={103} type="advokat" />
             </div>
           </article>
         </div>
