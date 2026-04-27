@@ -6,7 +6,7 @@ export default function RevisorEmployeeCard({ medarbejder }) {
     "/img/image-error-message.svg";
 
   return (
-    <div className="min-w-64 max-w-64 h-auto bg-(--revision-blue) rounded-2xl shadow-md flex flex-col overflow-hidden">
+    <div className="min-w-64 max-w-64 h-auto min-h-104 bg-(--revision-blue) rounded-2xl shadow-md flex flex-col overflow-hidden">
       <div>
         <Image
           className="overflow-hidden  w-full h-48 object-cover"

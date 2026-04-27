@@ -89,7 +89,7 @@ export default async function Page() {
             ></Image>
           </div>
 
-          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden)">
+          <div className="w-screen h-auto flex overflow-x-auto gap-5 pr-15 md:hidden">
             <AdvokatCardMobile />
             <RevisorCardMobile />
           </div>
