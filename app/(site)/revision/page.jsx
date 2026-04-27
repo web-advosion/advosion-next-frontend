@@ -432,6 +432,46 @@ export default async function Page() {
           </article>
         </div>
       </section>
+
+      {/*Sektion: ny kunde/CTA section */}
+      <section
+        id="ledelse"
+        className="w-screen h-auto bg-(--primary-bg) pb-12.5 pt-12.5 scroll-mt-12.5"
+      >
+        <div className="mx-auto w-full max-w-6xl 2xl:max-w-350 px-6.5 lg:px-3.5">
+          <div className="lg:flex">
+            <article>
+              <div className="w-full justify-start text-CTA-black text-4xl font-bold font-['Inter'] leading-7">
+                <h2>Ny kunde?</h2>
+              </div>
+
+              <div
+                className="mt-5 w-full md:max-w-[80%] lg:max-w-2/3 h-auto"
+                data-aos="fade-in"
+              >
+                <p>
+                  Er du ny kunde, eller overvejer du at blive kunde, så se med
+                  her. <br /> <br />
+                  Har du brug for økonomisk rådgivning eller specifikke
+                  revisionsydelser, står vi klar til at hjælpe dig og din
+                  virksomhed. <br /> <br />
+                  For at give dig den bedste indledende rådgivning, skal den
+                  første kontakt gerne gå gennem vores Statsautoriserede
+                  revisorer Michael og Jannie. <br /> <br />
+                  Dernæst bliver du tildelt den rette revisor til din case.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <article className="mt-12.5" data-aos="fade-in">
+            <div className="flex w-full overflow-scroll md:flex-row max-w-150 mt-7.5 gap-10">
+              <SingleEmployee id={113} />
+              <SingleEmployee id={112} />
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }
