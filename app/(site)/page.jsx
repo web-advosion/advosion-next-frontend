@@ -192,7 +192,7 @@ export default async function HomePage() {
                 <h3 className="sr-only">Swipe for at se flere udtalelser</h3>
                 <Image
                   className="w-35 h-10"
-                  src="/img/icon-swipe-white.svg"
+                  src="/img/icon-swipe.svg"
                   width={150}
                   height={50}
                   alt="Swipe for at se flere udtalelser"
