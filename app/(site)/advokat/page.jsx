@@ -701,7 +701,7 @@ export default async function Page() {
           <article className="mt-12.5" data-aos="fade-in">
             <div className="w-full flex justify-start mb-2.5">
               <Image
-                className="w-35 h-10"
+                className="w-35 h-10 lg:invisible"
                 src="/img/icon-swipe.svg"
                 width={150}
                 height={50}

@@ -465,7 +465,7 @@ export default async function Page() {
           </div>
 
           <article className="mt-12.5" data-aos="fade-in">
-            <div className="flex w-full overflow-scroll md:flex-row max-w-150 mt-7.5 gap-10">
+            <div className="flex w-full min-h-full overflow-scroll md:flex-row max-w-150 mt-7.5 gap-10">
               <SingleEmployee id={113} type="revisor" />
               <SingleEmployee id={112} type="revisor" />
             </div>
